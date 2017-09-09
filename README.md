@@ -7,8 +7,8 @@ To start working on the repository:
 ```
 1. Open the git shell
 2. Navigate to the directory you wish to place the repository inside
-3. git clone --recursive "https://github.com/SFUSatClub/CubeSat-Radio-v0.1.git"
-4. cd .\CubeSat-Radio-v0.1\KiCad-Lib\
+3. git clone --recursive "https://github.com/SFUSatClub/eps-hardware.git"
+4. cd .\eps-hardware\KiCad-Lib\
 5. git checkout master
 ```
 
