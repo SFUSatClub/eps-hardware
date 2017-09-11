@@ -1,0 +1,417 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SFUSat
+LIBS:SFUSat-power
+LIBS:eps-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SPV1040 U?
+U 1 1 59B7424B
+P 4950 3600
+F 0 "U?" H 4517 3848 60  0000 C CNN
+F 1 "SPV1040" H 5200 3350 60  0000 C CNN
+F 2 "" H 5050 3250 60  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/0d/30/c2/1a/92/03/48/cb/CD00287506.pdf/files/CD00287506.pdf/jcr:content/translations/en.CD00287506.pdf" H 5050 3250 60  0001 C CNN
+F 4 "http://www.st.com/content/ccc/resource/technical/document/application_note/34/f8/03/2c/c0/39/4b/93/CD00292052.pdf/files/CD00292052.pdf/jcr:content/translations/en.CD00292052.pdf" H 4950 3600 60  0001 C CNN "App Note"
+	1    4950 3600
+	1    0    0    -1  
+$EndComp
+Text Notes 7350 7500 0    60   ~ 0
+CubeSat Electrical Power Subsystem
+Text Notes 4450 4500 0    60   ~ 0
+Thermal Shutdown at 155C, \nreenabled at 130C
+$Comp
+L L L?
+U 1 1 59B74254
+P 4050 3300
+F 0 "L?" V 4000 3300 50  0000 C CNN
+F 1 "10uH" V 4125 3300 50  0000 C CNN
+F 2 "" H 4050 3300 50  0001 C CNN
+F 3 "" H 4050 3300 50  0001 C CNN
+F 4 "871-B82442T1103K050" V 4050 3300 60  0001 C CNN "Mouser"
+F 5 "495-5656-1-ND" V 4050 3300 60  0001 C CNN "Digikey"
+	1    4050 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59B74255
+P 4100 3700
+F 0 "#PWR?" H 4100 3450 50  0001 C CNN
+F 1 "GND" H 4100 3550 50  0000 C CNN
+F 2 "" H 4100 3700 50  0001 C CNN
+F 3 "" H 4100 3700 50  0001 C CNN
+	1    4100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 59B74256
+P 3850 3650
+F 0 "R?" V 3930 3650 50  0000 C CNN
+F 1 "0R" V 3850 3650 50  0000 C CNN
+F 2 "" V 3780 3650 50  0001 C CNN
+F 3 "" H 3850 3650 50  0001 C CNN
+	1    3850 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3300 4200 3300
+Wire Wire Line
+	4300 3500 3850 3500
+Wire Wire Line
+	4300 3900 3850 3900
+Wire Wire Line
+	3850 3900 3850 3800
+Wire Wire Line
+	4300 3700 4100 3700
+$Comp
+L R R?
+U 1 1 59B74257
+P 3600 3450
+F 0 "R?" V 3680 3450 50  0000 C CNN
+F 1 "1K" V 3600 3450 50  0000 C CNN
+F 2 "" V 3530 3450 50  0001 C CNN
+F 3 "" H 3600 3450 50  0001 C CNN
+	1    3600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV?
+U 1 1 59B74258
+P 3600 3850
+F 0 "RV?" V 3425 3850 50  0000 C CNN
+F 1 "POT" V 3500 3850 50  0000 C CNN
+F 2 "" H 3600 3850 50  0001 C CNN
+F 3 "" H 3600 3850 50  0001 C CNN
+	1    3600 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 59B74259
+P 4250 4100
+F 0 "C?" H 4275 4200 50  0000 L CNN
+F 1 "100nF" H 4275 4000 50  0000 L CNN
+F 2 "" H 4288 3950 50  0001 C CNN
+F 3 "" H 4250 4100 50  0001 C CNN
+	1    4250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 59B7425A
+P 3200 3800
+F 0 "C?" H 3225 3900 50  0000 L CNN
+F 1 "10uF" H 3225 3700 50  0000 L CNN
+F 2 "" H 3238 3650 50  0001 C CNN
+F 3 "" H 3200 3800 50  0001 C CNN
+	1    3200 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3700 3600 3600
+Wire Wire Line
+	3050 3300 3900 3300
+Wire Wire Line
+	4250 3950 4250 3900
+Connection ~ 4250 3900
+Wire Wire Line
+	3050 4250 4250 4250
+Wire Wire Line
+	3600 4250 3600 4000
+Wire Wire Line
+	3200 3300 3200 3650
+Connection ~ 3600 3300
+Wire Wire Line
+	3200 4250 3200 3950
+Connection ~ 3600 4250
+Connection ~ 3200 3300
+Connection ~ 3200 4250
+Wire Wire Line
+	3450 3850 3450 4050
+Wire Wire Line
+	3450 4050 3600 4050
+Connection ~ 3600 4050
+$Comp
+L GND #PWR?
+U 1 1 59B7425B
+P 3750 4350
+F 0 "#PWR?" H 3750 4100 50  0001 C CNN
+F 1 "GND" H 3750 4200 50  0000 C CNN
+F 2 "" H 3750 4350 50  0001 C CNN
+F 3 "" H 3750 4350 50  0001 C CNN
+	1    3750 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4350 3750 4250
+Connection ~ 3750 4250
+$Comp
+L C C?
+U 1 1 59B7425C
+P 5800 4200
+F 0 "C?" H 5825 4300 50  0000 L CNN
+F 1 "1nF" H 5825 4100 50  0000 L CNN
+F 2 "" H 5838 4050 50  0001 C CNN
+F 3 "" H 5800 4200 50  0001 C CNN
+	1    5800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 59B7425D
+P 6050 3600
+F 0 "C?" H 6075 3700 50  0000 L CNN
+F 1 "1uF" H 6075 3500 50  0000 L CNN
+F 2 "" H 6088 3450 50  0001 C CNN
+F 3 "" H 6050 3600 50  0001 C CNN
+	1    6050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 59B7425E
+P 6350 3400
+F 0 "R?" V 6430 3400 50  0000 C CNN
+F 1 "1K" V 6350 3400 50  0000 C CNN
+F 2 "" V 6280 3400 50  0001 C CNN
+F 3 "" H 6350 3400 50  0001 C CNN
+	1    6350 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 59B7425F
+P 6350 3800
+F 0 "R?" V 6430 3800 50  0000 C CNN
+F 1 "1K" V 6350 3800 50  0000 C CNN
+F 2 "" V 6280 3800 50  0001 C CNN
+F 3 "" H 6350 3800 50  0001 C CNN
+	1    6350 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 59B74260
+P 6800 3300
+F 0 "R?" V 6880 3300 50  0000 C CNN
+F 1 "10mR" V 6800 3300 50  0000 C CNN
+F 2 "" V 6730 3300 50  0001 C CNN
+F 3 "" H 6800 3300 50  0001 C CNN
+	1    6800 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 59B74261
+P 7200 3450
+F 0 "R?" V 7280 3450 50  0000 C CNN
+F 1 "1M" V 7200 3450 50  0000 C CNN
+F 2 "" V 7130 3450 50  0001 C CNN
+F 3 "" H 7200 3450 50  0001 C CNN
+	1    7200 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L POT RV?
+U 1 1 59B74262
+P 7200 3800
+F 0 "RV?" V 7025 3800 50  0000 C CNN
+F 1 "POT" V 7100 3800 50  0000 C CNN
+F 2 "" H 7200 3800 50  0001 C CNN
+F 3 "" H 7200 3800 50  0001 C CNN
+	1    7200 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5650 3700 5900 3700
+Wire Wire Line
+	5900 3700 5900 3750
+Wire Wire Line
+	5900 3750 6050 3750
+Wire Wire Line
+	5650 3500 5900 3500
+Wire Wire Line
+	5900 3500 5900 3450
+Wire Wire Line
+	5900 3450 6050 3450
+Wire Wire Line
+	6200 3400 6050 3400
+Wire Wire Line
+	6050 3400 6050 3450
+Wire Wire Line
+	6200 3800 6050 3800
+Wire Wire Line
+	6050 3800 6050 3750
+Wire Wire Line
+	5650 3900 6100 3900
+Wire Wire Line
+	5800 3900 5800 4050
+Wire Wire Line
+	6650 3400 6500 3400
+Wire Wire Line
+	6650 3100 6650 3400
+Wire Wire Line
+	6500 3800 6950 3800
+Wire Wire Line
+	6950 3800 6950 3300
+Wire Wire Line
+	6650 3300 5650 3300
+Wire Wire Line
+	6100 3900 6100 3950
+Wire Wire Line
+	6100 3950 7000 3950
+Wire Wire Line
+	7000 3950 7000 3650
+Connection ~ 5800 3900
+Wire Wire Line
+	6950 3300 8600 3300
+Wire Wire Line
+	8250 4350 5800 4350
+$Comp
+L C C?
+U 1 1 59B74263
+P 7550 3650
+F 0 "C?" H 7575 3750 50  0000 L CNN
+F 1 "10uF" H 7575 3550 50  0000 L CNN
+F 2 "" H 7588 3500 50  0001 C CNN
+F 3 "" H 7550 3650 50  0001 C CNN
+	1    7550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 59B74264
+P 7950 3650
+F 0 "D?" H 7950 3750 50  0000 C CNN
+F 1 "SMM4F5.0" H 7950 3550 50  0000 C CNN
+F 2 "" H 7950 3650 50  0001 C CNN
+F 3 "" H 7950 3650 50  0001 C CNN
+F 4 "497-15660-1-ND" H 7950 3650 60  0001 C CNN "Digikey"
+F 5 "511-SMM4F5.0A-TR" H 7950 3650 60  0001 C CNN "Mouser"
+	1    7950 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 59B74265
+P 8250 3650
+F 0 "C?" H 8275 3750 50  0000 L CNN
+F 1 "4.7uF" H 8275 3550 50  0000 L CNN
+F 2 "" H 8288 3500 50  0001 C CNN
+F 3 "" H 8250 3650 50  0001 C CNN
+	1    8250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3500 8250 3500
+Wire Wire Line
+	7950 3500 7950 3100
+Wire Wire Line
+	7950 3100 6650 3100
+Connection ~ 6650 3300
+Wire Wire Line
+	7550 3300 7550 3500
+Connection ~ 7200 3300
+Wire Wire Line
+	7550 3800 7550 4350
+Connection ~ 7200 4350
+Wire Wire Line
+	8250 3800 8250 4350
+Connection ~ 7550 4350
+Wire Wire Line
+	7950 3800 7950 4350
+Connection ~ 7950 4350
+Connection ~ 7550 3300
+Text Notes 4650 3050 0    60   ~ 0
+all pots: 0-1Mohm
+Text Notes 6700 3200 0    60   ~ 0
+This is 10^-3 ohms
+$Comp
+L R R?
+U 1 1 59B74266
+P 7200 4150
+F 0 "R?" V 7280 4150 50  0000 C CNN
+F 1 "330K" V 7200 4150 50  0000 C CNN
+F 2 "" V 7130 4150 50  0001 C CNN
+F 3 "" H 7200 4150 50  0001 C CNN
+	1    7200 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 4000 7200 3950
+Wire Wire Line
+	7200 4350 7200 4300
+Wire Wire Line
+	7200 3950 7050 3950
+Wire Wire Line
+	7050 3950 7050 3800
+Wire Wire Line
+	7200 3600 7200 3650
+Wire Wire Line
+	7200 3650 7000 3650
+Text Notes 4550 3200 0    60   ~ 0
+MPPT step-up converter
+Text HLabel 3050 3300 0    60   Input ~ 0
+PV+
+Text HLabel 3050 4250 0    60   Input ~ 0
+PV-
+Text HLabel 8600 3300 2    60   Input ~ 0
+VOUT
+$Comp
+L GND #PWR?
+U 1 1 59B7898C
+P 6600 4450
+F 0 "#PWR?" H 6600 4200 50  0001 C CNN
+F 1 "GND" H 6600 4300 50  0000 C CNN
+F 2 "" H 6600 4450 50  0001 C CNN
+F 3 "" H 6600 4450 50  0001 C CNN
+	1    6600 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4450 6600 4350
+Connection ~ 6600 4350
+$EndSCHEMATC
