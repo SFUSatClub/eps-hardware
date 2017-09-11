@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -45,29 +45,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L bq40z50-R1 U?
-U 1 1 59AC8502
-P 5500 3850
-F 0 "U?" H 4800 4650 60  0000 C CNN
-F 1 "bq40z50-R1" H 5500 3850 60  0000 C CNN
-F 2 "" H 5500 3850 60  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/bq40z50-r1.pdf" H 5500 3850 60  0001 C CNN
-F 4 "http://www.ti.com/lit/ug/sluubc1c/sluubc1c.pdf" H 5500 3850 60  0001 C CNN "Reference Manual"
-	1    5500 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L bq771601 U?
-U 1 1 59AC8581
-P 1050 4150
-F 0 "U?" H 755 4642 60  0000 C CNN
-F 1 "bq771601" H 1050 4150 60  0000 C CNN
-F 2 "" H 1050 4150 60  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/bq7716.pdf" H 1050 4150 60  0001 C CNN
-	1    1050 4150
-	-1   0    0    -1  
-$EndComp
 Text Notes 7350 7500 0    60   ~ 0
 CubeSat Electrical Power Subsystem
 $Comp
@@ -79,30 +56,6 @@ F 1 "BARREL_JACK" H 4000 5545 50  0000 C CNN
 F 2 "" H 4000 5700 50  0001 C CNN
 F 3 "" H 4000 5700 50  0001 C CNN
 	1    4000 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Battery_Cell BT?
-U 1 1 59AC9D26
-P 2500 3800
-F 0 "BT?" H 2600 3900 50  0000 L CNN
-F 1 "NCR18650" H 2600 3800 50  0000 L CNN
-F 2 "" V 2500 3860 50  0001 C CNN
-F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 2500 3860 50  0001 C CNN
-	1    2500 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Battery_Cell BT?
-U 1 1 59ACB270
-P 2250 700
-F 0 "BT?" H 2350 800 50  0000 L CNN
-F 1 "Solar_Cell" H 2350 700 50  0000 L CNN
-F 2 "" V 2250 760 50  0001 C CNN
-F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2250 760 50  0001 C CNN
-F 4 "SPECTROLAB 28.3% Ultra Triple Junction (UTJ) Solar Cells" H 2250 700 60  0001 C CNN "Product"
-F 5 "32cm2" H 2250 700 60  0001 C CNN "Model"
-	1    2250 700 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -179,68 +132,183 @@ Text Notes 7600 4850 0    60   ~ 0
 Pull-before-flight
 Text Notes 1650 1000 0    60   ~ 0
 Remove solar cells and replace with 4 panel connectors
-Text Notes 550  3450 0    60   ~ 0
-Overvoltage protection
-Text Notes 5000 2850 0    60   ~ 0
-Battery Managment
 Text Notes 3750 5400 0    60   ~ 0
 Aux ground power
 $Comp
 L Battery_Cell BT?
-U 1 1 59B70940
-P 3100 3800
-F 0 "BT?" H 3200 3900 50  0000 L CNN
-F 1 "NCR18650" H 3200 3800 50  0000 L CNN
-F 2 "" V 3100 3860 50  0001 C CNN
-F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 3100 3860 50  0001 C CNN
-	1    3100 3800
+U 1 1 59B709BC
+P 6400 4200
+F 0 "BT?" H 6500 4300 50  0000 L CNN
+F 1 "NCR18650" H 6500 4200 50  0000 L CNN
+F 2 "" V 6400 4260 50  0001 C CNN
+F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 6400 4260 50  0001 C CNN
+	1    6400 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3350 5800 3300
+Wire Wire Line
+	5800 3300 6400 3300
+Wire Wire Line
+	6400 3300 6400 3350
+Wire Wire Line
+	6400 4000 6400 3650
+Wire Wire Line
+	5800 4350 6400 4350
+Wire Wire Line
+	6400 4350 6400 4300
+$Sheet
+S 4950 1100 1000 700 
+U 59B728F7
+F0 "MPPT_1" 60
+F1 "mppt.sch" 60
+F2 "PV+" I L 4950 1300 60 
+F3 "PV-" I L 4950 1600 60 
+F4 "VOUT" I R 5950 1450 60 
+$EndSheet
+$Comp
+L Battery_Cell BT?
+U 1 1 59B7C951
+P 4250 1300
+F 0 "BT?" H 4350 1400 50  0000 L CNN
+F 1 "Solar_Cell" H 4350 1300 50  0000 L CNN
+F 2 "" V 4250 1360 50  0001 C CNN
+F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 4250 1360 50  0001 C CNN
+F 4 "SPECTROLAB 28.3% Ultra Triple Junction (UTJ) Solar Cells" H 4250 1300 60  0001 C CNN "Product"
+F 5 "32cm2" H 4250 1300 60  0001 C CNN "Model"
+	1    4250 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Battery_Cell BT?
-U 1 1 59B709BC
-P 3100 4450
-F 0 "BT?" H 3200 4550 50  0000 L CNN
-F 1 "NCR18650" H 3200 4450 50  0000 L CNN
-F 2 "" V 3100 4510 50  0001 C CNN
-F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 3100 4510 50  0001 C CNN
-	1    3100 4450
+U 1 1 59B7CD2E
+P 4250 1700
+F 0 "BT?" H 4350 1800 50  0000 L CNN
+F 1 "Solar_Cell" H 4350 1700 50  0000 L CNN
+F 2 "" V 4250 1760 50  0001 C CNN
+F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 4250 1760 50  0001 C CNN
+F 4 "SPECTROLAB 28.3% Ultra Triple Junction (UTJ) Solar Cells" H 4250 1700 60  0001 C CNN "Product"
+F 5 "32cm2" H 4250 1700 60  0001 C CNN "Model"
+	1    4250 1700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4250 1400 4250 1500
+$Comp
+L Battery_Cell BT?
+U 1 1 59B7CE94
+P 3650 1300
+F 0 "BT?" H 3750 1400 50  0000 L CNN
+F 1 "Solar_Cell" H 3750 1300 50  0000 L CNN
+F 2 "" V 3650 1360 50  0001 C CNN
+F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 3650 1360 50  0001 C CNN
+F 4 "SPECTROLAB 28.3% Ultra Triple Junction (UTJ) Solar Cells" H 3650 1300 60  0001 C CNN "Product"
+F 5 "32cm2" H 3650 1300 60  0001 C CNN "Model"
+	1    3650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Cell BT?
+U 1 1 59B7CE9C
+P 3650 1700
+F 0 "BT?" H 3750 1800 50  0000 L CNN
+F 1 "Solar_Cell" H 3750 1700 50  0000 L CNN
+F 2 "" V 3650 1760 50  0001 C CNN
+F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 3650 1760 50  0001 C CNN
+F 4 "SPECTROLAB 28.3% Ultra Triple Junction (UTJ) Solar Cells" H 3650 1700 60  0001 C CNN "Product"
+F 5 "32cm2" H 3650 1700 60  0001 C CNN "Model"
+	1    3650 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1400 3650 1500
+$Comp
+L Battery_Cell BT?
+U 1 1 59B7D104
+P 3000 1300
+F 0 "BT?" H 3100 1400 50  0000 L CNN
+F 1 "Solar_Cell" H 3100 1300 50  0000 L CNN
+F 2 "" V 3000 1360 50  0001 C CNN
+F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 3000 1360 50  0001 C CNN
+F 4 "SPECTROLAB 28.3% Ultra Triple Junction (UTJ) Solar Cells" H 3000 1300 60  0001 C CNN "Product"
+F 5 "32cm2" H 3000 1300 60  0001 C CNN "Model"
+	1    3000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Cell BT?
+U 1 1 59B7D10C
+P 3000 1700
+F 0 "BT?" H 3100 1800 50  0000 L CNN
+F 1 "Solar_Cell" H 3100 1700 50  0000 L CNN
+F 2 "" V 3000 1760 50  0001 C CNN
+F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 3000 1760 50  0001 C CNN
+F 4 "SPECTROLAB 28.3% Ultra Triple Junction (UTJ) Solar Cells" H 3000 1700 60  0001 C CNN "Product"
+F 5 "32cm2" H 3000 1700 60  0001 C CNN "Model"
+	1    3000 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1400 3000 1500
+Wire Wire Line
+	3000 1100 4900 1100
+Connection ~ 3650 1100
+Wire Wire Line
+	4900 1100 4900 1300
+Wire Wire Line
+	4900 1300 4950 1300
+Connection ~ 4250 1100
+Wire Wire Line
+	3000 1800 4900 1800
+Connection ~ 3650 1800
+Wire Wire Line
+	4900 1800 4900 1600
+Wire Wire Line
+	4900 1600 4950 1600
+Connection ~ 4250 1800
+$Sheet
+S 7600 3400 1100 800 
+U 59B7E955
+F0 "BMS" 60
+F1 "bms.sch" 60
+F2 "SDA" I R 8700 3700 60 
+F3 "SCL" I R 8700 3800 60 
+$EndSheet
+Wire Wire Line
+	5800 4300 5800 4350
+Wire Wire Line
+	5800 3650 5800 4000
 $Comp
 L Battery_Cell BT?
 U 1 1 59B70A3D
-P 2500 4450
-F 0 "BT?" H 2600 4550 50  0000 L CNN
-F 1 "NCR18650" H 2600 4450 50  0000 L CNN
-F 2 "" V 2500 4510 50  0001 C CNN
-F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 2500 4510 50  0001 C CNN
-	1    2500 4450
+P 5800 4200
+F 0 "BT?" H 5900 4300 50  0000 L CNN
+F 1 "NCR18650" H 5900 4200 50  0000 L CNN
+F 2 "" V 5800 4260 50  0001 C CNN
+F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 5800 4260 50  0001 C CNN
+	1    5800 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2500 3600 2500 3550
-Wire Wire Line
-	2500 3550 3100 3550
-Wire Wire Line
-	3100 3550 3100 3600
-Wire Wire Line
-	2500 3900 2500 4250
-Wire Wire Line
-	3100 4250 3100 3900
-Wire Wire Line
-	2500 4550 2500 4600
-Wire Wire Line
-	2500 4600 3100 4600
-Wire Wire Line
-	3100 4600 3100 4550
-$Sheet
-S 8450 3200 1000 700 
-U 59B728F7
-F0 "MPPT" 60
-F1 "mppt.sch" 60
-F2 "PV+" I L 8450 3400 60 
-F3 "PV-" I L 8450 3700 60 
-F4 "VOUT" I R 9450 3550 60 
-$EndSheet
+$Comp
+L Battery_Cell BT?
+U 1 1 59AC9D26
+P 5800 3550
+F 0 "BT?" H 5900 3650 50  0000 L CNN
+F 1 "NCR18650" H 5900 3550 50  0000 L CNN
+F 2 "" V 5800 3610 50  0001 C CNN
+F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 5800 3610 50  0001 C CNN
+	1    5800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Cell BT?
+U 1 1 59B70940
+P 6400 3550
+F 0 "BT?" H 6500 3650 50  0000 L CNN
+F 1 "NCR18650" H 6500 3550 50  0000 L CNN
+F 2 "" V 6400 3610 50  0001 C CNN
+F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 6400 3610 50  0001 C CNN
+	1    6400 3550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
