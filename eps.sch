@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -137,26 +137,26 @@ Aux ground power
 $Comp
 L Battery_Cell BT?
 U 1 1 59B709BC
-P 6400 4200
-F 0 "BT?" H 6500 4300 50  0000 L CNN
-F 1 "NCR18650" H 6500 4200 50  0000 L CNN
-F 2 "" V 6400 4260 50  0001 C CNN
-F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 6400 4260 50  0001 C CNN
-	1    6400 4200
+P 6050 3550
+F 0 "BT?" H 6150 3650 50  0000 L CNN
+F 1 "NCR18650" H 6150 3550 50  0000 L CNN
+F 2 "" V 6050 3610 50  0001 C CNN
+F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 6050 3610 50  0001 C CNN
+	1    6050 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 3350 5800 3300
+	5450 2700 5450 2650
 Wire Wire Line
-	5800 3300 6400 3300
+	5450 2650 7000 2650
 Wire Wire Line
-	6400 3300 6400 3350
+	6050 2650 6050 2700
 Wire Wire Line
-	6400 4000 6400 3650
+	6050 3350 6050 3000
 Wire Wire Line
-	5800 4350 6400 4350
+	5450 3700 6050 3700
 Wire Wire Line
-	6400 4350 6400 4300
+	6050 3700 6050 3650
 $Sheet
 S 3350 750  1000 700 
 U 59B728F7
@@ -267,48 +267,55 @@ Wire Wire Line
 	3300 1250 3350 1250
 Connection ~ 2650 1450
 $Sheet
-S 7600 3400 1100 800 
+S 7000 2500 1100 1700
 U 59B7E955
 F0 "BMS" 60
 F1 "bms.sch" 60
-F2 "SDA" I R 8700 3700 60 
-F3 "SCL" I R 8700 3800 60 
+F2 "SDA" I R 8100 2800 60 
+F3 "SCL" I R 8100 2900 60 
+F4 "TS1" I L 7000 2950 60 
+F5 "TS2" I L 7000 3050 60 
+F6 "TS3" I L 7000 3150 60 
+F7 "TS4" I L 7000 3250 60 
+F8 "VN" I L 7000 4100 60 
+F9 "V_LO" I L 7000 2800 60 
+F10 "V_HI" I L 7000 2650 60 
 $EndSheet
 Wire Wire Line
-	5800 4300 5800 4350
+	5450 3650 5450 3700
 Wire Wire Line
-	5800 3650 5800 4000
+	5450 3000 5450 3350
 $Comp
 L Battery_Cell BT?
 U 1 1 59B70A3D
-P 5800 4200
-F 0 "BT?" H 5900 4300 50  0000 L CNN
-F 1 "NCR18650" H 5900 4200 50  0000 L CNN
-F 2 "" V 5800 4260 50  0001 C CNN
-F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 5800 4260 50  0001 C CNN
-	1    5800 4200
+P 5450 3550
+F 0 "BT?" H 5550 3650 50  0000 L CNN
+F 1 "NCR18650" H 5550 3550 50  0000 L CNN
+F 2 "" V 5450 3610 50  0001 C CNN
+F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 5450 3610 50  0001 C CNN
+	1    5450 3550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Battery_Cell BT?
 U 1 1 59AC9D26
-P 5800 3550
-F 0 "BT?" H 5900 3650 50  0000 L CNN
-F 1 "NCR18650" H 5900 3550 50  0000 L CNN
-F 2 "" V 5800 3610 50  0001 C CNN
-F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 5800 3610 50  0001 C CNN
-	1    5800 3550
+P 5450 2900
+F 0 "BT?" H 5550 3000 50  0000 L CNN
+F 1 "NCR18650" H 5550 2900 50  0000 L CNN
+F 2 "" V 5450 2960 50  0001 C CNN
+F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 5450 2960 50  0001 C CNN
+	1    5450 2900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Battery_Cell BT?
 U 1 1 59B70940
-P 6400 3550
-F 0 "BT?" H 6500 3650 50  0000 L CNN
-F 1 "NCR18650" H 6500 3550 50  0000 L CNN
-F 2 "" V 6400 3610 50  0001 C CNN
-F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 6400 3610 50  0001 C CNN
-	1    6400 3550
+P 6050 2900
+F 0 "BT?" H 6150 3000 50  0000 L CNN
+F 1 "NCR18650" H 6150 2900 50  0000 L CNN
+F 2 "" V 6050 2960 50  0001 C CNN
+F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 6050 2960 50  0001 C CNN
+	1    6050 2900
 	1    0    0    -1  
 $EndComp
 Text Notes 1000 1100 2    60   ~ 0
@@ -646,4 +653,140 @@ Wire Wire Line
 Connection ~ 2650 4300
 Text Notes 1000 3950 2    60   ~ 0
 max 5.2V
+Connection ~ 6050 2650
+Connection ~ 6050 3050
+Connection ~ 5450 3050
+Wire Wire Line
+	5750 3700 5750 4100
+Connection ~ 5750 3700
+$Comp
+L Thermistor TH?
+U 1 1 59BA3822
+P 5200 3450
+F 0 "TH?" V 5300 3500 50  0000 C CNN
+F 1 "103AT-4-70378" V 5100 3450 50  0000 C BNN
+F 2 "" H 5200 3450 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/362/semitec_atthermistor-371460.pdf" H 5200 3450 50  0001 C CNN
+F 4 "954-103AT-4-70378" V 5200 3450 60  0001 C CNN "Mouser"
+	1    5200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59BA3829
+P 5200 3700
+F 0 "#PWR?" H 5200 3450 50  0001 C CNN
+F 1 "GND" H 5200 3550 50  0000 C CNN
+F 2 "" H 5200 3700 50  0001 C CNN
+F 3 "" H 5200 3700 50  0001 C CNN
+	1    5200 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3700 5200 3650
+$Comp
+L Thermistor TH?
+U 1 1 59BA3831
+P 6750 3500
+F 0 "TH?" V 6850 3550 50  0000 C CNN
+F 1 "103AT-4-70378" V 6650 3500 50  0000 C BNN
+F 2 "" H 6750 3500 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/362/semitec_atthermistor-371460.pdf" H 6750 3500 50  0001 C CNN
+F 4 "954-103AT-4-70378" V 6750 3500 60  0001 C CNN "Mouser"
+	1    6750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59BA3838
+P 6750 3750
+F 0 "#PWR?" H 6750 3500 50  0001 C CNN
+F 1 "GND" H 6750 3600 50  0000 C CNN
+F 2 "" H 6750 3750 50  0001 C CNN
+F 3 "" H 6750 3750 50  0001 C CNN
+	1    6750 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3750 6750 3700
+$Comp
+L Thermistor TH?
+U 1 1 59BA3840
+P 5200 2650
+F 0 "TH?" V 5300 2700 50  0000 C CNN
+F 1 "103AT-4-70378" V 5100 2650 50  0000 C BNN
+F 2 "" H 5200 2650 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/362/semitec_atthermistor-371460.pdf" H 5200 2650 50  0001 C CNN
+F 4 "954-103AT-4-70378" V 5200 2650 60  0001 C CNN "Mouser"
+	1    5200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59BA3847
+P 5200 2900
+F 0 "#PWR?" H 5200 2650 50  0001 C CNN
+F 1 "GND" H 5200 2750 50  0000 C CNN
+F 2 "" H 5200 2900 50  0001 C CNN
+F 3 "" H 5200 2900 50  0001 C CNN
+	1    5200 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2900 5200 2850
+$Comp
+L Thermistor TH?
+U 1 1 59BA384F
+P 6050 2450
+F 0 "TH?" V 6150 2500 50  0000 C CNN
+F 1 "103AT-4-70378" V 5950 2450 50  0000 C BNN
+F 2 "" H 6050 2450 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/362/semitec_atthermistor-371460.pdf" H 6050 2450 50  0001 C CNN
+F 4 "954-103AT-4-70378" V 6050 2450 60  0001 C CNN "Mouser"
+	1    6050 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59BA3856
+P 5800 2450
+F 0 "#PWR?" H 5800 2200 50  0001 C CNN
+F 1 "GND" H 5800 2300 50  0000 C CNN
+F 2 "" H 5800 2450 50  0001 C CNN
+F 3 "" H 5800 2450 50  0001 C CNN
+	1    5800 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 2450 5850 2450
+Wire Wire Line
+	5450 3050 6550 3050
+Wire Wire Line
+	6550 3050 6550 2800
+Wire Wire Line
+	6550 2800 7000 2800
+Wire Wire Line
+	7000 3250 6750 3250
+Wire Wire Line
+	6750 3250 6750 3300
+Wire Wire Line
+	7000 3150 5200 3150
+Wire Wire Line
+	5200 3150 5200 3250
+Wire Wire Line
+	7000 2950 6850 2950
+Wire Wire Line
+	6850 2950 6850 2250
+Wire Wire Line
+	6850 2250 5200 2250
+Wire Wire Line
+	5200 2250 5200 2450
+Wire Wire Line
+	6250 2450 6800 2450
+Wire Wire Line
+	6800 2450 6800 3050
+Wire Wire Line
+	6800 3050 7000 3050
+Wire Wire Line
+	5750 4100 7000 4100
 $EndSCHEMATC
