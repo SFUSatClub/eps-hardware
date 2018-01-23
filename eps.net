@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source "E:/Documents/Various Documents/School/SFU Satellite Club/KiCAD/eps-hardware/eps.sch")
-    (date "2018-01-22 23:59:40 PM")
-    (tool "Eeschema 4.0.5")
+    (source /home/tobi/Cubesat/Power/eps-hardware/eps.sch)
+    (date "Tue 23 Jan 2018 11:54:44 AM PST")
+    (tool "Eeschema 4.0.6-e0-6349~53~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -958,7 +958,7 @@
     (libpart (lib conn) (part BARREL_JACK)
       (description "DC Barrel Jack")
       (fields
-        (field (name Reference) CON)
+        (field (name Reference) J)
         (field (name Value) BARREL_JACK))
       (pins
         (pin (num 1) (name ~) (type passive))
@@ -975,11 +975,7 @@
     (libpart (lib device) (part C)
       (description "Unpolarized capacitor")
       (footprints
-        (fp C?)
-        (fp C_????_*)
-        (fp C_????)
-        (fp SMD*_c)
-        (fp Capacitor*))
+        (fp C_*))
       (fields
         (field (name Reference) C)
         (field (name Value) C))
@@ -990,8 +986,7 @@
       (description "Zener Diode")
       (docs https://en.wikipedia.org/wiki/Zener_diode)
       (footprints
-        (fp Diode_*)
-        (fp D-Pak_TO252AA)
+        (fp TO-???*)
         (fp *SingleDiode)
         (fp *_Diode_*)
         (fp *SingleDiode*)
@@ -1006,7 +1001,9 @@
       (description Inductor)
       (footprints
         (fp Choke_*)
-        (fp *Coil*))
+        (fp *Coil*)
+        (fp Inductor_*)
+        (fp L_*))
       (fields
         (field (name Reference) L)
         (field (name Value) L))
@@ -1060,7 +1057,7 @@
       (description Resistor)
       (footprints
         (fp R_*)
-        (fp Resistor_*))
+        (fp R_*))
       (fields
         (field (name Reference) R)
         (field (name Value) R))
@@ -1092,14 +1089,14 @@
     (libpart (lib conn) (part TEST_1P)
       (description point)
       (fields
-        (field (name Reference) W)
+        (field (name Reference) J)
         (field (name Value) TEST_1P))
       (pins
         (pin (num 1) (name 1) (type passive))))
     (libpart (lib device) (part Thermistor)
       (description "Thermistor, temperature-dependent resistor")
       (footprints
-        (fp R?)
+        (fp R_*)
         (fp SM0603)
         (fp SM0805))
       (fields
@@ -1197,14 +1194,14 @@
         (pin (num 7) (name CD) (type BiDi))
         (pin (num 8) (name OUT) (type output)))))
   (libraries
-    (library (logical SFUSat-power)
-      (uri KiCad-Lib\SFUSat-power.lib))
-    (library (logical conn)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
     (library (logical device)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
+      (uri /usr/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib))
     (library (logical SFUSat)
-      (uri KiCad-Lib\SFUSat.lib)))
+      (uri /home/tobi/Cubesat/Power/eps-hardware/KiCad-Lib/SFUSat.lib))
+    (library (logical SFUSat-power)
+      (uri /home/tobi/Cubesat/Power/eps-hardware/KiCad-Lib/SFUSat-power.lib)))
   (nets
     (net (code 1) (name /MPPT_4/VOUT)
       (node (ref C33) (pin 1))

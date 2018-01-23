@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.5)
+(kicad_pcb (version 4) (host pcbnew 4.0.6-e0-6349~53~ubuntu16.04.1)
 
   (general
     (links 9)
     (no_connects 0)
-    (area 122.454762 97.775 135.045238 106.825)
+    (area 0 0 0 0)
     (thickness 1.6)
     (drawings 0)
     (tracks 0)
@@ -58,10 +58,9 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 0.8 0.2)
+    (pad_size 0.2 0.8)
     (pad_drill 0)
     (pad_to_mask_clearance 0.05)
-    (pad_to_paste_clearance -0.1)
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
@@ -133,6 +132,8 @@
     (via_drill 0.4)
     (uvia_dia 0.3)
     (uvia_drill 0.1)
+    (add_net "Net-(C35-Pad1)")
+    (add_net "Net-(C35-Pad2)")
     (add_net "Net-(U7-Pad1)")
     (add_net "Net-(U7-Pad10)")
     (add_net "Net-(U7-Pad11)")
@@ -168,7 +169,7 @@
     (add_net "Net-(U7-Pad9)")
   )
 
-  (module SFUSat:S-PWQFN-N32 (layer F.Cu) (tedit 5A66F77E) (tstamp 5A673CFA)
+  (module SFUSat:S-PWQFN-N32 (layer F.Cu) (tedit 5A67923D) (tstamp 5A673CFA)
     (at 148.5011 105.0036)
     (path /5A66DD3E/5A66EC96)
     (fp_text reference U7 (at 0 3.5) (layer F.SilkS)
