@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -48,10 +48,10 @@ $EndDescr
 Text Notes 7350 7500 0    60   ~ 0
 CubeSat Electrical Power Subsystem
 $Comp
-L BARREL_JACK J?
+L BARREL_JACK J1
 U 1 1 59AC8EC8
 P 4000 5700
-F 0 "J?" H 4000 5895 50  0000 C CNN
+F 0 "J1" H 4000 5895 50  0000 C CNN
 F 1 "BARREL_JACK" H 4000 5545 50  0000 C CNN
 F 2 "" H 4000 5700 50  0001 C CNN
 F 3 "" H 4000 5700 50  0001 C CNN
@@ -59,10 +59,10 @@ F 3 "" H 4000 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SPST SW?
+L SPST SW2
 U 1 1 59ACBDB1
 P 6500 5100
-F 0 "SW?" H 6500 5350 60  0000 C CNN
+F 0 "SW2" H 6500 5350 60  0000 C CNN
 F 1 "SPST" H 6500 4950 60  0000 C CNN
 F 2 "" H 6500 5100 60  0001 C CNN
 F 3 "" H 6500 5100 60  0001 C CNN
@@ -70,10 +70,10 @@ F 3 "" H 6500 5100 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L SPST SW?
+L SPST SW3
 U 1 1 59ACC45E
 P 7100 5100
-F 0 "SW?" H 7100 5350 60  0000 C CNN
+F 0 "SW3" H 7100 5350 60  0000 C CNN
 F 1 "SPST" H 7100 4950 60  0000 C CNN
 F 2 "" H 7100 5100 60  0001 C CNN
 F 3 "" H 7100 5100 60  0001 C CNN
@@ -85,10 +85,10 @@ Wire Wire Line
 Wire Wire Line
 	7000 5300 6600 5300
 $Comp
-L SPST SW?
+L SPST SW1
 U 1 1 59ACDA19
 P 5750 5800
-F 0 "SW?" H 5750 6050 60  0000 C CNN
+F 0 "SW1" H 5750 6050 60  0000 C CNN
 F 1 "SPST" H 5750 5650 60  0000 C CNN
 F 2 "" H 5750 5800 60  0001 C CNN
 F 3 "" H 5750 5800 60  0001 C CNN
@@ -96,10 +96,10 @@ F 3 "" H 5750 5800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR01
 U 1 1 59AC987C
 P 5750 6100
-F 0 "#PWR?" H 5750 5850 50  0001 C CNN
+F 0 "#PWR01" H 5750 5850 50  0001 C CNN
 F 1 "GND" H 5750 5950 50  0000 C CNN
 F 2 "" H 5750 6100 50  0001 C CNN
 F 3 "" H 5750 6100 50  0001 C CNN
@@ -116,10 +116,10 @@ Wire Wire Line
 	5750 6100 5750 6050
 Connection ~ 5750 6050
 $Comp
-L SPST SW?
+L SPST SW4
 U 1 1 59ACB2E1
 P 8000 5100
-F 0 "SW?" H 8000 5350 60  0000 C CNN
+F 0 "SW4" H 8000 5350 60  0000 C CNN
 F 1 "SPST" H 8000 4950 60  0000 C CNN
 F 2 "" H 8000 5100 60  0001 C CNN
 F 3 "" H 8000 5100 60  0001 C CNN
@@ -135,10 +135,10 @@ Remove solar cells and replace with 4 panel connectors
 Text Notes 3750 5400 0    60   ~ 0
 Aux ground power
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT28
 U 1 1 59B709BC
 P 6050 3550
-F 0 "BT?" H 6150 3650 50  0000 L CNN
+F 0 "BT28" H 6150 3650 50  0000 L CNN
 F 1 "NCR18650" H 6150 3550 50  0000 L CNN
 F 2 "" V 6050 3610 50  0001 C CNN
 F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 6050 3610 50  0001 C CNN
@@ -167,10 +167,10 @@ F3 "PV-" I L 3350 1250 60
 F4 "VOUT" I R 4350 1100 60 
 $EndSheet
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT17
 U 1 1 59B7C951
 P 2650 950
-F 0 "BT?" H 2750 1050 50  0000 L CNN
+F 0 "BT17" H 2750 1050 50  0000 L CNN
 F 1 "Solar_Cell" H 2750 950 50  0000 L CNN
 F 2 "" V 2650 1010 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2650 1010 50  0001 C CNN
@@ -180,10 +180,10 @@ F 5 "32cm2" H 2650 950 60  0001 C CNN "Model"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT18
 U 1 1 59B7CD2E
 P 2650 1350
-F 0 "BT?" H 2750 1450 50  0000 L CNN
+F 0 "BT18" H 2750 1450 50  0000 L CNN
 F 1 "Solar_Cell" H 2750 1350 50  0000 L CNN
 F 2 "" V 2650 1410 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2650 1410 50  0001 C CNN
@@ -195,10 +195,10 @@ $EndComp
 Wire Wire Line
 	2650 1050 2650 1150
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT9
 U 1 1 59B7CE94
 P 2050 950
-F 0 "BT?" H 2150 1050 50  0000 L CNN
+F 0 "BT9" H 2150 1050 50  0000 L CNN
 F 1 "Solar_Cell" H 2150 950 50  0000 L CNN
 F 2 "" V 2050 1010 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2050 1010 50  0001 C CNN
@@ -208,10 +208,10 @@ F 5 "32cm2" H 2050 950 60  0001 C CNN "Model"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT10
 U 1 1 59B7CE9C
 P 2050 1350
-F 0 "BT?" H 2150 1450 50  0000 L CNN
+F 0 "BT10" H 2150 1450 50  0000 L CNN
 F 1 "Solar_Cell" H 2150 1350 50  0000 L CNN
 F 2 "" V 2050 1410 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2050 1410 50  0001 C CNN
@@ -223,10 +223,10 @@ $EndComp
 Wire Wire Line
 	2050 1050 2050 1150
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT1
 U 1 1 59B7D104
 P 1400 950
-F 0 "BT?" H 1500 1050 50  0000 L CNN
+F 0 "BT1" H 1500 1050 50  0000 L CNN
 F 1 "Solar_Cell" H 1500 950 50  0000 L CNN
 F 2 "" V 1400 1010 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 1400 1010 50  0001 C CNN
@@ -236,10 +236,10 @@ F 5 "32cm2" H 1400 950 60  0001 C CNN "Model"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT2
 U 1 1 59B7D10C
 P 1400 1350
-F 0 "BT?" H 1500 1450 50  0000 L CNN
+F 0 "BT2" H 1500 1450 50  0000 L CNN
 F 1 "Solar_Cell" H 1500 1350 50  0000 L CNN
 F 2 "" V 1400 1410 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 1400 1410 50  0001 C CNN
@@ -286,10 +286,10 @@ Wire Wire Line
 Wire Wire Line
 	5450 3000 5450 3350
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT26
 U 1 1 59B70A3D
 P 5450 3550
-F 0 "BT?" H 5550 3650 50  0000 L CNN
+F 0 "BT26" H 5550 3650 50  0000 L CNN
 F 1 "NCR18650" H 5550 3550 50  0000 L CNN
 F 2 "" V 5450 3610 50  0001 C CNN
 F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 5450 3610 50  0001 C CNN
@@ -297,10 +297,10 @@ F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pd
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT25
 U 1 1 59AC9D26
 P 5450 2900
-F 0 "BT?" H 5550 3000 50  0000 L CNN
+F 0 "BT25" H 5550 3000 50  0000 L CNN
 F 1 "NCR18650" H 5550 2900 50  0000 L CNN
 F 2 "" V 5450 2960 50  0001 C CNN
 F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 5450 2960 50  0001 C CNN
@@ -308,10 +308,10 @@ F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pd
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT27
 U 1 1 59B70940
 P 6050 2900
-F 0 "BT?" H 6150 3000 50  0000 L CNN
+F 0 "BT27" H 6150 3000 50  0000 L CNN
 F 1 "NCR18650" H 6150 2900 50  0000 L CNN
 F 2 "" V 6050 2960 50  0001 C CNN
 F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 6050 2960 50  0001 C CNN
@@ -330,10 +330,10 @@ F3 "PV-" I L 3350 2200 60
 F4 "VOUT" I R 4350 2050 60 
 $EndSheet
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT19
 U 1 1 59B86FB3
 P 2650 1900
-F 0 "BT?" H 2750 2000 50  0000 L CNN
+F 0 "BT19" H 2750 2000 50  0000 L CNN
 F 1 "Solar_Cell" H 2750 1900 50  0000 L CNN
 F 2 "" V 2650 1960 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2650 1960 50  0001 C CNN
@@ -343,10 +343,10 @@ F 5 "32cm2" H 2650 1900 60  0001 C CNN "Model"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT20
 U 1 1 59B86FBC
 P 2650 2300
-F 0 "BT?" H 2750 2400 50  0000 L CNN
+F 0 "BT20" H 2750 2400 50  0000 L CNN
 F 1 "Solar_Cell" H 2750 2300 50  0000 L CNN
 F 2 "" V 2650 2360 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2650 2360 50  0001 C CNN
@@ -358,10 +358,10 @@ $EndComp
 Wire Wire Line
 	2650 2000 2650 2100
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT11
 U 1 1 59B86FC6
 P 2050 1900
-F 0 "BT?" H 2150 2000 50  0000 L CNN
+F 0 "BT11" H 2150 2000 50  0000 L CNN
 F 1 "Solar_Cell" H 2150 1900 50  0000 L CNN
 F 2 "" V 2050 1960 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2050 1960 50  0001 C CNN
@@ -371,10 +371,10 @@ F 5 "32cm2" H 2050 1900 60  0001 C CNN "Model"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT12
 U 1 1 59B86FCF
 P 2050 2300
-F 0 "BT?" H 2150 2400 50  0000 L CNN
+F 0 "BT12" H 2150 2400 50  0000 L CNN
 F 1 "Solar_Cell" H 2150 2300 50  0000 L CNN
 F 2 "" V 2050 2360 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2050 2360 50  0001 C CNN
@@ -386,10 +386,10 @@ $EndComp
 Wire Wire Line
 	2050 2000 2050 2100
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT3
 U 1 1 59B86FD9
 P 1400 1900
-F 0 "BT?" H 1500 2000 50  0000 L CNN
+F 0 "BT3" H 1500 2000 50  0000 L CNN
 F 1 "Solar_Cell" H 1500 1900 50  0000 L CNN
 F 2 "" V 1400 1960 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 1400 1960 50  0001 C CNN
@@ -399,10 +399,10 @@ F 5 "32cm2" H 1400 1900 60  0001 C CNN "Model"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT4
 U 1 1 59B86FE2
 P 1400 2300
-F 0 "BT?" H 1500 2400 50  0000 L CNN
+F 0 "BT4" H 1500 2400 50  0000 L CNN
 F 1 "Solar_Cell" H 1500 2300 50  0000 L CNN
 F 2 "" V 1400 2360 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 1400 2360 50  0001 C CNN
@@ -441,10 +441,10 @@ F3 "PV-" I L 3350 3150 60
 F4 "VOUT" I R 4350 3000 60 
 $EndSheet
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT21
 U 1 1 59B88A39
 P 2650 2850
-F 0 "BT?" H 2750 2950 50  0000 L CNN
+F 0 "BT21" H 2750 2950 50  0000 L CNN
 F 1 "Solar_Cell" H 2750 2850 50  0000 L CNN
 F 2 "" V 2650 2910 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2650 2910 50  0001 C CNN
@@ -454,10 +454,10 @@ F 5 "32cm2" H 2650 2850 60  0001 C CNN "Model"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT22
 U 1 1 59B88A42
 P 2650 3250
-F 0 "BT?" H 2750 3350 50  0000 L CNN
+F 0 "BT22" H 2750 3350 50  0000 L CNN
 F 1 "Solar_Cell" H 2750 3250 50  0000 L CNN
 F 2 "" V 2650 3310 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2650 3310 50  0001 C CNN
@@ -469,10 +469,10 @@ $EndComp
 Wire Wire Line
 	2650 2950 2650 3050
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT13
 U 1 1 59B88A4C
 P 2050 2850
-F 0 "BT?" H 2150 2950 50  0000 L CNN
+F 0 "BT13" H 2150 2950 50  0000 L CNN
 F 1 "Solar_Cell" H 2150 2850 50  0000 L CNN
 F 2 "" V 2050 2910 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2050 2910 50  0001 C CNN
@@ -482,10 +482,10 @@ F 5 "32cm2" H 2050 2850 60  0001 C CNN "Model"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT14
 U 1 1 59B88A55
 P 2050 3250
-F 0 "BT?" H 2150 3350 50  0000 L CNN
+F 0 "BT14" H 2150 3350 50  0000 L CNN
 F 1 "Solar_Cell" H 2150 3250 50  0000 L CNN
 F 2 "" V 2050 3310 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2050 3310 50  0001 C CNN
@@ -497,10 +497,10 @@ $EndComp
 Wire Wire Line
 	2050 2950 2050 3050
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT5
 U 1 1 59B88A5F
 P 1400 2850
-F 0 "BT?" H 1500 2950 50  0000 L CNN
+F 0 "BT5" H 1500 2950 50  0000 L CNN
 F 1 "Solar_Cell" H 1500 2850 50  0000 L CNN
 F 2 "" V 1400 2910 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 1400 2910 50  0001 C CNN
@@ -510,10 +510,10 @@ F 5 "32cm2" H 1400 2850 60  0001 C CNN "Model"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT6
 U 1 1 59B88A68
 P 1400 3250
-F 0 "BT?" H 1500 3350 50  0000 L CNN
+F 0 "BT6" H 1500 3350 50  0000 L CNN
 F 1 "Solar_Cell" H 1500 3250 50  0000 L CNN
 F 2 "" V 1400 3310 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 1400 3310 50  0001 C CNN
@@ -552,10 +552,10 @@ F3 "PV-" I L 3350 4100 60
 F4 "VOUT" I R 4350 3950 60 
 $EndSheet
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT23
 U 1 1 59B88DAA
 P 2650 3800
-F 0 "BT?" H 2750 3900 50  0000 L CNN
+F 0 "BT23" H 2750 3900 50  0000 L CNN
 F 1 "Solar_Cell" H 2750 3800 50  0000 L CNN
 F 2 "" V 2650 3860 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2650 3860 50  0001 C CNN
@@ -565,10 +565,10 @@ F 5 "32cm2" H 2650 3800 60  0001 C CNN "Model"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT24
 U 1 1 59B88DB3
 P 2650 4200
-F 0 "BT?" H 2750 4300 50  0000 L CNN
+F 0 "BT24" H 2750 4300 50  0000 L CNN
 F 1 "Solar_Cell" H 2750 4200 50  0000 L CNN
 F 2 "" V 2650 4260 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2650 4260 50  0001 C CNN
@@ -580,10 +580,10 @@ $EndComp
 Wire Wire Line
 	2650 3900 2650 4000
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT15
 U 1 1 59B88DBD
 P 2050 3800
-F 0 "BT?" H 2150 3900 50  0000 L CNN
+F 0 "BT15" H 2150 3900 50  0000 L CNN
 F 1 "Solar_Cell" H 2150 3800 50  0000 L CNN
 F 2 "" V 2050 3860 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2050 3860 50  0001 C CNN
@@ -593,10 +593,10 @@ F 5 "32cm2" H 2050 3800 60  0001 C CNN "Model"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT16
 U 1 1 59B88DC6
 P 2050 4200
-F 0 "BT?" H 2150 4300 50  0000 L CNN
+F 0 "BT16" H 2150 4300 50  0000 L CNN
 F 1 "Solar_Cell" H 2150 4200 50  0000 L CNN
 F 2 "" V 2050 4260 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 2050 4260 50  0001 C CNN
@@ -608,10 +608,10 @@ $EndComp
 Wire Wire Line
 	2050 3900 2050 4000
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT7
 U 1 1 59B88DD0
 P 1400 3800
-F 0 "BT?" H 1500 3900 50  0000 L CNN
+F 0 "BT7" H 1500 3900 50  0000 L CNN
 F 1 "Solar_Cell" H 1500 3800 50  0000 L CNN
 F 2 "" V 1400 3860 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 1400 3860 50  0001 C CNN
@@ -621,10 +621,10 @@ F 5 "32cm2" H 1400 3800 60  0001 C CNN "Model"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT?
+L Battery_Cell BT8
 U 1 1 59B88DD9
 P 1400 4200
-F 0 "BT?" H 1500 4300 50  0000 L CNN
+F 0 "BT8" H 1500 4300 50  0000 L CNN
 F 1 "Solar_Cell" H 1500 4200 50  0000 L CNN
 F 2 "" V 1400 4260 50  0001 C CNN
 F 3 "http://www.spectrolab.com/DataSheets/cells/PV%20UTJ%20Cell%205-20-10.pdf" V 1400 4260 50  0001 C CNN
@@ -660,10 +660,10 @@ Wire Wire Line
 	5750 3700 5750 4100
 Connection ~ 5750 3700
 $Comp
-L Thermistor TH?
+L Thermistor TH2
 U 1 1 59BA3822
 P 5200 3450
-F 0 "TH?" V 5300 3500 50  0000 C CNN
+F 0 "TH2" V 5300 3500 50  0000 C CNN
 F 1 "103AT-4-70378" V 5100 3450 50  0000 C BNN
 F 2 "" H 5200 3450 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/362/semitec_atthermistor-371460.pdf" H 5200 3450 50  0001 C CNN
@@ -672,10 +672,10 @@ F 4 "954-103AT-4-70378" V 5200 3450 60  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR02
 U 1 1 59BA3829
 P 5200 3700
-F 0 "#PWR?" H 5200 3450 50  0001 C CNN
+F 0 "#PWR02" H 5200 3450 50  0001 C CNN
 F 1 "GND" H 5200 3550 50  0000 C CNN
 F 2 "" H 5200 3700 50  0001 C CNN
 F 3 "" H 5200 3700 50  0001 C CNN
@@ -685,10 +685,10 @@ $EndComp
 Wire Wire Line
 	5200 3700 5200 3650
 $Comp
-L Thermistor TH?
+L Thermistor TH4
 U 1 1 59BA3831
 P 6750 3500
-F 0 "TH?" V 6850 3550 50  0000 C CNN
+F 0 "TH4" V 6850 3550 50  0000 C CNN
 F 1 "103AT-4-70378" V 6650 3500 50  0000 C BNN
 F 2 "" H 6750 3500 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/362/semitec_atthermistor-371460.pdf" H 6750 3500 50  0001 C CNN
@@ -697,10 +697,10 @@ F 4 "954-103AT-4-70378" V 6750 3500 60  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR03
 U 1 1 59BA3838
 P 6750 3750
-F 0 "#PWR?" H 6750 3500 50  0001 C CNN
+F 0 "#PWR03" H 6750 3500 50  0001 C CNN
 F 1 "GND" H 6750 3600 50  0000 C CNN
 F 2 "" H 6750 3750 50  0001 C CNN
 F 3 "" H 6750 3750 50  0001 C CNN
@@ -710,10 +710,10 @@ $EndComp
 Wire Wire Line
 	6750 3750 6750 3700
 $Comp
-L Thermistor TH?
+L Thermistor TH1
 U 1 1 59BA3840
 P 5200 2650
-F 0 "TH?" V 5300 2700 50  0000 C CNN
+F 0 "TH1" V 5300 2700 50  0000 C CNN
 F 1 "103AT-4-70378" V 5100 2650 50  0000 C BNN
 F 2 "" H 5200 2650 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/362/semitec_atthermistor-371460.pdf" H 5200 2650 50  0001 C CNN
@@ -722,10 +722,10 @@ F 4 "954-103AT-4-70378" V 5200 2650 60  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR04
 U 1 1 59BA3847
 P 5200 2900
-F 0 "#PWR?" H 5200 2650 50  0001 C CNN
+F 0 "#PWR04" H 5200 2650 50  0001 C CNN
 F 1 "GND" H 5200 2750 50  0000 C CNN
 F 2 "" H 5200 2900 50  0001 C CNN
 F 3 "" H 5200 2900 50  0001 C CNN
@@ -735,10 +735,10 @@ $EndComp
 Wire Wire Line
 	5200 2900 5200 2850
 $Comp
-L Thermistor TH?
+L Thermistor TH3
 U 1 1 59BA384F
 P 6050 2450
-F 0 "TH?" V 6150 2500 50  0000 C CNN
+F 0 "TH3" V 6150 2500 50  0000 C CNN
 F 1 "103AT-4-70378" V 5950 2450 50  0000 C BNN
 F 2 "" H 6050 2450 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/362/semitec_atthermistor-371460.pdf" H 6050 2450 50  0001 C CNN
@@ -747,10 +747,10 @@ F 4 "954-103AT-4-70378" V 6050 2450 60  0001 C CNN "Mouser"
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR05
 U 1 1 59BA3856
 P 5800 2450
-F 0 "#PWR?" H 5800 2200 50  0001 C CNN
+F 0 "#PWR05" H 5800 2200 50  0001 C CNN
 F 1 "GND" H 5800 2300 50  0000 C CNN
 F 2 "" H 5800 2450 50  0001 C CNN
 F 3 "" H 5800 2450 50  0001 C CNN
@@ -789,4 +789,10 @@ Wire Wire Line
 	6800 3050 7000 3050
 Wire Wire Line
 	5750 4100 7000 4100
+$Sheet
+S 8325 2500 1375 1700
+U 5A66DD3E
+F0 "BMS_new" 60
+F1 "BMS_new.sch" 60
+$EndSheet
 $EndSCHEMATC
