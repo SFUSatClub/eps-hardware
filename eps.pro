@@ -1,4 +1,4 @@
-update=Sun 03 Sep 2017 04:56:43 PM PDT
+update=2018-02-05 1:56:38 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,6 @@ LibName28=contrib
 LibName29=valves
 LibName30=KiCad-Lib/SFUSat
 LibName31=KiCad-Lib/SFUSat-power
+LibName32=KiCad-Lib/SFUsat-cap
+LibName33=KiCad-Lib/SFUsat-ind
+LibName34=KiCad-Lib/SFUsat-res

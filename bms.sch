@@ -30,6 +30,9 @@ LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
 LIBS:SFUSat-power
+LIBS:SFUsat-cap
+LIBS:SFUsat-ind
+LIBS:SFUsat-res
 LIBS:eps-cache
 EELAYER 25 0
 EELAYER END
