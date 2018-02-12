@@ -592,7 +592,7 @@ Wire Wire Line
 Wire Wire Line
 	9325 2425 9325 3475
 Wire Wire Line
-	8175 2425 12975 2425
+	8175 2425 13175 2425
 Connection ~ 9150 2425
 Connection ~ 6950 2425
 Connection ~ 6775 2425
@@ -942,7 +942,7 @@ Wire Wire Line
 Wire Wire Line
 	10550 3775 9150 3775
 Wire Wire Line
-	11375 2725 12975 2725
+	11375 2725 13175 2725
 Connection ~ 11575 2725
 Connection ~ 11775 2725
 Connection ~ 11975 2725
@@ -950,4 +950,43 @@ Connection ~ 12175 2725
 Connection ~ 12375 2725
 Connection ~ 12575 2725
 Connection ~ 12775 2725
+Connection ~ 12975 2425
+Connection ~ 12975 2725
+$Comp
+L C_47u0_20%_25V_ALUM_CAN C?
+U 1 1 5A8162B1
+P 13175 2575
+F 0 "C?" H 13175 2625 50  0000 L BNN
+F 1 "47u" H 13175 2525 50  0000 L TNN
+F 2 "SFUSat-cap:C_ALUM_2626" H 13175 2575 50  0001 C CNN
+F 3 "" H 13175 2575 50  0001 C CNN
+F 4 "General Purpose" H 13175 2575 50  0001 C CNN "Applications"
+F 5 "47µF" H 13175 2575 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Aluminum - Polymer Capacitors" H 13175 2575 50  0001 C CNN "Categories"
+F 7 "30 mOhm" H 13175 2575 50  0001 C CNN "ESR (Equivalent Series Resistance)"
+F 8 "0.236\" (6.00mm)" H 13175 2575 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 13175 2575 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "-" H 13175 2575 50  0001 C CNN "Lead Spacing"
+F 11 "5000 Hrs @ 105°C" H 13175 2575 50  0001 C CNN "Lifetime @ Temp."
+F 12 "Panasonic Electronic Components" H 13175 2575 50  0001 C CNN "Manufacturer 1"
+F 13 "25SVPF47M" H 13175 2575 50  0001 C CNN "Manufacturer Part Number 1"
+F 14 "9 Weeks" H 13175 2575 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 15 "Surface Mount" H 13175 2575 50  0001 C CNN "Mounting Type"
+F 16 "-55°C ~ 105°C" H 13175 2575 50  0001 C CNN "Operating Temperature"
+F 17 "Radial, Can - SMD" H 13175 2575 50  0001 C CNN "Package / Case"
+F 18 "Active" H 13175 2575 50  0001 C CNN "Part Status"
+F 19 "-" H 13175 2575 50  0001 C CNN "Ratings"
+F 20 "2.8A @ 100kHz" H 13175 2575 50  0001 C CNN "Ripple Current @ High Frequency"
+F 21 "140mA @ 120Hz" H 13175 2575 50  0001 C CNN "Ripple Current @ Low Frequency"
+F 22 "OS-CON™, SVPF" H 13175 2575 50  0001 C CNN "Series"
+F 23 "0.248\" Dia (6.30mm)" H 13175 2575 50  0001 C CNN "Size / Dimension"
+F 24 "Digi-Key" H 13175 2575 50  0001 C CNN "Supplier 1"
+F 25 "P16513CT-ND" H 13175 2575 50  0001 C CNN "Supplier Part Number 1"
+F 26 "0.260\" L x 0.260\" W (6.60mm x 6.60mm)" H 13175 2575 50  0001 C CNN "Surface Mount Land Size"
+F 27 "±20%" H 13175 2575 50  0001 C CNN "Tolerance"
+F 28 "Polymer" H 13175 2575 50  0001 C CNN "Type"
+F 29 "25V" H 13175 2575 50  0001 C CNN "Voltage - Rated"
+	1    13175 2575
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
