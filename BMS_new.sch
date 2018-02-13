@@ -33,12 +33,11 @@ LIBS:SFUSat-power
 LIBS:SFUsat-cap
 LIBS:SFUsat-ind
 LIBS:SFUsat-res
-LIBS:eps-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""

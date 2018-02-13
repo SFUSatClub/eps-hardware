@@ -33,12 +33,11 @@ LIBS:SFUSat-power
 LIBS:SFUsat-cap
 LIBS:SFUsat-ind
 LIBS:SFUsat-res
-LIBS:eps-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -351,5 +350,15 @@ S 8325 2500 1375 1700
 U 5A66DD3E
 F0 "BMS_new" 60
 F1 "BMS_new.sch" 60
+$EndSheet
+$Sheet
+S 2250 2925 800  825 
+U 5A83873A
+F0 "SeriesBatteryCell" 60
+F1 "SeriesBatteryCell.sch" 60
+F2 "PACK+" O R 3050 3050 60 
+F3 "PACK-" O R 3050 3600 60 
+F4 "CB_EN" I R 3050 3425 60 
+F5 "OUTPUT" O R 3050 3225 60 
 $EndSheet
 $EndSCHEMATC
