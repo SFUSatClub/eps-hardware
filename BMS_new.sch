@@ -562,96 +562,6 @@ F 26 "25V" H 11375 2575 50  0001 C CNN "Voltage - Rated"
 	1    11375 2575
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9150 2725 9150 3375
-Wire Wire Line
-	6950 2725 6950 3375
-Wire Wire Line
-	6575 2850 6575 2725
-Connection ~ 6575 2425
-Connection ~ 6275 2425
-Connection ~ 6175 2425
-Connection ~ 6075 2425
-Wire Wire Line
-	6775 3475 6950 3475
-Wire Wire Line
-	6775 2425 6775 3475
-Wire Wire Line
-	9475 2850 9475 2725
-Connection ~ 9475 2425
-Connection ~ 9775 2425
-Connection ~ 9875 2425
-Connection ~ 9975 2425
-Connection ~ 9875 3225
-Connection ~ 9775 3225
-Wire Wire Line
-	9975 3225 9475 3225
-Connection ~ 9475 3225
-Wire Wire Line
-	9325 3475 9150 3475
-Wire Wire Line
-	9325 2425 9325 3475
-Wire Wire Line
-	8175 2425 13175 2425
-Connection ~ 9150 2425
-Connection ~ 6950 2425
-Connection ~ 6775 2425
-Wire Wire Line
-	10175 3225 10175 3575
-Wire Wire Line
-	10175 3575 9150 3575
-Connection ~ 10175 3350
-Wire Wire Line
-	9475 3350 9875 3350
-Wire Wire Line
-	9475 3150 9475 3350
-Wire Wire Line
-	6575 3350 6175 3350
-Wire Wire Line
-	6575 3150 6575 3350
-Wire Wire Line
-	6075 3225 6575 3225
-Connection ~ 6175 3225
-Connection ~ 6575 3225
-Connection ~ 6275 3225
-Connection ~ 9325 2425
-Wire Wire Line
-	5875 3225 5875 3575
-Wire Wire Line
-	5875 3575 6950 3575
-Connection ~ 5875 3350
-Wire Wire Line
-	5650 2425 5650 2775
-Connection ~ 5650 2675
-Connection ~ 5975 2425
-Connection ~ 5650 2575
-Wire Wire Line
-	4850 2425 4850 2875
-Connection ~ 4850 2775
-Connection ~ 4850 2675
-Connection ~ 5650 2425
-Connection ~ 4850 2575
-Wire Wire Line
-	4850 2425 7875 2425
-Wire Wire Line
-	5650 2975 5650 3675
-Wire Wire Line
-	5650 3675 6950 3675
-Wire Wire Line
-	10450 2425 10450 2775
-Connection ~ 10450 2675
-Connection ~ 10450 2575
-Wire Wire Line
-	11250 2425 11250 2875
-Connection ~ 11250 2775
-Connection ~ 11250 2675
-Connection ~ 11250 2575
-Wire Wire Line
-	10450 2975 10450 3675
-Wire Wire Line
-	10450 3675 9150 3675
-Connection ~ 10075 2425
-Connection ~ 10450 2425
 $Comp
 L C_10u0_10%_25V_X5R_0805 C?
 U 1 1 5A7DE99E
@@ -924,34 +834,6 @@ F 26 "25V" H 12975 2575 50  0001 C CNN "Voltage - Rated"
 	1    12975 2575
 	1    0    0    -1  
 $EndComp
-Connection ~ 11250 2425
-Connection ~ 11375 2425
-Connection ~ 11575 2425
-Connection ~ 11775 2425
-Connection ~ 11975 2425
-Connection ~ 12175 2425
-Connection ~ 12375 2425
-Connection ~ 12575 2425
-Connection ~ 12775 2425
-Wire Wire Line
-	11375 2725 11375 3150
-Wire Wire Line
-	11375 3150 10550 3150
-Wire Wire Line
-	10550 3150 10550 3775
-Wire Wire Line
-	10550 3775 9150 3775
-Wire Wire Line
-	11375 2725 13175 2725
-Connection ~ 11575 2725
-Connection ~ 11775 2725
-Connection ~ 11975 2725
-Connection ~ 12175 2725
-Connection ~ 12375 2725
-Connection ~ 12575 2725
-Connection ~ 12775 2725
-Connection ~ 12975 2425
-Connection ~ 12975 2725
 $Comp
 L C_47u0_20%_25V_ALUM_CAN C?
 U 1 1 5A8162B1
@@ -989,4 +871,275 @@ F 29 "25V" H 13175 2575 50  0001 C CNN "Voltage - Rated"
 	1    13175 2575
 	1    0    0    -1  
 $EndComp
+$Comp
+L C_47u0_20%_20V_TANT_2917 C?
+U 1 1 5A823459
+P 13375 2575
+F 0 "C?" H 13375 2625 50  0000 L BNN
+F 1 "47u" H 13375 2525 50  0000 L TNN
+F 2 "SFUSat-cap:C_TANT_2917" H 13375 2575 50  0001 C CNN
+F 3 "" H 13375 2575 50  0001 C CNN
+F 4 "47µF" H 13375 2575 50  0001 C CNN "Capacitance"
+F 5 "Capacitors - Tantalum - Polymer Capacitors" H 13375 2575 50  0001 C CNN "Categories"
+F 6 "55 mOhm" H 13375 2575 50  0001 C CNN "ESR (Equivalent Series Resistance)"
+F 7 "General Purpose" H 13375 2575 50  0001 C CNN "Features"
+F 8 "0.079\" (2.00mm)" H 13375 2575 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 13375 2575 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "-" H 13375 2575 50  0001 C CNN "Lead Spacing"
+F 11 "2000 Hrs @ 105°C" H 13375 2575 50  0001 C CNN "Lifetime @ Temp."
+F 12 "Panasonic Electronic Components" H 13375 2575 50  0001 C CNN "Manufacturer 1"
+F 13 "20TQC47MYF" H 13375 2575 50  0001 C CNN "Manufacturer Part Number 1"
+F 14 "D2" H 13375 2575 50  0001 C CNN "Manufacturer Size Code"
+F 15 "13 Weeks" H 13375 2575 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 16 "Surface Mount" H 13375 2575 50  0001 C CNN "Mounting Type"
+F 17 "-55°C ~ 105°C" H 13375 2575 50  0001 C CNN "Operating Temperature"
+F 18 "2917 (7343 Metric)" H 13375 2575 50  0001 C CNN "Package / Case"
+F 19 "Active" H 13375 2575 50  0001 C CNN "Part Status"
+F 20 "-" H 13375 2575 50  0001 C CNN "Ratings"
+F 21 "POSCAP™ TQC" H 13375 2575 50  0001 C CNN "Series"
+F 22 "0.287\" L x 0.169\" W (7.30mm x 4.30mm)" H 13375 2575 50  0001 C CNN "Size / Dimension"
+F 23 "Digi-Key" H 13375 2575 50  0001 C CNN "Supplier 1"
+F 24 "P16249CT-ND" H 13375 2575 50  0001 C CNN "Supplier Part Number 1"
+F 25 "±20%" H 13375 2575 50  0001 C CNN "Tolerance"
+F 26 "Molded" H 13375 2575 50  0001 C CNN "Type"
+F 27 "20V" H 13375 2575 50  0001 C CNN "Voltage - Rated"
+	1    13375 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A823CFA
+P 13575 2800
+F 0 "#PWR?" H 13575 2550 50  0001 C CNN
+F 1 "GND" H 13575 2650 50  0000 C CNN
+F 2 "" H 13575 2800 50  0000 C CNN
+F 3 "" H 13575 2800 50  0000 C CNN
+	1    13575 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CSD25402Q3A Q?
+U 1 1 5A82412A
+P 11000 3525
+F 0 "Q?" H 11000 3800 50  0000 C BNN
+F 1 "CSD25402Q3A" H 11000 3250 50  0000 C TNN
+F 2 "" H 11000 3525 50  0001 C CNN
+F 3 "" H 11000 3525 50  0001 C CNN
+F 4 "Discrete Semiconductor Products - Transistors - FETs, MOSFETs - Single" H 11000 3525 50  0001 C CNN "Categories"
+F 5 "76A (Tc)" H 11000 3525 50  0001 C CNN "Current - Continuous Drain (Id) @ 25°C"
+F 6 "20V" H 11000 3525 50  0001 C CNN "Drain to Source Voltage (Vdss)"
+F 7 "1.8V, 4.5V" H 11000 3525 50  0001 C CNN "Drive Voltage (Max Rds On,  Min Rds On)"
+F 8 "-" H 11000 3525 50  0001 C CNN "FET Feature"
+F 9 "P-Channel" H 11000 3525 50  0001 C CNN "FET Type"
+F 10 "9.7nC @ 4.5V" H 11000 3525 50  0001 C CNN "Gate Charge (Qg) (Max) @ Vgs"
+F 11 "1790pF @ 10V" H 11000 3525 50  0001 C CNN "Input Capacitance (Ciss) (Max) @ Vds"
+F 12 "Lead free / RoHS Compliant" H 11000 3525 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 13 "Texas Instruments" H 11000 3525 50  0001 C CNN "Manufacturer 1"
+F 14 "CSD25402Q3A" H 11000 3525 50  0001 C CNN "Manufacturer Part Number 1"
+F 15 "17 Weeks" H 11000 3525 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 16 "Surface Mount" H 11000 3525 50  0001 C CNN "Mounting Type"
+F 17 "-55°C ~ 150°C (TJ)" H 11000 3525 50  0001 C CNN "Operating Temperature"
+F 18 "8-PowerVDFN" H 11000 3525 50  0001 C CNN "Package / Case"
+F 19 "Active" H 11000 3525 50  0001 C CNN "Part Status"
+F 20 "2.8W (Ta), 69W (Tc)" H 11000 3525 50  0001 C CNN "Power Dissipation (Max)"
+F 21 "8.9 mOhm @ 10A, 4.5V" H 11000 3525 50  0001 C CNN "Rds On (Max) @ Id, Vgs"
+F 22 "NexFET™" H 11000 3525 50  0001 C CNN "Series"
+F 23 "Digi-Key" H 11000 3525 50  0001 C CNN "Supplier 1"
+F 24 "8-VSON (3.3x3.3)" H 11000 3525 50  0001 C CNN "Supplier Device Package"
+F 25 "296-38916-1-ND" H 11000 3525 50  0001 C CNN "Supplier Part Number 1"
+F 26 "MOSFET (Metal Oxide)" H 11000 3525 50  0001 C CNN "Technology"
+F 27 "±12V" H 11000 3525 50  0001 C CNN "Vgs (Max)"
+F 28 "1.15V @ 250µA" H 11000 3525 50  0001 C CNN "Vgs(th) (Max) @ Id"
+	1    11000 3525
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 2725 9150 3375
+Wire Wire Line
+	6950 2725 6950 3375
+Wire Wire Line
+	6575 2850 6575 2725
+Connection ~ 6575 2425
+Connection ~ 6275 2425
+Connection ~ 6175 2425
+Connection ~ 6075 2425
+Wire Wire Line
+	6775 3475 6950 3475
+Wire Wire Line
+	6775 2425 6775 3475
+Wire Wire Line
+	9475 2850 9475 2725
+Connection ~ 9475 2425
+Connection ~ 9775 2425
+Connection ~ 9875 2425
+Connection ~ 9975 2425
+Connection ~ 9875 3225
+Connection ~ 9775 3225
+Wire Wire Line
+	9975 3225 9475 3225
+Connection ~ 9475 3225
+Wire Wire Line
+	9325 3475 9150 3475
+Wire Wire Line
+	9325 2425 9325 3475
+Wire Wire Line
+	8175 2425 13575 2425
+Connection ~ 9150 2425
+Connection ~ 6950 2425
+Connection ~ 6775 2425
+Wire Wire Line
+	10175 3225 10175 3575
+Wire Wire Line
+	10175 3575 9150 3575
+Connection ~ 10175 3350
+Wire Wire Line
+	9475 3350 9875 3350
+Wire Wire Line
+	9475 3150 9475 3350
+Wire Wire Line
+	6575 3350 6175 3350
+Wire Wire Line
+	6575 3150 6575 3350
+Wire Wire Line
+	6075 3225 6575 3225
+Connection ~ 6175 3225
+Connection ~ 6575 3225
+Connection ~ 6275 3225
+Connection ~ 9325 2425
+Wire Wire Line
+	5875 3225 5875 3575
+Wire Wire Line
+	5875 3575 6950 3575
+Connection ~ 5875 3350
+Wire Wire Line
+	5650 2425 5650 2775
+Connection ~ 5650 2675
+Connection ~ 5975 2425
+Connection ~ 5650 2575
+Wire Wire Line
+	4850 2425 4850 2875
+Connection ~ 4850 2775
+Connection ~ 4850 2675
+Connection ~ 5650 2425
+Connection ~ 4850 2575
+Wire Wire Line
+	4850 2425 7875 2425
+Wire Wire Line
+	5650 2975 5650 3675
+Wire Wire Line
+	5650 3675 6950 3675
+Wire Wire Line
+	10450 2425 10450 2775
+Connection ~ 10450 2675
+Connection ~ 10450 2575
+Wire Wire Line
+	11250 2425 11250 2875
+Connection ~ 11250 2775
+Connection ~ 11250 2675
+Connection ~ 11250 2575
+Wire Wire Line
+	10450 2975 10450 3675
+Wire Wire Line
+	10450 3675 9150 3675
+Connection ~ 10075 2425
+Connection ~ 10450 2425
+Connection ~ 11250 2425
+Connection ~ 11375 2425
+Connection ~ 11575 2425
+Connection ~ 11775 2425
+Connection ~ 11975 2425
+Connection ~ 12175 2425
+Connection ~ 12375 2425
+Connection ~ 12575 2425
+Connection ~ 12775 2425
+Wire Wire Line
+	11375 2725 11375 3150
+Wire Wire Line
+	11375 3150 10550 3150
+Wire Wire Line
+	10550 3150 10550 3775
+Wire Wire Line
+	10550 3775 9150 3775
+Wire Wire Line
+	11375 2725 13575 2725
+Connection ~ 11575 2725
+Connection ~ 11775 2725
+Connection ~ 11975 2725
+Connection ~ 12175 2725
+Connection ~ 12375 2725
+Connection ~ 12575 2725
+Connection ~ 12775 2725
+Connection ~ 12975 2425
+Connection ~ 12975 2725
+Connection ~ 13175 2425
+Connection ~ 13175 2725
+Wire Wire Line
+	13575 2725 13575 2800
+Connection ~ 13375 2725
+Connection ~ 13375 2425
+Wire Wire Line
+	10600 3325 10550 3325
+Connection ~ 10550 3325
+Wire Wire Line
+	10600 3325 10600 3625
+Connection ~ 10600 3425
+Connection ~ 10600 3525
+Wire Wire Line
+	9150 3875 11400 3875
+Wire Wire Line
+	11400 3875 11400 3725
+$Comp
+L C_1u0_10%_25V_X7R_0603 C?
+U 1 1 5A8272BA
+P 11525 3500
+F 0 "C?" H 11525 3550 50  0000 L BNN
+F 1 "1u" H 11525 3450 50  0000 L TNN
+F 2 "SFUSat-cap:C_0603" H 11525 3500 50  0001 C CNN
+F 3 "" H 11525 3500 50  0001 C CNN
+F 4 "General Purpose" H 11525 3500 50  0001 C CNN "Applications"
+F 5 "1µF" H 11525 3500 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Ceramic Capacitors" H 11525 3500 50  0001 C CNN "Categories"
+F 7 "-" H 11525 3500 50  0001 C CNN "Features"
+F 8 "-" H 11525 3500 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 11525 3500 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "-" H 11525 3500 50  0001 C CNN "Lead Spacing"
+F 11 "-" H 11525 3500 50  0001 C CNN "Lead Style"
+F 12 "Murata Electronics North America" H 11525 3500 50  0001 C CNN "Manufacturer 1"
+F 13 "GRM188R71E105KA12D" H 11525 3500 50  0001 C CNN "Manufacturer Part Number 1"
+F 14 "Surface Mount, MLCC" H 11525 3500 50  0001 C CNN "Mounting Type"
+F 15 "-55°C ~ 125°C" H 11525 3500 50  0001 C CNN "Operating Temperature"
+F 16 "0603 (1608 Metric)" H 11525 3500 50  0001 C CNN "Package / Case"
+F 17 "Active" H 11525 3500 50  0001 C CNN "Part Status"
+F 18 "-" H 11525 3500 50  0001 C CNN "Ratings"
+F 19 "GRM" H 11525 3500 50  0001 C CNN "Series"
+F 20 "0.063\" L x 0.032\" W (1.60mm x 0.80mm)" H 11525 3500 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 11525 3500 50  0001 C CNN "Supplier 1"
+F 22 "490-5307-1-ND" H 11525 3500 50  0001 C CNN "Supplier Part Number 1"
+F 23 "X7R" H 11525 3500 50  0001 C CNN "Temperature Coefficient"
+F 24 "0.035\" (0.90mm)" H 11525 3500 50  0001 C CNN "Thickness (Max)"
+F 25 "±10%" H 11525 3500 50  0001 C CNN "Tolerance"
+F 26 "25V" H 11525 3500 50  0001 C CNN "Voltage - Rated"
+	1    11525 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11525 3325 11400 3325
+Wire Wire Line
+	11400 3325 11400 3525
+Connection ~ 11400 3425
+$Comp
+L GND #PWR?
+U 1 1 5A827D8F
+P 11525 3700
+F 0 "#PWR?" H 11525 3450 50  0001 C CNN
+F 1 "GND" H 11525 3550 50  0000 C CNN
+F 2 "" H 11525 3700 50  0000 C CNN
+F 3 "" H 11525 3700 50  0000 C CNN
+	1    11525 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11525 3700 11525 3650
+Wire Wire Line
+	11525 3350 11525 3325
 $EndSCHEMATC
