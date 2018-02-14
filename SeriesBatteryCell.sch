@@ -30,14 +30,15 @@ LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
 LIBS:SFUSat-power
-LIBS:SFUsat-cap
-LIBS:SFUsat-ind
-LIBS:SFUsat-res
+LIBS:SFUSat-cap
+LIBS:SFUSat-ind
+LIBS:SFUSat-res
+LIBS:eps-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 6 8
 Title ""
 Date ""
 Rev ""
@@ -89,28 +90,6 @@ $EndComp
 Text HLabel 6700 2450 2    60   Output ~ 0
 OUTPUT
 $Comp
-L Battery BT?
-U 1 1 5A83B0BC
-P 3875 2600
-F 0 "BT?" H 3975 2650 50  0000 L CNN
-F 1 "NCR18650B" H 3975 2550 50  0000 L CNN
-F 2 "" V 3875 2640 50  0000 C CNN
-F 3 "" V 3875 2640 50  0000 C CNN
-	1    3875 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Battery BT1
-U 1 1 5A83B180
-P 3875 3000
-F 0 "BT1" H 3975 3050 50  0000 L CNN
-F 1 "NCR18650B" H 3975 2950 50  0000 L CNN
-F 2 "" V 3875 3040 50  0000 C CNN
-F 3 "" V 3875 3040 50  0000 C CNN
-	1    3875 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R?
 U 1 1 5A83B33A
 P 4650 2250
@@ -155,23 +134,13 @@ F 3 "" H 5250 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3875 3400 4900 3400
-Wire Wire Line
-	4900 3400 5250 3400
-Wire Wire Line
-	5250 3400 6700 3400
-Wire Wire Line
-	6700 3400 7400 3400
-Wire Wire Line
-	7400 3400 7800 3400
+	3875 3400 7800 3400
 Wire Wire Line
 	6650 2850 6700 2850
 Wire Wire Line
 	6650 2650 7400 2650
 Wire Wire Line
-	7400 2550 7400 2650
-Wire Wire Line
-	7400 2650 7400 2750
+	7400 2550 7400 2750
 Wire Wire Line
 	7400 3050 7400 3400
 Connection ~ 7400 3400
@@ -180,18 +149,9 @@ Wire Wire Line
 	7400 2250 7400 2150
 Connection ~ 7400 2150
 Wire Wire Line
-	3875 2150 7400 2150
-Wire Wire Line
-	7400 2150 7800 2150
+	3875 2150 7800 2150
 Wire Wire Line
 	6650 2450 6700 2450
-Wire Wire Line
-	3875 2750 3875 2800
-Wire Wire Line
-	3875 2800 3875 2850
-Wire Wire Line
-	3875 3150 3875 3400
-Connection ~ 3875 2800
 Wire Wire Line
 	5300 3050 5250 3050
 $Comp
@@ -221,30 +181,22 @@ Wire Wire Line
 Wire Wire Line
 	5250 2250 5250 2450
 Wire Wire Line
-	4900 2600 4900 2650
+	4900 2600 4900 3050
 Wire Wire Line
-	4900 2650 4900 3050
-Wire Wire Line
-	4800 2650 4900 2650
-Wire Wire Line
-	4900 2650 5300 2650
+	4800 2650 5300 2650
 Connection ~ 4900 2650
 Wire Wire Line
 	4900 3400 4900 3350
 Connection ~ 4900 3400
 Wire Wire Line
-	4800 2250 4900 2250
-Wire Wire Line
-	4900 2250 5250 2250
+	4800 2250 5250 2250
 Wire Wire Line
 	4900 2250 4900 2300
 Connection ~ 4900 2250
 Wire Wire Line
 	4500 2650 4450 2650
 Wire Wire Line
-	4450 2650 4450 2800
-Wire Wire Line
-	4450 2800 4450 2850
+	4450 2650 4450 2850
 Wire Wire Line
 	4450 2800 3875 2800
 Wire Wire Line
@@ -258,9 +210,7 @@ Connection ~ 4450 2800
 Wire Wire Line
 	6650 3050 6700 3050
 Wire Wire Line
-	6700 3050 6700 3400
-Wire Wire Line
-	6700 3400 6700 3500
+	6700 3050 6700 3500
 Connection ~ 6700 3400
 $Comp
 L GND #PWR?
@@ -274,10 +224,35 @@ F 3 "" H 6700 3500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3875 2150 3875 2250
-Wire Wire Line
-	3875 2250 3875 2450
-Wire Wire Line
 	4500 2250 3875 2250
+$Comp
+L Batt-Series BT?
+U 1 1 5A841090
+P 3875 2525
+F 0 "BT?" H 3975 2625 50  0000 L CNN
+F 1 "NCR18650B" H 3975 2525 50  0000 L CNN
+F 2 "" V 3875 2585 50  0001 C CNN
+F 3 "" V 3875 2585 50  0001 C CNN
+	1    3875 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Batt-Series BT?
+U 1 1 5A8410F1
+P 3875 3075
+F 0 "BT?" H 3975 3175 50  0000 L CNN
+F 1 "NCR18650B" H 3975 3075 50  0000 L CNN
+F 2 "" V 3875 3135 50  0001 C CNN
+F 3 "" V 3875 3135 50  0001 C CNN
+	1    3875 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3875 2150 3875 2325
 Connection ~ 3875 2250
+Wire Wire Line
+	3875 2725 3875 2875
+Connection ~ 3875 2800
+Wire Wire Line
+	3875 3275 3875 3400
 $EndSCHEMATC

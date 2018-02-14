@@ -30,9 +30,10 @@ LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
 LIBS:SFUSat-power
-LIBS:SFUsat-cap
-LIBS:SFUsat-ind
-LIBS:SFUsat-res
+LIBS:SFUSat-cap
+LIBS:SFUSat-ind
+LIBS:SFUSat-res
+LIBS:eps-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -92,30 +93,18 @@ F4 "CB_EN" I R 4450 5875 60
 F5 "OUTPUT" O R 4450 6025 60 
 $EndSheet
 Wire Wire Line
-	4450 2400 5300 2400
+	4450 2400 5850 2400
 Wire Wire Line
-	5300 2400 5850 2400
-Wire Wire Line
-	4450 2550 5450 2550
-Wire Wire Line
-	5450 2550 5850 2550
+	4450 2550 5850 2550
 Wire Wire Line
 	4450 3425 5300 3425
 Wire Wire Line
-	5300 2400 5300 3425
-Wire Wire Line
-	5300 3425 5300 4450
-Wire Wire Line
-	5300 4450 5300 5475
+	5300 2400 5300 5475
 Connection ~ 5300 2400
 Wire Wire Line
 	4450 3575 5450 3575
 Wire Wire Line
-	5450 2550 5450 3575
-Wire Wire Line
-	5450 3575 5450 4600
-Wire Wire Line
-	5450 4600 5450 5625
+	5450 2550 5450 5625
 Connection ~ 5450 2550
 Connection ~ 5300 3425
 Wire Wire Line
@@ -132,17 +121,11 @@ Connection ~ 5450 4600
 Text HLabel 5850 2800 2    60   Input ~ 0
 CB_EN
 Wire Wire Line
-	4450 2800 5600 2800
-Wire Wire Line
-	5600 2800 5850 2800
+	4450 2800 5850 2800
 Wire Wire Line
 	4450 3825 5600 3825
 Wire Wire Line
-	5600 2800 5600 3825
-Wire Wire Line
-	5600 3825 5600 4850
-Wire Wire Line
-	5600 4850 5600 5875
+	5600 2800 5600 5875
 Connection ~ 5600 2800
 Wire Wire Line
 	5600 4850 4450 4850

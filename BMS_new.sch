@@ -30,9 +30,10 @@ LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
 LIBS:SFUSat-power
-LIBS:SFUsat-cap
-LIBS:SFUsat-ind
-LIBS:SFUsat-res
+LIBS:SFUSat-cap
+LIBS:SFUSat-ind
+LIBS:SFUSat-res
+LIBS:eps-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
