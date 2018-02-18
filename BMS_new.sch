@@ -1514,7 +1514,7 @@ U 1 1 5A89896B
 P 18000 5150
 F 0 "Q?" H 17935 5260 50  0000 R BNN
 F 1 "2N7002ET1G" H 18125 5155 50  0000 L CNN
-F 2 "SFUSat:SOT-23" H 18000 5150 50  0001 C CNN
+F 2 "SFUSat:SOT-23-3" H 18000 5150 50  0001 C CNN
 F 3 "" H 18000 5150 50  0001 C CNN
 F 4 "Discrete Semiconductor Products - Transistors - FETs, MOSFETs - Single" H 18000 5150 50  0001 C CNN "Categories"
 F 5 "260mA (Ta)" H 18000 5150 50  0001 C CNN "Current - Continuous Drain (Id) @ 25°C"
@@ -1590,8 +1590,8 @@ F 3 "" H 18275 3725 50  0000 C CNN
 	1    18275 3775
 	1    0    0    -1  
 $EndComp
-Text Notes 19075 3600 0    60   ~ 0
-Doesn't match ref. design?
+Text Notes 19450 3625 0    100  ~ 0
+FIX THIS
 $Comp
 L GNDPWR #PWR?
 U 1 1 5A8A63BB
@@ -2366,7 +2366,7 @@ U 1 1 5A89703F
 P 7625 2600
 F 0 "D?" H 7625 2660 50  0000 C BNN
 F 1 "SMAJ26CA" H 7625 2535 50  0001 C TNN
-F 2 "" H 7625 2600 50  0001 C CNN
+F 2 "SFUSat:DO-214AC-BI" H 7625 2600 50  0001 C CNN
 F 3 "" H 7625 2600 50  0001 C CNN
 F 4 "General Purpose" H 7625 2600 50  0001 C CNN "Applications"
 F 5 "1" H 7625 2600 50  0001 C CNN "Bidirectional Channels"
@@ -2850,9 +2850,9 @@ Wire Wire Line
 Wire Wire Line
 	14875 2500 17150 2500
 Wire Wire Line
-	17650 5150 17700 5150
+	17650 5150 17800 5150
 Wire Wire Line
-	18000 5550 18000 5450
+	18000 5350 18000 5550
 Wire Wire Line
 	17650 5450 19075 5450
 Wire Wire Line
@@ -3027,9 +3027,6 @@ Wire Wire Line
 Wire Wire Line
 	7850 2900 6400 2900
 Wire Wire Line
-	6600 2800 6600 2900
-Connection ~ 6600 2900
-Wire Wire Line
 	6975 2800 6975 2900
 Connection ~ 6975 2900
 Wire Wire Line
@@ -3165,6 +3162,193 @@ F 1 "GNDPWR" H 4850 2670 50  0000 C CNN
 F 2 "" H 4850 2750 50  0000 C CNN
 F 3 "" H 4850 2750 50  0000 C CNN
 	1    4850 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L DCX124EK-7-F Q?
+U 1 1 5A89CB3F
+P 7050 3250
+F 0 "Q?" H 7080 3610 50  0000 L BNN
+F 1 "DCX124EK-7-F" H 7160 3185 50  0000 L TNN
+F 2 "SFUSat:SC-74" H 7050 3250 50  0001 C CNN
+F 3 "" H 7050 3250 50  0001 C CNN
+F 4 "DCX124" H 7050 3250 50  0001 C CNN "Base Part Number"
+F 5 "Discrete Semiconductor Products - Transistors - Bipolar (BJT) - Arrays, Pre-Biased" H 7050 3250 50  0001 C CNN "Categories"
+F 6 "100mA" H 7050 3250 50  0001 C CNN "Current - Collector (Ic) (Max)"
+F 7 "500nA" H 7050 3250 50  0001 C CNN "Current - Collector Cutoff (Max)"
+F 8 "80 @ 5mA, 5V" H 7050 3250 50  0001 C CNN "DC Current Gain (hFE) (Min) @ Ic, Vce"
+F 9 "250MHz" H 7050 3250 50  0001 C CNN "Frequency - Transition"
+F 10 "Lead free / RoHS Compliant" H 7050 3250 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 11 "Diodes Incorporated" H 7050 3250 50  0001 C CNN "Manufacturer 1"
+F 12 "DCX124EK-7-F" H 7050 3250 50  0001 C CNN "Manufacturer Part Number 1"
+F 13 "16 Weeks" H 7050 3250 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 14 "Surface Mount" H 7050 3250 50  0001 C CNN "Mounting Type"
+F 15 "SC-74, SOT-457" H 7050 3250 50  0001 C CNN "Package / Case"
+F 16 "Active" H 7050 3250 50  0001 C CNN "Part Status"
+F 17 "300mW" H 7050 3250 50  0001 C CNN "Power - Max"
+F 18 "22 kOhms" H 7050 3250 50  0001 C CNN "Resistor - Base (R1)"
+F 19 "22 kOhms" H 7050 3250 50  0001 C CNN "Resistor - Emitter Base (R2)"
+F 20 "-" H 7050 3250 50  0001 C CNN "Series"
+F 21 "Digi-Key" H 7050 3250 50  0001 C CNN "Supplier 1"
+F 22 "SC-74R" H 7050 3250 50  0001 C CNN "Supplier Device Package"
+F 23 "DCX124EK-FDICT-ND" H 7050 3250 50  0001 C CNN "Supplier Part Number 1"
+F 24 "1 NPN, 1 PNP - Pre-Biased (Dual)" H 7050 3250 50  0001 C CNN "Transistor Type"
+F 25 "300mV @ 500µA, 10mA" H 7050 3250 50  0001 C CNN "Vce Saturation (Max) @ Ib, Ic"
+F 26 "50V" H 7050 3250 50  0001 C CNN "Voltage - Collector Emitter Breakdown (Max)"
+	1    7050 3250
+	0    -1   1    0   
+$EndComp
+$Comp
+L DCX124EK-7-F Q?
+U 2 1 5A89CC7B
+P 7050 4200
+F 0 "Q?" H 7080 4560 50  0000 L BNN
+F 1 "DCX124EK-7-F" H 7160 4135 50  0000 L TNN
+F 2 "SFUSat:SC-74" H 7050 4200 50  0001 C CNN
+F 3 "" H 7050 4200 50  0001 C CNN
+F 4 "DCX124" H 7050 4200 50  0001 C CNN "Base Part Number"
+F 5 "Discrete Semiconductor Products - Transistors - Bipolar (BJT) - Arrays, Pre-Biased" H 7050 4200 50  0001 C CNN "Categories"
+F 6 "100mA" H 7050 4200 50  0001 C CNN "Current - Collector (Ic) (Max)"
+F 7 "500nA" H 7050 4200 50  0001 C CNN "Current - Collector Cutoff (Max)"
+F 8 "80 @ 5mA, 5V" H 7050 4200 50  0001 C CNN "DC Current Gain (hFE) (Min) @ Ic, Vce"
+F 9 "250MHz" H 7050 4200 50  0001 C CNN "Frequency - Transition"
+F 10 "Lead free / RoHS Compliant" H 7050 4200 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 11 "Diodes Incorporated" H 7050 4200 50  0001 C CNN "Manufacturer 1"
+F 12 "DCX124EK-7-F" H 7050 4200 50  0001 C CNN "Manufacturer Part Number 1"
+F 13 "16 Weeks" H 7050 4200 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 14 "Surface Mount" H 7050 4200 50  0001 C CNN "Mounting Type"
+F 15 "SC-74, SOT-457" H 7050 4200 50  0001 C CNN "Package / Case"
+F 16 "Active" H 7050 4200 50  0001 C CNN "Part Status"
+F 17 "300mW" H 7050 4200 50  0001 C CNN "Power - Max"
+F 18 "22 kOhms" H 7050 4200 50  0001 C CNN "Resistor - Base (R1)"
+F 19 "22 kOhms" H 7050 4200 50  0001 C CNN "Resistor - Emitter Base (R2)"
+F 20 "-" H 7050 4200 50  0001 C CNN "Series"
+F 21 "Digi-Key" H 7050 4200 50  0001 C CNN "Supplier 1"
+F 22 "SC-74R" H 7050 4200 50  0001 C CNN "Supplier Device Package"
+F 23 "DCX124EK-FDICT-ND" H 7050 4200 50  0001 C CNN "Supplier Part Number 1"
+F 24 "1 NPN, 1 PNP - Pre-Biased (Dual)" H 7050 4200 50  0001 C CNN "Transistor Type"
+F 25 "300mV @ 500µA, 10mA" H 7050 4200 50  0001 C CNN "Vce Saturation (Max) @ Ib, Ic"
+F 26 "50V" H 7050 4200 50  0001 C CNN "Voltage - Collector Emitter Breakdown (Max)"
+	2    7050 4200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6600 2800 6600 3250
+Wire Wire Line
+	6600 3250 6650 3250
+Wire Wire Line
+	7350 3250 7400 3250
+Wire Wire Line
+	7400 3250 7400 2900
+Connection ~ 7400 2900
+Wire Wire Line
+	7050 3900 7050 3750
+Wire Wire Line
+	7050 4600 7050 4650
+$Comp
+L GNDPWR #PWR?
+U 1 1 5A8A2526
+P 7050 4650
+F 0 "#PWR?" H 7050 4450 50  0001 C CNN
+F 1 "GNDPWR" H 7050 4520 50  0000 C CNN
+F 2 "" H 7050 4600 50  0000 C CNN
+F 3 "" H 7050 4600 50  0000 C CNN
+	1    7050 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4200 7900 4200
+$Comp
+L R_10k0_5%_0.1W_0603 R?
+U 1 1 5A8971E1
+P 7900 3950
+F 0 "R?" H 7900 4000 50  0000 C BNN
+F 1 "10k0" H 7900 3900 50  0000 C TNN
+F 2 "SFUSat-res:R_0603" H 7900 3950 50  0001 C CNN
+F 3 "" H 7900 3950 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 7900 3950 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 7900 3950 50  0001 C CNN "Composition"
+F 6 "-" H 7900 3950 50  0001 C CNN "Failure Rate"
+F 7 "-" H 7900 3950 50  0001 C CNN "Features"
+F 8 "0.022\" (0.55mm)" H 7900 3950 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 7900 3950 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Vishay Dale" H 7900 3950 50  0001 C CNN "Manufacturer 1"
+F 11 "CRCW060310K0JNEAC" H 7900 3950 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "2" H 7900 3950 50  0001 C CNN "Number of Terminations"
+F 13 "-55°C ~ 155°C" H 7900 3950 50  0001 C CNN "Operating Temperature"
+F 14 "0603 (1608 Metric)" H 7900 3950 50  0001 C CNN "Package / Case"
+F 15 "Active" H 7900 3950 50  0001 C CNN "Part Status"
+F 16 "0.1W, 1/10W" H 7900 3950 50  0001 C CNN "Power (Watts)"
+F 17 "10 kOhms" H 7900 3950 50  0001 C CNN "Resistance"
+F 18 "CRCW-C" H 7900 3950 50  0001 C CNN "Series"
+F 19 "Digi-Key" H 7900 3950 50  0001 C CNN "Supplier 1"
+F 20 "0603" H 7900 3950 50  0001 C CNN "Supplier Device Package"
+F 21 "541-3957-1-ND" H 7900 3950 50  0001 C CNN "Supplier Part Number 1"
+F 22 "±200ppm/°C" H 7900 3950 50  0001 C CNN "Temperature Coefficient"
+F 23 "±5%" H 7900 3950 50  0001 C CNN "Tolerance"
+	1    7900 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 4100 7900 4250
+Wire Wire Line
+	7900 3700 7900 3800
+Wire Wire Line
+	7725 3700 7900 3700
+Text Label 7725 3700 0    60   ~ 0
+3V3
+$Comp
+L 2N7002ET1G Q?
+U 1 1 5A897EF1
+P 7900 4450
+F 0 "Q?" H 7835 4560 50  0000 R BNN
+F 1 "2N7002ET1G" H 7825 4350 50  0000 R TNN
+F 2 "SFUSat:SOT-23-3" H 7900 4450 50  0001 C CNN
+F 3 "" H 7900 4450 50  0001 C CNN
+F 4 "Discrete Semiconductor Products - Transistors - FETs, MOSFETs - Single" H 7900 4450 50  0001 C CNN "Categories"
+F 5 "260mA (Ta)" H 7900 4450 50  0001 C CNN "Current - Continuous Drain (Id) @ 25°C"
+F 6 "60V" H 7900 4450 50  0001 C CNN "Drain to Source Voltage (Vdss)"
+F 7 "4.5V, 10V" H 7900 4450 50  0001 C CNN "Drive Voltage (Max Rds On,  Min Rds On)"
+F 8 "-" H 7900 4450 50  0001 C CNN "FET Feature"
+F 9 "N-Channel" H 7900 4450 50  0001 C CNN "FET Type"
+F 10 "0.81nC @ 5V" H 7900 4450 50  0001 C CNN "Gate Charge (Qg) (Max) @ Vgs"
+F 11 "26.7pF @ 25V" H 7900 4450 50  0001 C CNN "Input Capacitance (Ciss) (Max) @ Vds"
+F 12 "Lead free / RoHS Compliant" H 7900 4450 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 13 "ON Semiconductor" H 7900 4450 50  0001 C CNN "Manufacturer 1"
+F 14 "2N7002ET1G" H 7900 4450 50  0001 C CNN "Manufacturer Part Number 1"
+F 15 "46 Weeks" H 7900 4450 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 16 "Surface Mount" H 7900 4450 50  0001 C CNN "Mounting Type"
+F 17 "-55°C ~ 150°C (TJ)" H 7900 4450 50  0001 C CNN "Operating Temperature"
+F 18 "TO-236-3, SC-59, SOT-23-3" H 7900 4450 50  0001 C CNN "Package / Case"
+F 19 "Active" H 7900 4450 50  0001 C CNN "Part Status"
+F 20 "300mW (Tj)" H 7900 4450 50  0001 C CNN "Power Dissipation (Max)"
+F 21 "2.5 Ohm @ 240mA, 10V" H 7900 4450 50  0001 C CNN "Rds On (Max) @ Id, Vgs"
+F 22 "-" H 7900 4450 50  0001 C CNN "Series"
+F 23 "Digi-Key" H 7900 4450 50  0001 C CNN "Supplier 1"
+F 24 "SOT-23-3 (TO-236)" H 7900 4450 50  0001 C CNN "Supplier Device Package"
+F 25 "2N7002ET1GOSCT-ND" H 7900 4450 50  0001 C CNN "Supplier Part Number 1"
+F 26 "MOSFET (Metal Oxide)" H 7900 4450 50  0001 C CNN "Technology"
+F 27 "±20V" H 7900 4450 50  0001 C CNN "Vgs (Max)"
+F 28 "2.5V @ 250µA" H 7900 4450 50  0001 C CNN "Vgs(th) (Max) @ Id"
+	1    7900 4450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	18000 4950 18000 4850
+Connection ~ 7900 4200
+Wire Wire Line
+	8100 4450 8475 4450
+Text Label 8475 4450 2    60   ~ 0
+CHG_OK
+$Comp
+L GND #PWR?
+U 1 1 5A89D500
+P 7900 4650
+F 0 "#PWR?" H 7900 4400 50  0001 C CNN
+F 1 "GND" H 7900 4500 50  0000 C CNN
+F 2 "" H 7900 4650 50  0000 C CNN
+F 3 "" H 7900 4650 50  0000 C CNN
+	1    7900 4650
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
