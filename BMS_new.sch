@@ -944,56 +944,9 @@ F 26 "25V" H 18275 3575 50  0001 C CNN "Voltage - Rated"
 	1    18275 3575
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R?
-U 1 1 5A855F79
-P 18600 3400
-F 0 "R?" V 18680 3400 50  0000 C CNN
-F 1 "0.01" V 18600 3400 50  0000 C CNN
-F 2 "" V 18530 3400 50  0000 C CNN
-F 3 "" H 18600 3400 50  0000 C CNN
-F 4 "WSLP1206R0100FEA" V 18600 3400 60  0001 C CNN "Part"
-	1    18600 3400
-	0    1    1    0   
-$EndComp
-$Comp
-L C C?
-U 1 1 5A85678B
-P 18800 3575
-F 0 "C?" H 18825 3675 50  0000 L CNN
-F 1 "10u" H 18825 3475 50  0000 L CNN
-F 2 "SFUSat-cap:C_1206" H 18875 3325 50  0001 C CNN
-F 3 "" H 18800 3575 50  0000 C CNN
-F 4 "GRM31CR71E106KA12L" H 18800 3575 60  0001 C CNN "Part"
-	1    18800 3575
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 5A857377
-P 18600 3125
-F 0 "C?" H 18625 3025 50  0000 L CNN
-F 1 "0.1u" H 18625 3225 50  0000 L CNN
-F 2 "SFUSat-cap:C_0603" H 18675 2875 50  0001 C CNN
-F 3 "" H 18600 3125 50  0000 C CNN
-F 4 "GRM188R71E104KA01D" H 18600 3125 60  0001 C CNN "Part"
-	1    18600 3125
-	0    1    1    0   
-$EndComp
-Text HLabel 19050 3400 2    60   Input ~ 0
+Text HLabel 19775 3025 2    60   Input ~ 0
 VBAT+
-$Comp
-L GND #PWR?
-U 1 1 5A859390
-P 18800 3775
-F 0 "#PWR?" H 18800 3525 50  0001 C CNN
-F 1 "GND" H 18800 3625 50  0000 C CNN
-F 2 "" H 18800 3775 50  0000 C CNN
-F 3 "" H 18800 3775 50  0000 C CNN
-	1    18800 3775
-	1    0    0    -1  
-$EndComp
-Text HLabel 19050 3750 2    60   Input ~ 0
+Text HLabel 19775 3425 2    60   Input ~ 0
 VBAT-
 $Comp
 L C_2u2_10%_35V_X5R_0603 C?
@@ -1545,7 +1498,7 @@ F 3 "" H 18000 5550 50  0000 C CNN
 	1    18000 5550
 	1    0    0    -1  
 $EndComp
-Text Label 18525 4150 0    60   ~ 0
+Text Label 19575 4150 2    60   ~ 0
 VDDA
 $Comp
 L GNDPWR #PWR?
@@ -1580,17 +1533,15 @@ F 3 "" H 18275 3725 50  0000 C CNN
 	1    18275 3775
 	1    0    0    -1  
 $EndComp
-Text Notes 19450 3625 0    100  ~ 0
-FIX THIS
 $Comp
 L GNDPWR #PWR?
 U 1 1 5A8A63BB
-P 20275 2875
-F 0 "#PWR?" H 20275 2675 50  0001 C CNN
-F 1 "GNDPWR" H 20275 2745 50  0000 C CNN
-F 2 "" H 20275 2825 50  0000 C CNN
-F 3 "" H 20275 2825 50  0000 C CNN
-	1    20275 2875
+P 20275 2825
+F 0 "#PWR?" H 20275 2625 50  0001 C CNN
+F 1 "GNDPWR" H 20275 2695 50  0000 C CNN
+F 2 "" H 20275 2775 50  0000 C CNN
+F 3 "" H 20275 2775 50  0000 C CNN
+	1    20275 2825
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3729,8 +3680,6 @@ Connection ~ 19675 2500
 Connection ~ 19675 2800
 Connection ~ 19875 2500
 Connection ~ 19875 2800
-Wire Wire Line
-	20275 2800 20275 2875
 Connection ~ 20075 2800
 Connection ~ 20075 2500
 Wire Wire Line
@@ -3745,32 +3694,13 @@ Wire Wire Line
 Wire Wire Line
 	18100 3950 18100 3800
 Wire Wire Line
-	18100 3400 18450 3400
-Wire Wire Line
 	18100 3400 18100 3600
 Connection ~ 18100 3500
 Wire Wire Line
 	18275 3775 18275 3725
 Wire Wire Line
-	18275 3425 18275 3400
+	18275 3100 18275 3425
 Connection ~ 18275 3400
-Wire Wire Line
-	18750 3400 19050 3400
-Wire Wire Line
-	18800 3125 18800 3425
-Wire Wire Line
-	18450 3125 18400 3125
-Wire Wire Line
-	18400 3125 18400 3400
-Connection ~ 18400 3400
-Wire Wire Line
-	18750 3125 18800 3125
-Connection ~ 18800 3400
-Wire Wire Line
-	18800 3725 18800 3775
-Wire Wire Line
-	19050 3750 18800 3750
-Connection ~ 18800 3750
 Wire Wire Line
 	15850 4350 16325 4350
 Wire Wire Line
@@ -3858,9 +3788,6 @@ Wire Wire Line
 Connection ~ 18800 4850
 Wire Wire Line
 	18800 4500 18800 4450
-Wire Wire Line
-	18525 4150 19350 4150
-Connection ~ 18800 4150
 Wire Wire Line
 	19350 4850 19350 4750
 Connection ~ 19075 4850
@@ -4231,4 +4158,260 @@ Wire Wire Line
 Wire Wire Line
 	13300 6500 13300 5250
 Connection ~ 13250 6500
+Wire Wire Line
+	18275 3400 18100 3400
+Wire Wire Line
+	15850 4050 18600 4050
+Wire Wire Line
+	18800 4150 19575 4150
+Connection ~ 19350 4150
+$Comp
+L R_10R0_5%_0.1W_0603 R?
+U 1 1 5A8DE872
+P 18600 3750
+F 0 "R?" H 18600 3800 50  0000 C BNN
+F 1 "10R0" H 18600 3700 50  0000 C TNN
+F 2 "SFUSat-res:R_0603" H 18600 3750 50  0001 C CNN
+F 3 "" H 18600 3750 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 18600 3750 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 18600 3750 50  0001 C CNN "Composition"
+F 6 "-" H 18600 3750 50  0001 C CNN "Failure Rate"
+F 7 "-" H 18600 3750 50  0001 C CNN "Features"
+F 8 "0.022\" (0.55mm)" H 18600 3750 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 18600 3750 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Vishay Dale" H 18600 3750 50  0001 C CNN "Manufacturer 1"
+F 11 "CRCW060310R0JNEAC" H 18600 3750 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "2" H 18600 3750 50  0001 C CNN "Number of Terminations"
+F 13 "-55°C ~ 155°C" H 18600 3750 50  0001 C CNN "Operating Temperature"
+F 14 "0603 (1608 Metric)" H 18600 3750 50  0001 C CNN "Package / Case"
+F 15 "Active" H 18600 3750 50  0001 C CNN "Part Status"
+F 16 "0.1W, 1/10W" H 18600 3750 50  0001 C CNN "Power (Watts)"
+F 17 "10 Ohms" H 18600 3750 50  0001 C CNN "Resistance"
+F 18 "CRCW-C" H 18600 3750 50  0001 C CNN "Series"
+F 19 "Digi-Key" H 18600 3750 50  0001 C CNN "Supplier 1"
+F 20 "0603" H 18600 3750 50  0001 C CNN "Supplier Device Package"
+F 21 "541-4057-1-ND" H 18600 3750 50  0001 C CNN "Supplier Part Number 1"
+F 22 "±200ppm/°C" H 18600 3750 50  0001 C CNN "Temperature Coefficient"
+F 23 "±5%" H 18600 3750 50  0001 C CNN "Tolerance"
+	1    18600 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L R_10R0_5%_0.1W_0603 R?
+U 1 1 5A8DEC89
+P 18900 3750
+F 0 "R?" H 18900 3800 50  0000 C BNN
+F 1 "10R0" H 18900 3700 50  0000 C TNN
+F 2 "SFUSat-res:R_0603" H 18900 3750 50  0001 C CNN
+F 3 "" H 18900 3750 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 18900 3750 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 18900 3750 50  0001 C CNN "Composition"
+F 6 "-" H 18900 3750 50  0001 C CNN "Failure Rate"
+F 7 "-" H 18900 3750 50  0001 C CNN "Features"
+F 8 "0.022\" (0.55mm)" H 18900 3750 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 18900 3750 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Vishay Dale" H 18900 3750 50  0001 C CNN "Manufacturer 1"
+F 11 "CRCW060310R0JNEAC" H 18900 3750 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "2" H 18900 3750 50  0001 C CNN "Number of Terminations"
+F 13 "-55°C ~ 155°C" H 18900 3750 50  0001 C CNN "Operating Temperature"
+F 14 "0603 (1608 Metric)" H 18900 3750 50  0001 C CNN "Package / Case"
+F 15 "Active" H 18900 3750 50  0001 C CNN "Part Status"
+F 16 "0.1W, 1/10W" H 18900 3750 50  0001 C CNN "Power (Watts)"
+F 17 "10 Ohms" H 18900 3750 50  0001 C CNN "Resistance"
+F 18 "CRCW-C" H 18900 3750 50  0001 C CNN "Series"
+F 19 "Digi-Key" H 18900 3750 50  0001 C CNN "Supplier 1"
+F 20 "0603" H 18900 3750 50  0001 C CNN "Supplier Device Package"
+F 21 "541-4057-1-ND" H 18900 3750 50  0001 C CNN "Supplier Part Number 1"
+F 22 "±200ppm/°C" H 18900 3750 50  0001 C CNN "Temperature Coefficient"
+F 23 "±5%" H 18900 3750 50  0001 C CNN "Tolerance"
+	1    18900 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L C_100n0_10%_25V_X7R_0603 C?
+U 1 1 5A8DEE36
+P 18750 3500
+F 0 "C?" H 18750 3550 50  0000 L BNN
+F 1 "100n0" H 18750 3450 50  0000 L TNN
+F 2 "SFUSat-cap:C_0603" H 18750 3500 50  0001 C CNN
+F 3 "" H 18750 3500 50  0001 C CNN
+F 4 "General Purpose" H 18750 3500 50  0001 C CNN "Applications"
+F 5 "0.1µF" H 18750 3500 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Ceramic Capacitors" H 18750 3500 50  0001 C CNN "Categories"
+F 7 "-" H 18750 3500 50  0001 C CNN "Features"
+F 8 "-" H 18750 3500 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 18750 3500 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "-" H 18750 3500 50  0001 C CNN "Lead Spacing"
+F 11 "-" H 18750 3500 50  0001 C CNN "Lead Style"
+F 12 "Murata Electronics North America" H 18750 3500 50  0001 C CNN "Manufacturer 1"
+F 13 "GRM188R71E104KA01D" H 18750 3500 50  0001 C CNN "Manufacturer Part Number 1"
+F 14 "Surface Mount, MLCC" H 18750 3500 50  0001 C CNN "Mounting Type"
+F 15 "-55°C ~ 125°C" H 18750 3500 50  0001 C CNN "Operating Temperature"
+F 16 "0603 (1608 Metric)" H 18750 3500 50  0001 C CNN "Package / Case"
+F 17 "Active" H 18750 3500 50  0001 C CNN "Part Status"
+F 18 "-" H 18750 3500 50  0001 C CNN "Ratings"
+F 19 "GRM" H 18750 3500 50  0001 C CNN "Series"
+F 20 "0.063\" L x 0.032\" W (1.60mm x 0.80mm)" H 18750 3500 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 18750 3500 50  0001 C CNN "Supplier 1"
+F 22 "490-1524-1-ND" H 18750 3500 50  0001 C CNN "Supplier Part Number 1"
+F 23 "X7R" H 18750 3500 50  0001 C CNN "Temperature Coefficient"
+F 24 "0.035\" (0.90mm)" H 18750 3500 50  0001 C CNN "Thickness (Max)"
+F 25 "±10%" H 18750 3500 50  0001 C CNN "Tolerance"
+F 26 "25V" H 18750 3500 50  0001 C CNN "Voltage - Rated"
+	1    18750 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	18600 4050 18600 3900
+Wire Wire Line
+	18700 4050 18900 4050
+Wire Wire Line
+	18700 4050 18700 4150
+Wire Wire Line
+	18700 4150 15850 4150
+Wire Wire Line
+	18900 4050 18900 3900
+Connection ~ 18600 3500
+Connection ~ 18900 3500
+$Comp
+L R_10m0_1%_1W_1206 R?
+U 1 1 5A8E5C7C
+P 18750 3100
+F 0 "R?" H 18750 3150 50  0000 C BNN
+F 1 "10m0" H 18750 3050 50  0000 C TNN
+F 2 "SFUSat-res:R_1206" H 18750 3100 50  0001 C CNN
+F 3 "" H 18750 3100 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 18750 3100 50  0001 C CNN "Categories"
+F 5 "Metal Element" H 18750 3100 50  0001 C CNN "Composition"
+F 6 "-" H 18750 3100 50  0001 C CNN "Failure Rate"
+F 7 "Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding" H 18750 3100 50  0001 C CNN "Features"
+F 8 "0.035\" (0.89mm)" H 18750 3100 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 18750 3100 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Vishay Dale" H 18750 3100 50  0001 C CNN "Manufacturer 1"
+F 11 "WSLP1206R0100FEA" H 18750 3100 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "2" H 18750 3100 50  0001 C CNN "Number of Terminations"
+F 13 "-65°C ~ 170°C" H 18750 3100 50  0001 C CNN "Operating Temperature"
+F 14 "1206 (3216 Metric)" H 18750 3100 50  0001 C CNN "Package / Case"
+F 15 "Active" H 18750 3100 50  0001 C CNN "Part Status"
+F 16 "1W" H 18750 3100 50  0001 C CNN "Power (Watts)"
+F 17 "10 mOhms" H 18750 3100 50  0001 C CNN "Resistance"
+F 18 "WSLP" H 18750 3100 50  0001 C CNN "Series"
+F 19 "0.126\" L x 0.063\" W (3.20mm x 1.60mm)" H 18750 3100 50  0001 C CNN "Size / Dimension"
+F 20 "Digi-Key" H 18750 3100 50  0001 C CNN "Supplier 1"
+F 21 "1206" H 18750 3100 50  0001 C CNN "Supplier Device Package"
+F 22 "WSLP-.01CT-ND" H 18750 3100 50  0001 C CNN "Supplier Part Number 1"
+F 23 "±75ppm/°C" H 18750 3100 50  0001 C CNN "Temperature Coefficient"
+F 24 "±1%" H 18750 3100 50  0001 C CNN "Tolerance"
+	1    18750 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 18600 3100
+Wire Wire Line
+	18275 3100 18600 3100
+Wire Wire Line
+	18600 3100 18600 3600
+Connection ~ 18900 3100
+Wire Wire Line
+	18900 3100 18900 3600
+$Comp
+L C_10u0_10%_25V_X7R_1206 C?
+U 1 1 5A8EBD2F
+P 19100 3250
+F 0 "C?" H 19100 3300 50  0000 L BNN
+F 1 "10u0" H 19100 3200 50  0000 L TNN
+F 2 "SFUSat-cap:C_1206" H 19100 3250 50  0001 C CNN
+F 3 "" H 19100 3250 50  0001 C CNN
+F 4 "General Purpose" H 19100 3250 50  0001 C CNN "Applications"
+F 5 "10µF" H 19100 3250 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Ceramic Capacitors" H 19100 3250 50  0001 C CNN "Categories"
+F 7 "-" H 19100 3250 50  0001 C CNN "Features"
+F 8 "-" H 19100 3250 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 19100 3250 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "-" H 19100 3250 50  0001 C CNN "Lead Spacing"
+F 11 "-" H 19100 3250 50  0001 C CNN "Lead Style"
+F 12 "Murata Electronics North America" H 19100 3250 50  0001 C CNN "Manufacturer 1"
+F 13 "GRM31CR71E106KA12L" H 19100 3250 50  0001 C CNN "Manufacturer Part Number 1"
+F 14 "Surface Mount, MLCC" H 19100 3250 50  0001 C CNN "Mounting Type"
+F 15 "-55°C ~ 125°C" H 19100 3250 50  0001 C CNN "Operating Temperature"
+F 16 "1206 (3216 Metric)" H 19100 3250 50  0001 C CNN "Package / Case"
+F 17 "Active" H 19100 3250 50  0001 C CNN "Part Status"
+F 18 "-" H 19100 3250 50  0001 C CNN "Ratings"
+F 19 "GRM" H 19100 3250 50  0001 C CNN "Series"
+F 20 "0.126\" L x 0.063\" W (3.20mm x 1.60mm)" H 19100 3250 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 19100 3250 50  0001 C CNN "Supplier 1"
+F 22 "490-6518-1-ND" H 19100 3250 50  0001 C CNN "Supplier Part Number 1"
+F 23 "X7R" H 19100 3250 50  0001 C CNN "Temperature Coefficient"
+F 24 "0.071\" (1.80mm)" H 19100 3250 50  0001 C CNN "Thickness (Max)"
+F 25 "±10%" H 19100 3250 50  0001 C CNN "Tolerance"
+F 26 "25V" H 19100 3250 50  0001 C CNN "Voltage - Rated"
+	1    19100 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18900 3100 19800 3100
+$Comp
+L B220A-13-F D?
+U 1 1 5A8D5665
+P 19450 3275
+F 0 "D?" H 19450 3335 50  0000 C BNN
+F 1 "B220A-13-F" H 19450 3215 50  0001 C TNN
+F 2 "SFUSat:DO-214AC" H 19345 3240 50  0001 C CNN
+F 3 "" H 19450 3275 50  0001 C CNN
+F 4 "B220" H 19450 3275 50  0001 C CNN "Base Part Number"
+F 5 "200pF @ 4V, 1MHz" H 19450 3275 50  0001 C CNN "Capacitance @ Vr, F"
+F 6 "Discrete Semiconductor Products - Diodes - Rectifiers - Single" H 19450 3275 50  0001 C CNN "Categories"
+F 7 "2A" H 19450 3275 50  0001 C CNN "Current - Average Rectified (Io)"
+F 8 "500µA @ 20V" H 19450 3275 50  0001 C CNN "Current - Reverse Leakage @ Vr"
+F 9 "Schottky" H 19450 3275 50  0001 C CNN "Diode Type"
+F 10 "Lead free / RoHS Compliant" H 19450 3275 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 11 "Diodes Incorporated" H 19450 3275 50  0001 C CNN "Manufacturer 1"
+F 12 "B220A-13-F" H 19450 3275 50  0001 C CNN "Manufacturer Part Number 1"
+F 13 "Surface Mount" H 19450 3275 50  0001 C CNN "Mounting Type"
+F 14 "-65°C ~ 150°C" H 19450 3275 50  0001 C CNN "Operating Temperature - Junction"
+F 15 "DO-214AC, SMA" H 19450 3275 50  0001 C CNN "Package / Case"
+F 16 "Active" H 19450 3275 50  0001 C CNN "Part Status"
+F 17 "-" H 19450 3275 50  0001 C CNN "Series"
+F 18 "Fast Recovery =< 500ns, > 200mA (Io)" H 19450 3275 50  0001 C CNN "Speed"
+F 19 "Digi-Key" H 19450 3275 50  0001 C CNN "Supplier 1"
+F 20 "SMA" H 19450 3275 50  0001 C CNN "Supplier Device Package"
+F 21 "B220A-FDICT-ND" H 19450 3275 50  0001 C CNN "Supplier Part Number 1"
+F 22 "20V" H 19450 3275 50  0001 C CNN "Voltage - DC Reverse (Vr) (Max)"
+F 23 "500mV @ 2A" H 19450 3275 50  0001 C CNN "Voltage - Forward (Vf) (Max) @ If"
+	1    19450 3275
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	19100 3400 19100 3425
+Wire Wire Line
+	19450 3375 19450 3475
+Wire Wire Line
+	19450 3100 19450 3175
+Connection ~ 19100 3100
+Connection ~ 19450 3425
+$Comp
+L GNDPWR #PWR?
+U 1 1 5A8D6333
+P 19450 3475
+F 0 "#PWR?" H 19450 3275 50  0001 C CNN
+F 1 "GNDPWR" H 19450 3345 50  0000 C CNN
+F 2 "" H 19450 3425 50  0000 C CNN
+F 3 "" H 19450 3425 50  0000 C CNN
+	1    19450 3475
+	1    0    0    -1  
+$EndComp
+Connection ~ 19450 3100
+Wire Wire Line
+	19700 3425 19700 3200
+Wire Wire Line
+	19700 3200 19800 3200
+Connection ~ 19700 3425
+Connection ~ 19700 3100
+Wire Wire Line
+	20275 2800 20275 2825
+Wire Wire Line
+	19700 3100 19700 3025
+Wire Wire Line
+	19700 3025 19775 3025
+Wire Wire Line
+	19100 3425 19775 3425
 $EndSCHEMATC
