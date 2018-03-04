@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:eps-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -112,9 +113,7 @@ $EndComp
 Wire Wire Line
 	5950 6050 5950 5900
 Wire Wire Line
-	5550 6050 5750 6050
-Wire Wire Line
-	5750 6050 5950 6050
+	5550 6050 5950 6050
 Wire Wire Line
 	5550 6050 5550 5900
 Wire Wire Line
@@ -151,19 +150,13 @@ $EndComp
 Wire Wire Line
 	1450 1350 1450 1300
 Wire Wire Line
-	1450 1300 2050 1300
-Wire Wire Line
-	2050 1300 3000 1300
+	1450 1300 3000 1300
 Wire Wire Line
 	2050 1300 2050 1350
 Wire Wire Line
-	2050 1650 2050 1700
+	2050 1650 2050 2000
 Wire Wire Line
-	2050 1700 2050 2000
-Wire Wire Line
-	1450 2350 1750 2350
-Wire Wire Line
-	1750 2350 2050 2350
+	1450 2350 2050 2350
 Wire Wire Line
 	2050 2350 2050 2300
 $Sheet
@@ -184,9 +177,7 @@ $EndSheet
 Wire Wire Line
 	1450 2300 1450 2350
 Wire Wire Line
-	1450 1650 1450 1700
-Wire Wire Line
-	1450 1700 1450 2000
+	1450 1650 1450 2000
 $Comp
 L Battery_Cell BT26
 U 1 1 59B70A3D
@@ -327,9 +318,7 @@ $EndComp
 Wire Wire Line
 	1800 1100 1850 1100
 Wire Wire Line
-	1450 1700 2050 1700
-Wire Wire Line
-	2050 1700 2550 1700
+	1450 1700 2550 1700
 Wire Wire Line
 	2550 1700 2550 1450
 Wire Wire Line
