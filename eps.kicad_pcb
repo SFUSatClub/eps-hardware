@@ -2165,7 +2165,7 @@
   )
 
   (module SFUSat-cap:C_ALUM_2626 (layer F.Cu) (tedit 5A822555) (tstamp 5AA457D5)
-    (at 165.7 138)
+    (at 132.5 112.5)
     (path /5A66DD3E/5A8162B1)
     (fp_text reference C55 (at 0 -4.5) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2200,10 +2200,15 @@
       (net 86 /BMS_new/VSYS))
     (pad 2 smd rect (at 2.8 0) (size 3.5 1.6) (layers F.Cu F.Paste F.Mask)
       (net 61 GNDPWR))
+    (model ../../../../../home/tobi/Cubesat/eps-hardware/KiCad-Lib/SFUSat-cap.pretty/C_ALUM_2626.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat-cap:C_TANT_2917 (layer F.Cu) (tedit 5A822504) (tstamp 5AA457E8)
-    (at 165.7 147)
+    (at 160.5 101)
     (path /5A66DD3E/5A823459)
     (fp_text reference C56 (at 0 -3.5) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2333,7 +2338,7 @@
   )
 
   (module SFUSat-ind:L_8030 (layer F.Cu) (tedit 5A6E224B) (tstamp 5AA4583D)
-    (at 141.88 153.5)
+    (at 149 83)
     (path /5A66DD3E/5A7832A4)
     (fp_text reference L1 (at 0 -5.15) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2357,6 +2362,11 @@
       (net 77 "Net-(C35-Pad1)"))
     (pad 1 smd rect (at -3.62 0) (size 2.42 5.33) (layers F.Cu F.Paste F.Mask)
       (net 72 "Net-(C29-Pad1)"))
+    (model ../../../../../home/tobi/Cubesat/eps-hardware/KiCad-Lib/SFUSat-ind.pretty/L_8030.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat:8-PowerWDFN (layer F.Cu) (tedit 5A892DA9) (tstamp 5AA4587E)
