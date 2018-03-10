@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:eps-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -39,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 4 7
 Title ""
 Date ""
 Rev ""

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:eps-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -39,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -51,17 +50,6 @@ Comment4 ""
 $EndDescr
 Text Notes 7350 7500 0    60   ~ 0
 CubeSat Electrical Power Subsystem
-$Comp
-L BARREL_JACK J1
-U 1 1 59AC8EC8
-P 4000 5700
-F 0 "J1" H 4000 5895 50  0000 C CNN
-F 1 "BARREL_JACK" H 4000 5545 50  0000 C CNN
-F 2 "" H 4000 5700 50  0001 C CNN
-F 3 "" H 4000 5700 50  0001 C CNN
-	1    4000 5700
-	1    0    0    -1  
-$EndComp
 $Comp
 L SPST SW2
 U 1 1 59ACBDB1
@@ -134,219 +122,6 @@ Text Notes 6250 5600 0    60   ~ 0
 Deployment Switchs
 Text Notes 7600 4850 0    60   ~ 0
 Pull-before-flight
-Text Notes 3750 5400 0    60   ~ 0
-Aux ground power
-$Comp
-L Battery_Cell BT28
-U 1 1 59B709BC
-P 2050 2200
-F 0 "BT28" H 2150 2300 50  0000 L CNN
-F 1 "NCR18650" H 2150 2200 50  0000 L CNN
-F 2 "" V 2050 2260 50  0001 C CNN
-F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 2050 2260 50  0001 C CNN
-	1    2050 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 1350 1450 1300
-Wire Wire Line
-	1450 1300 3000 1300
-Wire Wire Line
-	2050 1300 2050 1350
-Wire Wire Line
-	2050 1650 2050 2000
-Wire Wire Line
-	1450 2350 2050 2350
-Wire Wire Line
-	2050 2350 2050 2300
-$Sheet
-S 3000 1150 1100 1700
-U 59B7E955
-F0 "BMS" 60
-F1 "bms.sch" 60
-F2 "SDA" I R 4100 1450 60 
-F3 "SCL" I R 4100 1550 60 
-F4 "TS1" I L 3000 1600 60 
-F5 "TS2" I L 3000 1700 60 
-F6 "TS3" I L 3000 1800 60 
-F7 "TS4" I L 3000 1900 60 
-F8 "VN" I L 3000 2750 60 
-F9 "V_LO" I L 3000 1450 60 
-F10 "V_HI" I L 3000 1300 60 
-$EndSheet
-Wire Wire Line
-	1450 2300 1450 2350
-Wire Wire Line
-	1450 1650 1450 2000
-$Comp
-L Battery_Cell BT26
-U 1 1 59B70A3D
-P 1450 2200
-F 0 "BT26" H 1550 2300 50  0000 L CNN
-F 1 "NCR18650" H 1550 2200 50  0000 L CNN
-F 2 "" V 1450 2260 50  0001 C CNN
-F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 1450 2260 50  0001 C CNN
-	1    1450 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Battery_Cell BT25
-U 1 1 59AC9D26
-P 1450 1550
-F 0 "BT25" H 1550 1650 50  0000 L CNN
-F 1 "NCR18650" H 1550 1550 50  0000 L CNN
-F 2 "" V 1450 1610 50  0001 C CNN
-F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 1450 1610 50  0001 C CNN
-	1    1450 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Battery_Cell BT27
-U 1 1 59B70940
-P 2050 1550
-F 0 "BT27" H 2150 1650 50  0000 L CNN
-F 1 "NCR18650" H 2150 1550 50  0000 L CNN
-F 2 "" V 2050 1610 50  0001 C CNN
-F 3 "https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf" V 2050 1610 50  0001 C CNN
-	1    2050 1550
-	1    0    0    -1  
-$EndComp
-Connection ~ 2050 1300
-Connection ~ 2050 1700
-Connection ~ 1450 1700
-Wire Wire Line
-	1750 2350 1750 2750
-Connection ~ 1750 2350
-$Comp
-L Thermistor TH2
-U 1 1 59BA3822
-P 1200 2100
-F 0 "TH2" V 1300 2150 50  0000 C CNN
-F 1 "103AT-4-70378" V 1100 2100 50  0000 C BNN
-F 2 "" H 1200 2100 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/362/semitec_atthermistor-371460.pdf" H 1200 2100 50  0001 C CNN
-F 4 "954-103AT-4-70378" V 1200 2100 60  0001 C CNN "Mouser"
-	1    1200 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR02
-U 1 1 59BA3829
-P 1200 2350
-F 0 "#PWR02" H 1200 2100 50  0001 C CNN
-F 1 "GND" H 1200 2200 50  0000 C CNN
-F 2 "" H 1200 2350 50  0001 C CNN
-F 3 "" H 1200 2350 50  0001 C CNN
-	1    1200 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1200 2350 1200 2300
-$Comp
-L Thermistor TH4
-U 1 1 59BA3831
-P 2750 2150
-F 0 "TH4" V 2850 2200 50  0000 C CNN
-F 1 "103AT-4-70378" V 2650 2150 50  0000 C BNN
-F 2 "" H 2750 2150 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/362/semitec_atthermistor-371460.pdf" H 2750 2150 50  0001 C CNN
-F 4 "954-103AT-4-70378" V 2750 2150 60  0001 C CNN "Mouser"
-	1    2750 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR03
-U 1 1 59BA3838
-P 2750 2400
-F 0 "#PWR03" H 2750 2150 50  0001 C CNN
-F 1 "GND" H 2750 2250 50  0000 C CNN
-F 2 "" H 2750 2400 50  0001 C CNN
-F 3 "" H 2750 2400 50  0001 C CNN
-	1    2750 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 2400 2750 2350
-$Comp
-L Thermistor TH1
-U 1 1 59BA3840
-P 1200 1300
-F 0 "TH1" V 1300 1350 50  0000 C CNN
-F 1 "103AT-4-70378" V 1100 1300 50  0000 C BNN
-F 2 "" H 1200 1300 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/362/semitec_atthermistor-371460.pdf" H 1200 1300 50  0001 C CNN
-F 4 "954-103AT-4-70378" V 1200 1300 60  0001 C CNN "Mouser"
-	1    1200 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR04
-U 1 1 59BA3847
-P 1200 1550
-F 0 "#PWR04" H 1200 1300 50  0001 C CNN
-F 1 "GND" H 1200 1400 50  0000 C CNN
-F 2 "" H 1200 1550 50  0001 C CNN
-F 3 "" H 1200 1550 50  0001 C CNN
-	1    1200 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1200 1550 1200 1500
-$Comp
-L Thermistor TH3
-U 1 1 59BA384F
-P 2050 1100
-F 0 "TH3" V 2150 1150 50  0000 C CNN
-F 1 "103AT-4-70378" V 1950 1100 50  0000 C BNN
-F 2 "" H 2050 1100 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/362/semitec_atthermistor-371460.pdf" H 2050 1100 50  0001 C CNN
-F 4 "954-103AT-4-70378" V 2050 1100 60  0001 C CNN "Mouser"
-	1    2050 1100
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR05
-U 1 1 59BA3856
-P 1800 1100
-F 0 "#PWR05" H 1800 850 50  0001 C CNN
-F 1 "GND" H 1800 950 50  0000 C CNN
-F 2 "" H 1800 1100 50  0001 C CNN
-F 3 "" H 1800 1100 50  0001 C CNN
-	1    1800 1100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1800 1100 1850 1100
-Wire Wire Line
-	1450 1700 2550 1700
-Wire Wire Line
-	2550 1700 2550 1450
-Wire Wire Line
-	2550 1450 3000 1450
-Wire Wire Line
-	3000 1900 2750 1900
-Wire Wire Line
-	2750 1900 2750 1950
-Wire Wire Line
-	3000 1800 1200 1800
-Wire Wire Line
-	1200 1800 1200 1900
-Wire Wire Line
-	3000 1600 2850 1600
-Wire Wire Line
-	2850 1600 2850 900 
-Wire Wire Line
-	2850 900  1200 900 
-Wire Wire Line
-	1200 900  1200 1100
-Wire Wire Line
-	2250 1100 2800 1100
-Wire Wire Line
-	2800 1100 2800 1700
-Wire Wire Line
-	2800 1700 3000 1700
-Wire Wire Line
-	1750 2750 3000 2750
 $Sheet
 S 8325 2500 1375 1700
 U 5A66DD3E
@@ -368,4 +143,233 @@ F6 "OUTPUT2" O R 7600 3200 60
 F7 "OUTPUT3" O R 7600 3300 60 
 F8 "OUTPUT4" O R 7600 3400 60 
 $EndSheet
+$Comp
+L 3pin-DC-power P1
+U 1 1 5AA4749A
+P 4800 4400
+F 0 "P1" H 4150 4500 60  0000 C CNN
+F 1 "3pin-DC-power" H 4450 4650 60  0000 C CNN
+F 2 "SFUSat:PJ-028-SMT-TR-3pin-DC-jack" H 4800 4400 60  0001 C CNN
+F 3 "" H 4800 4400 60  0001 C CNN
+	1    4800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L B3B-XH-A(LF)(SN) U1
+U 1 1 5AA48ED6
+P 4125 5225
+F 0 "U1" H 4125 5275 50  0000 C BNN
+F 1 "B3B-XH-A(LF)(SN)" H 4125 5175 50  0000 C TNN
+F 2 "SFUSat:B3B-XH-A" H 4125 5225 50  0001 C CNN
+F 3 "" H 4125 5225 50  0001 C CNN
+F 4 "-" H 4125 5225 50  0001 C CNN "Applications"
+F 5 "Connectors, Interconnects - Rectangular Connectors - Headers, Male Pins" H 4125 5225 50  0001 C CNN "Categories"
+F 6 "Header" H 4125 5225 50  0001 C CNN "Connector Type"
+F 7 "Tin" H 4125 5225 50  0001 C CNN "Contact Finish - Mating"
+F 8 "Tin" H 4125 5225 50  0001 C CNN "Contact Finish - Post"
+F 9 "-" H 4125 5225 50  0001 C CNN "Contact Finish Thickness - Mating"
+F 10 "-" H 4125 5225 50  0001 C CNN "Contact Finish Thickness - Post"
+F 11 "-" H 4125 5225 50  0001 C CNN "Contact Length - Mating"
+F 12 "0.134\" (3.40mm)" H 4125 5225 50  0001 C CNN "Contact Length - Post"
+F 13 "Brass" H 4125 5225 50  0001 C CNN "Contact Material"
+F 14 "Square" H 4125 5225 50  0001 C CNN "Contact Shape"
+F 15 "Male Pin" H 4125 5225 50  0001 C CNN "Contact Type"
+F 16 "3A" H 4125 5225 50  0001 C CNN "Current Rating"
+F 17 "Detent Lock" H 4125 5225 50  0001 C CNN "Fastening Type"
+F 18 "-" H 4125 5225 50  0001 C CNN "Features"
+F 19 "-" H 4125 5225 50  0001 C CNN "Ingress Protection"
+F 20 "Natural" H 4125 5225 50  0001 C CNN "Insulation Color"
+F 21 "0.276\" (7.00mm)" H 4125 5225 50  0001 C CNN "Insulation Height"
+F 22 "Polyamide (PA66), Nylon 6/6" H 4125 5225 50  0001 C CNN "Insulation Material"
+F 23 "Lead free / RoHS Compliant" H 4125 5225 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 24 "JST Sales America Inc." H 4125 5225 50  0001 C CNN "Manufacturer 1"
+F 25 "B3B-XH-A(LF)(SN)" H 4125 5225 50  0001 C CNN "Manufacturer Part Number 1"
+F 26 "14 Weeks" H 4125 5225 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 27 "9.8mm" H 4125 5225 50  0001 C CNN "Mated Stacking Heights"
+F 28 "UL94 V-0" H 4125 5225 50  0001 C CNN "Material Flammability Rating"
+F 29 "Through Hole" H 4125 5225 50  0001 C CNN "Mounting Type"
+F 30 "3" H 4125 5225 50  0001 C CNN "Number of Positions"
+F 31 "All" H 4125 5225 50  0001 C CNN "Number of Positions Loaded"
+F 32 "1" H 4125 5225 50  0001 C CNN "Number of Rows"
+F 33 "-25°C ~ 85°C" H 4125 5225 50  0001 C CNN "Operating Temperature"
+F 34 "-" H 4125 5225 50  0001 C CNN "Overall Contact Length"
+F 35 "Active" H 4125 5225 50  0001 C CNN "Part Status"
+F 36 "0.098\" (2.50mm)" H 4125 5225 50  0001 C CNN "Pitch - Mating"
+F 37 "-" H 4125 5225 50  0001 C CNN "Row Spacing - Mating"
+F 38 "XH" H 4125 5225 50  0001 C CNN "Series"
+F 39 "Shrouded - 4 Wall" H 4125 5225 50  0001 C CNN "Shrouding"
+F 40 "Board to Cable/Wire" H 4125 5225 50  0001 C CNN "Style"
+F 41 "Digi-Key" H 4125 5225 50  0001 C CNN "Supplier 1"
+F 42 "455-2248-ND" H 4125 5225 50  0001 C CNN "Supplier Part Number 1"
+F 43 "Press-Fit, Solder" H 4125 5225 50  0001 C CNN "Termination"
+F 44 "250V" H 4125 5225 50  0001 C CNN "Voltage Rating"
+F 45 "XHP-3" H 4125 5225 50  0001 C CNN "Mating Part Number"
+F 46 "455-2219-ND" H 4125 5225 50  0001 C CNN "Mating Part Digikey"
+	1    4125 5225
+	1    0    0    -1  
+$EndComp
+$Comp
+L B3B-XH-A(LF)(SN) U4
+U 1 1 5AA4A26A
+P 5000 5200
+F 0 "U4" H 5000 5250 50  0000 C BNN
+F 1 "B3B-XH-A(LF)(SN)" H 5000 5150 50  0000 C TNN
+F 2 "SFUSat:B3B-XH-A" H 5000 5200 50  0001 C CNN
+F 3 "" H 5000 5200 50  0001 C CNN
+F 4 "-" H 5000 5200 50  0001 C CNN "Applications"
+F 5 "Connectors, Interconnects - Rectangular Connectors - Headers, Male Pins" H 5000 5200 50  0001 C CNN "Categories"
+F 6 "Header" H 5000 5200 50  0001 C CNN "Connector Type"
+F 7 "Tin" H 5000 5200 50  0001 C CNN "Contact Finish - Mating"
+F 8 "Tin" H 5000 5200 50  0001 C CNN "Contact Finish - Post"
+F 9 "-" H 5000 5200 50  0001 C CNN "Contact Finish Thickness - Mating"
+F 10 "-" H 5000 5200 50  0001 C CNN "Contact Finish Thickness - Post"
+F 11 "-" H 5000 5200 50  0001 C CNN "Contact Length - Mating"
+F 12 "0.134\" (3.40mm)" H 5000 5200 50  0001 C CNN "Contact Length - Post"
+F 13 "Brass" H 5000 5200 50  0001 C CNN "Contact Material"
+F 14 "Square" H 5000 5200 50  0001 C CNN "Contact Shape"
+F 15 "Male Pin" H 5000 5200 50  0001 C CNN "Contact Type"
+F 16 "3A" H 5000 5200 50  0001 C CNN "Current Rating"
+F 17 "Detent Lock" H 5000 5200 50  0001 C CNN "Fastening Type"
+F 18 "-" H 5000 5200 50  0001 C CNN "Features"
+F 19 "-" H 5000 5200 50  0001 C CNN "Ingress Protection"
+F 20 "Natural" H 5000 5200 50  0001 C CNN "Insulation Color"
+F 21 "0.276\" (7.00mm)" H 5000 5200 50  0001 C CNN "Insulation Height"
+F 22 "Polyamide (PA66), Nylon 6/6" H 5000 5200 50  0001 C CNN "Insulation Material"
+F 23 "Lead free / RoHS Compliant" H 5000 5200 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 24 "JST Sales America Inc." H 5000 5200 50  0001 C CNN "Manufacturer 1"
+F 25 "B3B-XH-A(LF)(SN)" H 5000 5200 50  0001 C CNN "Manufacturer Part Number 1"
+F 26 "14 Weeks" H 5000 5200 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 27 "9.8mm" H 5000 5200 50  0001 C CNN "Mated Stacking Heights"
+F 28 "UL94 V-0" H 5000 5200 50  0001 C CNN "Material Flammability Rating"
+F 29 "Through Hole" H 5000 5200 50  0001 C CNN "Mounting Type"
+F 30 "3" H 5000 5200 50  0001 C CNN "Number of Positions"
+F 31 "All" H 5000 5200 50  0001 C CNN "Number of Positions Loaded"
+F 32 "1" H 5000 5200 50  0001 C CNN "Number of Rows"
+F 33 "-25°C ~ 85°C" H 5000 5200 50  0001 C CNN "Operating Temperature"
+F 34 "-" H 5000 5200 50  0001 C CNN "Overall Contact Length"
+F 35 "Active" H 5000 5200 50  0001 C CNN "Part Status"
+F 36 "0.098\" (2.50mm)" H 5000 5200 50  0001 C CNN "Pitch - Mating"
+F 37 "-" H 5000 5200 50  0001 C CNN "Row Spacing - Mating"
+F 38 "XH" H 5000 5200 50  0001 C CNN "Series"
+F 39 "Shrouded - 4 Wall" H 5000 5200 50  0001 C CNN "Shrouding"
+F 40 "Board to Cable/Wire" H 5000 5200 50  0001 C CNN "Style"
+F 41 "Digi-Key" H 5000 5200 50  0001 C CNN "Supplier 1"
+F 42 "455-2248-ND" H 5000 5200 50  0001 C CNN "Supplier Part Number 1"
+F 43 "Press-Fit, Solder" H 5000 5200 50  0001 C CNN "Termination"
+F 44 "250V" H 5000 5200 50  0001 C CNN "Voltage Rating"
+F 45 "XHP-3" H 5000 5200 50  0001 C CNN "Mating Part Number"
+F 46 "455-2219-ND" H 5000 5200 50  0001 C CNN "Mating Part Digikey"
+	1    5000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L PC104-8BIT J1
+U 1 1 5AA52ED5
+P 1525 5525
+F 0 "J1" H 1775 3875 60  0000 C CNN
+F 1 "PC104-8BIT" H 1475 7275 60  0000 C CNN
+F 2 "SFUSat:PC104-8bit" H 1525 6525 60  0001 C CNN
+F 3 "" H 1525 6525 60  0001 C CNN
+	1    1525 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L PC104PTH J2
+U 1 1 5AA52FC8
+P 2975 4225
+F 0 "J2" H 2975 4075 60  0000 C CNN
+F 1 "PC104PTH" H 2975 4375 60  0000 C CNN
+F 2 "SFUSat:PC104PTH" H 2975 4225 60  0001 C CNN
+F 3 "" H 2975 4225 60  0001 C CNN
+	1    2975 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5AA5314F
+P 2675 4225
+F 0 "#PWR02" H 2675 3975 50  0001 C CNN
+F 1 "GND" H 2675 4075 50  0000 C CNN
+F 2 "" H 2675 4225 50  0001 C CNN
+F 3 "" H 2675 4225 50  0001 C CNN
+	1    2675 4225
+	0    1    1    0   
+$EndComp
+$Comp
+L PC104PTH J3
+U 1 1 5AA53A52
+P 2975 4600
+F 0 "J3" H 2975 4450 60  0000 C CNN
+F 1 "PC104PTH" H 2975 4750 60  0000 C CNN
+F 2 "SFUSat:PC104PTH" H 2975 4600 60  0001 C CNN
+F 3 "" H 2975 4600 60  0001 C CNN
+	1    2975 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5AA53A58
+P 2675 4600
+F 0 "#PWR03" H 2675 4350 50  0001 C CNN
+F 1 "GND" H 2675 4450 50  0000 C CNN
+F 2 "" H 2675 4600 50  0001 C CNN
+F 3 "" H 2675 4600 50  0001 C CNN
+	1    2675 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L PC104PTH J4
+U 1 1 5AA53C16
+P 2975 5025
+F 0 "J4" H 2975 4875 60  0000 C CNN
+F 1 "PC104PTH" H 2975 5175 60  0000 C CNN
+F 2 "SFUSat:PC104PTH" H 2975 5025 60  0001 C CNN
+F 3 "" H 2975 5025 60  0001 C CNN
+	1    2975 5025
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5AA53C1C
+P 2675 5025
+F 0 "#PWR04" H 2675 4775 50  0001 C CNN
+F 1 "GND" H 2675 4875 50  0000 C CNN
+F 2 "" H 2675 5025 50  0001 C CNN
+F 3 "" H 2675 5025 50  0001 C CNN
+	1    2675 5025
+	0    1    1    0   
+$EndComp
+$Comp
+L PC104PTH J5
+U 1 1 5AA53C22
+P 2975 5400
+F 0 "J5" H 2975 5250 60  0000 C CNN
+F 1 "PC104PTH" H 2975 5550 60  0000 C CNN
+F 2 "SFUSat:PC104PTH" H 2975 5400 60  0001 C CNN
+F 3 "" H 2975 5400 60  0001 C CNN
+	1    2975 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5AA53C28
+P 2675 5400
+F 0 "#PWR05" H 2675 5150 50  0001 C CNN
+F 1 "GND" H 2675 5250 50  0000 C CNN
+F 2 "" H 2675 5400 50  0001 C CNN
+F 3 "" H 2675 5400 50  0001 C CNN
+	1    2675 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L 3pin-DC-power P?
+U 1 1 5AA490AA
+P 5850 4400
+F 0 "P?" H 5200 4500 60  0000 C CNN
+F 1 "3pin-DC-power" H 5500 4650 60  0000 C CNN
+F 2 "SFUSat:PJ-028-SMT-TR-3pin-DC-jack" H 5850 4400 60  0001 C CNN
+F 3 "" H 5850 4400 60  0001 C CNN
+	1    5850 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
