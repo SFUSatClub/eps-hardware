@@ -38,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -53,23 +53,10 @@ CubeSat Electrical Power Subsystem
 $Sheet
 S 8325 2500 1375 1700
 U 5A66DD3E
-F0 "BMS_new" 60
-F1 "BMS_new.sch" 60
+F0 "BMS" 60
+F1 "BMS.sch" 60
 F2 "VBAT+" I L 8325 2750 60 
 F3 "VBAT-" I L 8325 2850 60 
-$EndSheet
-$Sheet
-S 6725 2650 875  850 
-U 5A843744
-F0 "BatteryPack" 60
-F1 "BatteryPack.sch" 60
-F2 "PACK+" O R 7600 2750 60 
-F3 "PACK-" O R 7600 2850 60 
-F4 "CB_EN" I R 7600 3000 60 
-F5 "OUTPUT1" O R 7600 3100 60 
-F6 "OUTPUT2" O R 7600 3200 60 
-F7 "OUTPUT3" O R 7600 3300 60 
-F8 "OUTPUT4" O R 7600 3400 60 
 $EndSheet
 $Comp
 L 3pin-DC-power P1
@@ -139,55 +126,55 @@ $EndComp
 $Comp
 L B3B-XH-A(LF)(SN) U4
 U 1 1 5AA4A26A
-P 5000 5200
-F 0 "U4" H 5000 5250 50  0000 C BNN
-F 1 "B3B-XH-A(LF)(SN)" H 5000 5150 50  0000 C TNN
-F 2 "SFUSat:B3B-XH-A" H 5000 5200 50  0001 C CNN
-F 3 "" H 5000 5200 50  0001 C CNN
-F 4 "-" H 5000 5200 50  0001 C CNN "Applications"
-F 5 "Connectors, Interconnects - Rectangular Connectors - Headers, Male Pins" H 5000 5200 50  0001 C CNN "Categories"
-F 6 "Header" H 5000 5200 50  0001 C CNN "Connector Type"
-F 7 "Tin" H 5000 5200 50  0001 C CNN "Contact Finish - Mating"
-F 8 "Tin" H 5000 5200 50  0001 C CNN "Contact Finish - Post"
-F 9 "-" H 5000 5200 50  0001 C CNN "Contact Finish Thickness - Mating"
-F 10 "-" H 5000 5200 50  0001 C CNN "Contact Finish Thickness - Post"
-F 11 "-" H 5000 5200 50  0001 C CNN "Contact Length - Mating"
-F 12 "0.134\" (3.40mm)" H 5000 5200 50  0001 C CNN "Contact Length - Post"
-F 13 "Brass" H 5000 5200 50  0001 C CNN "Contact Material"
-F 14 "Square" H 5000 5200 50  0001 C CNN "Contact Shape"
-F 15 "Male Pin" H 5000 5200 50  0001 C CNN "Contact Type"
-F 16 "3A" H 5000 5200 50  0001 C CNN "Current Rating"
-F 17 "Detent Lock" H 5000 5200 50  0001 C CNN "Fastening Type"
-F 18 "-" H 5000 5200 50  0001 C CNN "Features"
-F 19 "-" H 5000 5200 50  0001 C CNN "Ingress Protection"
-F 20 "Natural" H 5000 5200 50  0001 C CNN "Insulation Color"
-F 21 "0.276\" (7.00mm)" H 5000 5200 50  0001 C CNN "Insulation Height"
-F 22 "Polyamide (PA66), Nylon 6/6" H 5000 5200 50  0001 C CNN "Insulation Material"
-F 23 "Lead free / RoHS Compliant" H 5000 5200 50  0001 C CNN "Lead Free Status / RoHS Status"
-F 24 "JST Sales America Inc." H 5000 5200 50  0001 C CNN "Manufacturer 1"
-F 25 "B3B-XH-A(LF)(SN)" H 5000 5200 50  0001 C CNN "Manufacturer Part Number 1"
-F 26 "14 Weeks" H 5000 5200 50  0001 C CNN "Manufacturer Standard Lead Time 1"
-F 27 "9.8mm" H 5000 5200 50  0001 C CNN "Mated Stacking Heights"
-F 28 "UL94 V-0" H 5000 5200 50  0001 C CNN "Material Flammability Rating"
-F 29 "Through Hole" H 5000 5200 50  0001 C CNN "Mounting Type"
-F 30 "3" H 5000 5200 50  0001 C CNN "Number of Positions"
-F 31 "All" H 5000 5200 50  0001 C CNN "Number of Positions Loaded"
-F 32 "1" H 5000 5200 50  0001 C CNN "Number of Rows"
-F 33 "-25°C ~ 85°C" H 5000 5200 50  0001 C CNN "Operating Temperature"
-F 34 "-" H 5000 5200 50  0001 C CNN "Overall Contact Length"
-F 35 "Active" H 5000 5200 50  0001 C CNN "Part Status"
-F 36 "0.098\" (2.50mm)" H 5000 5200 50  0001 C CNN "Pitch - Mating"
-F 37 "-" H 5000 5200 50  0001 C CNN "Row Spacing - Mating"
-F 38 "XH" H 5000 5200 50  0001 C CNN "Series"
-F 39 "Shrouded - 4 Wall" H 5000 5200 50  0001 C CNN "Shrouding"
-F 40 "Board to Cable/Wire" H 5000 5200 50  0001 C CNN "Style"
-F 41 "Digi-Key" H 5000 5200 50  0001 C CNN "Supplier 1"
-F 42 "455-2248-ND" H 5000 5200 50  0001 C CNN "Supplier Part Number 1"
-F 43 "Press-Fit, Solder" H 5000 5200 50  0001 C CNN "Termination"
-F 44 "250V" H 5000 5200 50  0001 C CNN "Voltage Rating"
-F 45 "XHP-3" H 5000 5200 50  0001 C CNN "Mating Part Number"
-F 46 "455-2219-ND" H 5000 5200 50  0001 C CNN "Mating Part Digikey"
-	1    5000 5200
+P 5175 5800
+F 0 "U4" H 5175 5850 50  0000 C BNN
+F 1 "B3B-XH-A(LF)(SN)" H 5175 5750 50  0000 C TNN
+F 2 "SFUSat:B3B-XH-A" H 5175 5800 50  0001 C CNN
+F 3 "" H 5175 5800 50  0001 C CNN
+F 4 "-" H 5175 5800 50  0001 C CNN "Applications"
+F 5 "Connectors, Interconnects - Rectangular Connectors - Headers, Male Pins" H 5175 5800 50  0001 C CNN "Categories"
+F 6 "Header" H 5175 5800 50  0001 C CNN "Connector Type"
+F 7 "Tin" H 5175 5800 50  0001 C CNN "Contact Finish - Mating"
+F 8 "Tin" H 5175 5800 50  0001 C CNN "Contact Finish - Post"
+F 9 "-" H 5175 5800 50  0001 C CNN "Contact Finish Thickness - Mating"
+F 10 "-" H 5175 5800 50  0001 C CNN "Contact Finish Thickness - Post"
+F 11 "-" H 5175 5800 50  0001 C CNN "Contact Length - Mating"
+F 12 "0.134\" (3.40mm)" H 5175 5800 50  0001 C CNN "Contact Length - Post"
+F 13 "Brass" H 5175 5800 50  0001 C CNN "Contact Material"
+F 14 "Square" H 5175 5800 50  0001 C CNN "Contact Shape"
+F 15 "Male Pin" H 5175 5800 50  0001 C CNN "Contact Type"
+F 16 "3A" H 5175 5800 50  0001 C CNN "Current Rating"
+F 17 "Detent Lock" H 5175 5800 50  0001 C CNN "Fastening Type"
+F 18 "-" H 5175 5800 50  0001 C CNN "Features"
+F 19 "-" H 5175 5800 50  0001 C CNN "Ingress Protection"
+F 20 "Natural" H 5175 5800 50  0001 C CNN "Insulation Color"
+F 21 "0.276\" (7.00mm)" H 5175 5800 50  0001 C CNN "Insulation Height"
+F 22 "Polyamide (PA66), Nylon 6/6" H 5175 5800 50  0001 C CNN "Insulation Material"
+F 23 "Lead free / RoHS Compliant" H 5175 5800 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 24 "JST Sales America Inc." H 5175 5800 50  0001 C CNN "Manufacturer 1"
+F 25 "B3B-XH-A(LF)(SN)" H 5175 5800 50  0001 C CNN "Manufacturer Part Number 1"
+F 26 "14 Weeks" H 5175 5800 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 27 "9.8mm" H 5175 5800 50  0001 C CNN "Mated Stacking Heights"
+F 28 "UL94 V-0" H 5175 5800 50  0001 C CNN "Material Flammability Rating"
+F 29 "Through Hole" H 5175 5800 50  0001 C CNN "Mounting Type"
+F 30 "3" H 5175 5800 50  0001 C CNN "Number of Positions"
+F 31 "All" H 5175 5800 50  0001 C CNN "Number of Positions Loaded"
+F 32 "1" H 5175 5800 50  0001 C CNN "Number of Rows"
+F 33 "-25°C ~ 85°C" H 5175 5800 50  0001 C CNN "Operating Temperature"
+F 34 "-" H 5175 5800 50  0001 C CNN "Overall Contact Length"
+F 35 "Active" H 5175 5800 50  0001 C CNN "Part Status"
+F 36 "0.098\" (2.50mm)" H 5175 5800 50  0001 C CNN "Pitch - Mating"
+F 37 "-" H 5175 5800 50  0001 C CNN "Row Spacing - Mating"
+F 38 "XH" H 5175 5800 50  0001 C CNN "Series"
+F 39 "Shrouded - 4 Wall" H 5175 5800 50  0001 C CNN "Shrouding"
+F 40 "Board to Cable/Wire" H 5175 5800 50  0001 C CNN "Style"
+F 41 "Digi-Key" H 5175 5800 50  0001 C CNN "Supplier 1"
+F 42 "455-2248-ND" H 5175 5800 50  0001 C CNN "Supplier Part Number 1"
+F 43 "Press-Fit, Solder" H 5175 5800 50  0001 C CNN "Termination"
+F 44 "250V" H 5175 5800 50  0001 C CNN "Voltage Rating"
+F 45 "XHP-3" H 5175 5800 50  0001 C CNN "Mating Part Number"
+F 46 "455-2219-ND" H 5175 5800 50  0001 C CNN "Mating Part Digikey"
+	1    5175 5800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -336,4 +323,16 @@ F 4 "SW764-ND" H 6700 6075 60  0001 C CNN "Digikey"
 	1    6700 6075
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4975 5700 4725 5700
+Wire Wire Line
+	4975 5800 4725 5800
+Wire Wire Line
+	4725 5900 4975 5900
+Text Label 4725 5700 2    60   ~ 0
+pack+
+Text Label 4725 5800 2    60   ~ 0
+pack-
+Text Label 4725 5900 2    60   ~ 0
+return
 $EndSCHEMATC
