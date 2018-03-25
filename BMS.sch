@@ -33,12 +33,17 @@ LIBS:SFUSat-power
 LIBS:SFUSat-cap
 LIBS:SFUSat-ind
 LIBS:SFUSat-res
+LIBS:lms3635aqrnlrq1
+LIBS:tps563219ddfr-nd
+LIBS:cd4555b
+LIBS:bts5030-1eja
+LIBS:tps2296xc
 LIBS:eps-cache
 EELAYER 25 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 2 2
+Sheet 2 5
 Title ""
 Date ""
 Rev ""

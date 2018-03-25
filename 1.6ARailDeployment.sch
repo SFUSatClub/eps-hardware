@@ -1,0 +1,230 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SFUSat
+LIBS:SFUSat-power
+LIBS:SFUSat-cap
+LIBS:SFUSat-ind
+LIBS:SFUSat-res
+LIBS:lms3635aqrnlrq1
+LIBS:tps563219ddfr-nd
+LIBS:cd4555b
+LIBS:bts5030-1eja
+LIBS:tps2296xc
+LIBS:eps-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CD4555B U8
+U 1 1 5ABA7930
+P 6450 2950
+F 0 "U8" H 6450 2800 60  0000 C CNN
+F 1 "CD4555B" H 6450 3350 60  0000 C CNN
+F 2 "SFUSat:CD4555BPWR" H 6450 2950 60  0001 C CNN
+F 3 "" H 6450 2950 60  0001 C CNN
+	1    6450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPS2296xC U5
+U 1 1 5ABA7937
+P 4150 3700
+F 0 "U5" H 4150 3700 60  0000 C CNN
+F 1 "TPS2296xC" H 4150 4000 60  0000 C CNN
+F 2 "SFUSat:TPS22964CYZPR" H 4150 3700 60  0001 C CNN
+F 3 "" H 4150 3700 60  0001 C CNN
+	1    4150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPS2296xC U6
+U 1 1 5ABA793E
+P 4150 4450
+F 0 "U6" H 4150 4450 60  0000 C CNN
+F 1 "TPS2296xC" H 4150 4750 60  0000 C CNN
+F 2 "SFUSat:TPS22964CYZPR" H 4150 4450 60  0001 C CNN
+F 3 "" H 4150 4450 60  0001 C CNN
+	1    4150 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR37
+U 1 1 5ABA7945
+P 4600 3500
+F 0 "#PWR37" H 4600 3250 50  0001 C CNN
+F 1 "GND" H 4600 3350 50  0000 C CNN
+F 2 "" H 4600 3500 50  0001 C CNN
+F 3 "" H 4600 3500 50  0001 C CNN
+	1    4600 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR38
+U 1 1 5ABA794B
+P 4600 4250
+F 0 "#PWR38" H 4600 4000 50  0001 C CNN
+F 1 "GND" H 4600 4100 50  0000 C CNN
+F 2 "" H 4600 4250 50  0001 C CNN
+F 3 "" H 4600 4250 50  0001 C CNN
+	1    4600 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR41
+U 1 1 5ABA7951
+P 6950 3300
+F 0 "#PWR41" H 6950 3050 50  0001 C CNN
+F 1 "GND" H 6950 3150 50  0000 C CNN
+F 2 "" H 6950 3300 50  0001 C CNN
+F 3 "" H 6950 3300 50  0001 C CNN
+	1    6950 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR40
+U 1 1 5ABA7957
+P 6950 2800
+F 0 "#PWR40" H 6950 2550 50  0001 C CNN
+F 1 "GND" H 6950 2650 50  0000 C CNN
+F 2 "" H 6950 2800 50  0001 C CNN
+F 3 "" H 6950 2800 50  0001 C CNN
+	1    6950 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR39
+U 1 1 5ABA795D
+P 5450 3100
+F 0 "#PWR39" H 5450 2850 50  0001 C CNN
+F 1 "GND" H 5450 2950 50  0000 C CNN
+F 2 "" H 5450 3100 50  0001 C CNN
+F 3 "" H 5450 3100 50  0001 C CNN
+	1    5450 3100
+	0    1    1    0   
+$EndComp
+Text HLabel 5150 4400 2    60   Input ~ 0
+-z_Rails
+Text HLabel 5100 3650 2    60   Input ~ 0
++z_Rails
+Text HLabel 5550 2800 0    60   Input ~ 0
+Deploy.Select
+Text HLabel 5050 2900 0    60   Input ~ 0
+Deploy.EN
+Text HLabel 5850 2700 0    60   Input ~ 0
+Vout3.3V
+Text HLabel 3450 3250 1    60   Input ~ 0
+Ain1.6A
+Wire Wire Line
+	7150 2900 7150 3500
+Wire Wire Line
+	6950 2900 7150 2900
+Wire Wire Line
+	7350 2700 7350 3950
+Wire Wire Line
+	6950 2700 7350 2700
+Wire Wire Line
+	5550 2800 6000 2800
+Wire Wire Line
+	5850 2700 6000 2700
+Wire Wire Line
+	3450 3250 3450 4450
+Wire Wire Line
+	3450 3600 3700 3600
+Wire Wire Line
+	3450 3700 3700 3700
+Connection ~ 3450 3600
+Wire Wire Line
+	3450 4350 3700 4350
+Connection ~ 3450 3700
+Wire Wire Line
+	3450 4450 3700 4450
+Connection ~ 3450 4350
+Wire Wire Line
+	7150 3500 5150 3500
+Wire Wire Line
+	5150 3500 5150 3250
+Wire Wire Line
+	5150 3250 3650 3250
+Wire Wire Line
+	3650 3250 3650 3500
+Wire Wire Line
+	3650 3500 3700 3500
+Wire Wire Line
+	7350 3950 3600 3950
+Wire Wire Line
+	3600 3950 3600 4250
+Wire Wire Line
+	3600 4250 3700 4250
+Wire Wire Line
+	4600 3600 4850 3600
+Wire Wire Line
+	4850 3600 4850 3700
+Wire Wire Line
+	4850 3700 4600 3700
+Wire Wire Line
+	4600 4350 4850 4350
+Wire Wire Line
+	4850 4350 4850 4450
+Wire Wire Line
+	4850 4450 4600 4450
+Wire Wire Line
+	6950 3000 6950 3300
+Connection ~ 6950 3200
+Connection ~ 6950 3100
+Wire Wire Line
+	6000 3000 5650 3000
+Wire Wire Line
+	5650 3000 5650 3200
+Wire Wire Line
+	5450 3100 6000 3100
+Wire Wire Line
+	5650 3200 6000 3200
+Connection ~ 5650 3100
+Wire Wire Line
+	5150 4400 4850 4400
+Connection ~ 4850 4400
+Wire Wire Line
+	5100 3650 4850 3650
+Connection ~ 4850 3650
+Wire Wire Line
+	5050 2900 6000 2900
+$EndSCHEMATC
