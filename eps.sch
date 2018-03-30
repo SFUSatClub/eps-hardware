@@ -345,8 +345,8 @@ S 3050 1800 1250 600
 U 5AAF7649
 F0 "3.3V_Regulator_PDB" 60
 F1 "PowderDistribtuion.sch" 60
-F6 "Vout3.3V" I L 3050 1850 60 
-F7 "Vin" I L 3050 1950 60 
+F2 "Vout3.3V" I L 3050 1850 60 
+F3 "Vin" I L 3050 1950 60 
 $EndSheet
 $Sheet
 S 6550 1800 1500 600 
