@@ -1087,10 +1087,10 @@ F 26 "50V" H 17350 4550 50  0001 C CNN "Voltage - Rated"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR28
+L GND #PWR09
 U 1 1 5A870434
 P 17725 4550
-F 0 "#PWR28" H 17725 4300 50  0001 C CNN
+F 0 "#PWR09" H 17725 4300 50  0001 C CNN
 F 1 "GND" H 17725 4400 50  0000 C CNN
 F 2 "" H 17725 4550 50  0000 C CNN
 F 3 "" H 17725 4550 50  0000 C CNN
@@ -1235,22 +1235,11 @@ F 24 "±1%" H 16225 5300 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GNDPWR #PWR24
-U 1 1 5A871531
-P 15950 6000
-F 0 "#PWR24" H 15950 5800 50  0001 C CNN
-F 1 "GNDPWR" H 15950 5870 50  0000 C CNN
-F 2 "" H 15950 5950 50  0000 C CNN
-F 3 "" H 15950 5950 50  0000 C CNN
-	1    15950 6000
-	1    0    0    -1  
-$EndComp
-$Comp
 L R_0R0_0%_0.1W_0603 R44
 U 1 1 5A871A63
 P 16200 5900
 F 0 "R44" H 16200 5950 50  0000 C BNN
-F 1 "0R0" H 16200 5850 50  0000 C TNN
+F 1 "DNP" H 16200 5850 50  0000 C TNN
 F 2 "SFUSat-res:R_0603" H 16200 5900 50  0001 C CNN
 F 3 "" H 16200 5900 50  0001 C CNN
 F 4 "Resistors - Chip Resistor - Surface Mount" H 16200 5900 50  0001 C CNN "Categories"
@@ -1278,14 +1267,14 @@ F 24 "Jumper" H 16200 5900 50  0001 C CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR26
+L GND #PWR011
 U 1 1 5A872B37
-P 16450 6000
-F 0 "#PWR26" H 16450 5750 50  0001 C CNN
-F 1 "GND" H 16450 5850 50  0000 C CNN
-F 2 "" H 16450 6000 50  0000 C CNN
-F 3 "" H 16450 6000 50  0000 C CNN
-	1    16450 6000
+P 16450 6725
+F 0 "#PWR011" H 16450 6475 50  0001 C CNN
+F 1 "GND" H 16450 6575 50  0000 C CNN
+F 2 "" H 16450 6725 50  0000 C CNN
+F 3 "" H 16450 6725 50  0000 C CNN
+	1    16450 6725
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1490,10 +1479,10 @@ F 28 "2.5V @ 250µA" H 18000 5150 50  0001 C CNN "Vgs(th) (Max) @ Id"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR29
+L GND #PWR012
 U 1 1 5A89A1EE
 P 18000 5550
-F 0 "#PWR29" H 18000 5300 50  0001 C CNN
+F 0 "#PWR012" H 18000 5300 50  0001 C CNN
 F 1 "GND" H 18000 5400 50  0000 C CNN
 F 2 "" H 18000 5550 50  0000 C CNN
 F 3 "" H 18000 5550 50  0000 C CNN
@@ -1503,10 +1492,10 @@ $EndComp
 Text Label 19575 4150 2    60   ~ 0
 VDDA
 $Comp
-L GNDPWR #PWR27
+L GNDPWR #PWR013
 U 1 1 5A8A288A
 P 16675 4350
-F 0 "#PWR27" H 16675 4150 50  0001 C CNN
+F 0 "#PWR013" H 16675 4150 50  0001 C CNN
 F 1 "GNDPWR" H 16675 4220 50  0000 C CNN
 F 2 "" H 16675 4300 50  0000 C CNN
 F 3 "" H 16675 4300 50  0000 C CNN
@@ -1514,10 +1503,10 @@ F 3 "" H 16675 4300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR25
+L GNDPWR #PWR014
 U 1 1 5A8A3B12
 P 16175 3425
-F 0 "#PWR25" H 16175 3225 50  0001 C CNN
+F 0 "#PWR014" H 16175 3225 50  0001 C CNN
 F 1 "GNDPWR" H 16175 3295 50  0000 C CNN
 F 2 "" H 16175 3375 50  0000 C CNN
 F 3 "" H 16175 3375 50  0000 C CNN
@@ -1525,10 +1514,10 @@ F 3 "" H 16175 3375 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR30
+L GNDPWR #PWR015
 U 1 1 5A8A43CF
 P 18275 3775
-F 0 "#PWR30" H 18275 3575 50  0001 C CNN
+F 0 "#PWR015" H 18275 3575 50  0001 C CNN
 F 1 "GNDPWR" H 18275 3645 50  0000 C CNN
 F 2 "" H 18275 3725 50  0000 C CNN
 F 3 "" H 18275 3725 50  0000 C CNN
@@ -1536,10 +1525,10 @@ F 3 "" H 18275 3725 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR32
+L GNDPWR #PWR016
 U 1 1 5A8A63BB
 P 20275 2825
-F 0 "#PWR32" H 20275 2625 50  0001 C CNN
+F 0 "#PWR016" H 20275 2625 50  0001 C CNN
 F 1 "GNDPWR" H 20275 2695 50  0000 C CNN
 F 2 "" H 20275 2775 50  0000 C CNN
 F 3 "" H 20275 2775 50  0000 C CNN
@@ -1547,10 +1536,10 @@ F 3 "" H 20275 2775 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR23
+L GNDPWR #PWR017
 U 1 1 5A8A7E06
 P 13275 3425
-F 0 "#PWR23" H 13275 3225 50  0001 C CNN
+F 0 "#PWR017" H 13275 3225 50  0001 C CNN
 F 1 "GNDPWR" H 13275 3295 50  0000 C CNN
 F 2 "" H 13275 3375 50  0000 C CNN
 F 3 "" H 13275 3375 50  0000 C CNN
@@ -1628,10 +1617,10 @@ F 26 "25V" H 11125 2650 50  0001 C CNN "Voltage - Rated"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR19
+L GNDPWR #PWR018
 U 1 1 5A8A9094
 P 11350 2925
-F 0 "#PWR19" H 11350 2725 50  0001 C CNN
+F 0 "#PWR018" H 11350 2725 50  0001 C CNN
 F 1 "GNDPWR" H 11350 2795 50  0000 C CNN
 F 2 "" H 11350 2875 50  0000 C CNN
 F 3 "" H 11350 2875 50  0000 C CNN
@@ -1677,10 +1666,10 @@ F 28 "16V" H 11125 3375 50  0001 C CNN "Voltage - Rated"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR18
+L GND #PWR019
 U 1 1 5A8AA653
 P 11125 3625
-F 0 "#PWR18" H 11125 3375 50  0001 C CNN
+F 0 "#PWR019" H 11125 3375 50  0001 C CNN
 F 1 "GND" H 11125 3475 50  0000 C CNN
 F 2 "" H 11125 3625 50  0000 C CNN
 F 3 "" H 11125 3625 50  0000 C CNN
@@ -1920,10 +1909,10 @@ F 26 "25V" H 9725 3525 50  0001 C CNN "Voltage - Rated"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR14
+L GND #PWR020
 U 1 1 5A8B4685
 P 9725 3725
-F 0 "#PWR14" H 9725 3475 50  0001 C CNN
+F 0 "#PWR020" H 9725 3475 50  0001 C CNN
 F 1 "GND" H 9725 3575 50  0000 C CNN
 F 2 "" H 9725 3725 50  0000 C CNN
 F 3 "" H 9725 3725 50  0000 C CNN
@@ -2067,10 +2056,10 @@ F 26 "25V" H 8725 3150 50  0001 C CNN "Voltage - Rated"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR12
+L GNDPWR #PWR021
 U 1 1 5A8B7A48
 P 9175 2800
-F 0 "#PWR12" H 9175 2600 50  0001 C CNN
+F 0 "#PWR021" H 9175 2600 50  0001 C CNN
 F 1 "GNDPWR" H 9175 2670 50  0000 C CNN
 F 2 "" H 9175 2750 50  0000 C CNN
 F 3 "" H 9175 2750 50  0000 C CNN
@@ -2146,10 +2135,10 @@ F 26 "25V" H 9325 3150 50  0001 C CNN "Voltage - Rated"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR13
+L GNDPWR #PWR022
 U 1 1 5A8B8C80
 P 9175 3300
-F 0 "#PWR13" H 9175 3100 50  0001 C CNN
+F 0 "#PWR022" H 9175 3100 50  0001 C CNN
 F 1 "GNDPWR" H 9175 3170 50  0000 C CNN
 F 2 "" H 9175 3250 50  0000 C CNN
 F 3 "" H 9175 3250 50  0000 C CNN
@@ -2259,10 +2248,10 @@ F 26 "26V" H 7625 2600 50  0001 C CNN "Voltage - Reverse Standoff (Typ)"
 	0    1    1    0   
 $EndComp
 $Comp
-L GNDPWR #PWR9
+L GNDPWR #PWR023
 U 1 1 5A897DDD
 P 7850 3375
-F 0 "#PWR9" H 7850 3175 50  0001 C CNN
+F 0 "#PWR023" H 7850 3175 50  0001 C CNN
 F 1 "GNDPWR" H 7850 3245 50  0000 C CNN
 F 2 "" H 7850 3325 50  0000 C CNN
 F 3 "" H 7850 3325 50  0000 C CNN
@@ -2270,10 +2259,10 @@ F 3 "" H 7850 3325 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR8
+L GNDPWR #PWR024
 U 1 1 5A89816E
 P 7625 2700
-F 0 "#PWR8" H 7625 2500 50  0001 C CNN
+F 0 "#PWR024" H 7625 2500 50  0001 C CNN
 F 1 "GNDPWR" H 7625 2570 50  0000 C CNN
 F 2 "" H 7625 2650 50  0000 C CNN
 F 3 "" H 7625 2650 50  0000 C CNN
@@ -2484,10 +2473,10 @@ F 26 "25V" H 8725 2075 50  0001 C CNN "Voltage - Rated"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR11
+L GNDPWR #PWR025
 U 1 1 5A8A39C6
 P 9050 2275
-F 0 "#PWR11" H 9050 2075 50  0001 C CNN
+F 0 "#PWR025" H 9050 2075 50  0001 C CNN
 F 1 "GNDPWR" H 9050 2145 50  0000 C CNN
 F 2 "" H 9050 2225 50  0000 C CNN
 F 3 "" H 9050 2225 50  0000 C CNN
@@ -2593,10 +2582,10 @@ F 26 "25V" H 5200 2950 50  0001 C CNN "Voltage - Rated"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR6
+L GNDPWR #PWR026
 U 1 1 5A899C25
 P 5200 3200
-F 0 "#PWR6" H 5200 3000 50  0001 C CNN
+F 0 "#PWR026" H 5200 3000 50  0001 C CNN
 F 1 "GNDPWR" H 5200 3070 50  0000 C CNN
 F 2 "" H 5200 3150 50  0000 C CNN
 F 3 "" H 5200 3150 50  0000 C CNN
@@ -2604,10 +2593,10 @@ F 3 "" H 5200 3150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR5
+L GNDPWR #PWR027
 U 1 1 5A89A0AD
 P 4850 2800
-F 0 "#PWR5" H 4850 2600 50  0001 C CNN
+F 0 "#PWR027" H 4850 2600 50  0001 C CNN
 F 1 "GNDPWR" H 4850 2670 50  0000 C CNN
 F 2 "" H 4850 2750 50  0000 C CNN
 F 3 "" H 4850 2750 50  0000 C CNN
@@ -2683,10 +2672,10 @@ F 26 "50V" H 7050 4200 50  0001 C CNN "Voltage - Collector Emitter Breakdown (Ma
 	1    0    0    1   
 $EndComp
 $Comp
-L GNDPWR #PWR7
+L GNDPWR #PWR028
 U 1 1 5A8A2526
 P 7050 4650
-F 0 "#PWR7" H 7050 4450 50  0001 C CNN
+F 0 "#PWR028" H 7050 4450 50  0001 C CNN
 F 1 "GNDPWR" H 7050 4520 50  0000 C CNN
 F 2 "" H 7050 4600 50  0000 C CNN
 F 3 "" H 7050 4600 50  0000 C CNN
@@ -2763,10 +2752,10 @@ F 28 "2.5V @ 250µA" H 7900 4450 50  0001 C CNN "Vgs(th) (Max) @ Id"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR10
+L GND #PWR029
 U 1 1 5A89D500
 P 7900 4650
-F 0 "#PWR10" H 7900 4400 50  0001 C CNN
+F 0 "#PWR029" H 7900 4400 50  0001 C CNN
 F 1 "GND" H 7900 4500 50  0000 C CNN
 F 2 "" H 7900 4650 50  0000 C CNN
 F 3 "" H 7900 4650 50  0000 C CNN
@@ -2910,10 +2899,10 @@ $EndComp
 Text Label 13250 4250 0    60   ~ 0
 ILIM_HIZ
 $Comp
-L GND #PWR16
+L GND #PWR030
 U 1 1 5A8A75A7
 P 10500 4600
-F 0 "#PWR16" H 10500 4350 50  0001 C CNN
+F 0 "#PWR030" H 10500 4350 50  0001 C CNN
 F 1 "GND" H 10500 4450 50  0000 C CNN
 F 2 "" H 10500 4600 50  0000 C CNN
 F 3 "" H 10500 4600 50  0000 C CNN
@@ -3128,10 +3117,10 @@ Text Label 10000 4550 0    60   ~ 0
 Text Label 9450 4900 0    60   ~ 0
 ILIM_control
 $Comp
-L GND #PWR15
+L GND #PWR031
 U 1 1 5A8BECD9
 P 10200 5050
-F 0 "#PWR15" H 10200 4800 50  0001 C CNN
+F 0 "#PWR031" H 10200 4800 50  0001 C CNN
 F 1 "GND" H 10200 4900 50  0000 C CNN
 F 2 "" H 10200 5050 50  0000 C CNN
 F 3 "" H 10200 5050 50  0000 C CNN
@@ -3421,10 +3410,10 @@ Text Label 12275 6200 0    60   ~ 0
 Text Label 12900 6200 2    60   ~ 0
 VSYS
 $Comp
-L GND #PWR21
+L GND #PWR032
 U 1 1 5A8F3767
 P 12350 6850
-F 0 "#PWR21" H 12350 6600 50  0001 C CNN
+F 0 "#PWR032" H 12350 6600 50  0001 C CNN
 F 1 "GND" H 12350 6700 50  0000 C CNN
 F 2 "" H 12350 6850 50  0000 C CNN
 F 3 "" H 12350 6850 50  0000 C CNN
@@ -3432,10 +3421,10 @@ F 3 "" H 12350 6850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR22
+L GND #PWR033
 U 1 1 5A8F5272
 P 12950 7200
-F 0 "#PWR22" H 12950 6950 50  0001 C CNN
+F 0 "#PWR033" H 12950 6950 50  0001 C CNN
 F 1 "GND" H 12950 7050 50  0000 C CNN
 F 2 "" H 12950 7200 50  0000 C CNN
 F 3 "" H 12950 7200 50  0000 C CNN
@@ -3636,10 +3625,10 @@ F 23 "500mV @ 2A" H 19450 3275 50  0001 C CNN "Voltage - Forward (Vf) (Max) @ If
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GNDPWR #PWR31
+L GNDPWR #PWR034
 U 1 1 5A8D6333
 P 19450 3475
-F 0 "#PWR31" H 19450 3275 50  0001 C CNN
+F 0 "#PWR034" H 19450 3275 50  0001 C CNN
 F 1 "GNDPWR" H 19450 3345 50  0000 C CNN
 F 2 "" H 19450 3425 50  0000 C CNN
 F 3 "" H 19450 3425 50  0000 C CNN
@@ -3785,8 +3774,6 @@ F 3 "" H 11800 4250 50  0001 C CNN
 	1    11800 4250
 	0    -1   -1   0   
 $EndComp
-Text Notes 15425 7100 0    60   ~ 0
-add 3v3 regulator from eval board\n
 Text HLabel 11675 5950 0    60   Input ~ 0
 CHG_OK
 $Comp
@@ -4031,6 +4018,123 @@ F 3 "" H 19325 5100 50  0001 C CNN
 	1    19325 5100
 	1    0    0    -1  
 $EndComp
+$Comp
+L TEST TP18
+U 1 1 5ACAC756
+P 19025 3925
+F 0 "TP18" H 19025 4225 50  0000 C BNN
+F 1 "TEST" H 19025 4175 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Small" H 19025 3925 50  0001 C CNN
+F 3 "" H 19025 3925 50  0001 C CNN
+	1    19025 3925
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST TP20
+U 1 1 5ACAC950
+P 19025 4075
+F 0 "TP20" H 19025 4375 50  0000 C BNN
+F 1 "TEST" H 19025 4325 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Small" H 19025 4075 50  0001 C CNN
+F 3 "" H 19025 4075 50  0001 C CNN
+	1    19025 4075
+	0    1    1    0   
+$EndComp
+Text Notes 17825 8100 0    60   ~ 0
+3V3 net in this sheet must only be used within this sheet!\nDo not connect with outside 3v3 net!!!!
+$Comp
+L LM3480 U?
+U 1 1 5ACCC74D
+P 18200 8475
+F 0 "U?" H 18350 8225 60  0000 C CNN
+F 1 "LM3480" H 18150 8675 60  0000 C CNN
+F 2 "SFUSat:SOT-23-3" H 18200 8475 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm3480.pdf" H 18200 8475 60  0001 C CNN
+F 4 "LM3480IM3X-3.3/NOPBCT-ND" H 18200 8475 60  0001 C CNN "Digikey"
+	1    18200 8475
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_100n0_10%_25V_X7R_0603 C?
+U 1 1 5ACE2E94
+P 17575 8600
+F 0 "C?" H 17575 8650 50  0000 L BNN
+F 1 "100n0" H 17575 8550 50  0000 L TNN
+F 2 "SFUSat-cap:C_0603" H 17575 8600 50  0001 C CNN
+F 3 "" H 17575 8600 50  0001 C CNN
+F 4 "General Purpose" H 17575 8600 50  0001 C CNN "Applications"
+F 5 "0.1µF" H 17575 8600 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Ceramic Capacitors" H 17575 8600 50  0001 C CNN "Categories"
+F 7 "-" H 17575 8600 50  0001 C CNN "Features"
+F 8 "-" H 17575 8600 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 17575 8600 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "-" H 17575 8600 50  0001 C CNN "Lead Spacing"
+F 11 "-" H 17575 8600 50  0001 C CNN "Lead Style"
+F 12 "Murata Electronics North America" H 17575 8600 50  0001 C CNN "Manufacturer 1"
+F 13 "GRM188R71E104KA01D" H 17575 8600 50  0001 C CNN "Manufacturer Part Number 1"
+F 14 "Surface Mount, MLCC" H 17575 8600 50  0001 C CNN "Mounting Type"
+F 15 "-55°C ~ 125°C" H 17575 8600 50  0001 C CNN "Operating Temperature"
+F 16 "0603 (1608 Metric)" H 17575 8600 50  0001 C CNN "Package / Case"
+F 17 "Active" H 17575 8600 50  0001 C CNN "Part Status"
+F 18 "-" H 17575 8600 50  0001 C CNN "Ratings"
+F 19 "GRM" H 17575 8600 50  0001 C CNN "Series"
+F 20 "0.063\" L x 0.032\" W (1.60mm x 0.80mm)" H 17575 8600 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 17575 8600 50  0001 C CNN "Supplier 1"
+F 22 "490-1524-1-ND" H 17575 8600 50  0001 C CNN "Supplier Part Number 1"
+F 23 "X7R" H 17575 8600 50  0001 C CNN "Temperature Coefficient"
+F 24 "0.035\" (0.90mm)" H 17575 8600 50  0001 C CNN "Thickness (Max)"
+F 25 "±10%" H 17575 8600 50  0001 C CNN "Tolerance"
+F 26 "25V" H 17575 8600 50  0001 C CNN "Voltage - Rated"
+	1    17575 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_100n0_10%_25V_X7R_0603 C?
+U 1 1 5ACE464B
+P 18775 8600
+F 0 "C?" H 18775 8650 50  0000 L BNN
+F 1 "100n0" H 18775 8550 50  0000 L TNN
+F 2 "SFUSat-cap:C_0603" H 18775 8600 50  0001 C CNN
+F 3 "" H 18775 8600 50  0001 C CNN
+F 4 "General Purpose" H 18775 8600 50  0001 C CNN "Applications"
+F 5 "0.1µF" H 18775 8600 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Ceramic Capacitors" H 18775 8600 50  0001 C CNN "Categories"
+F 7 "-" H 18775 8600 50  0001 C CNN "Features"
+F 8 "-" H 18775 8600 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 18775 8600 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "-" H 18775 8600 50  0001 C CNN "Lead Spacing"
+F 11 "-" H 18775 8600 50  0001 C CNN "Lead Style"
+F 12 "Murata Electronics North America" H 18775 8600 50  0001 C CNN "Manufacturer 1"
+F 13 "GRM188R71E104KA01D" H 18775 8600 50  0001 C CNN "Manufacturer Part Number 1"
+F 14 "Surface Mount, MLCC" H 18775 8600 50  0001 C CNN "Mounting Type"
+F 15 "-55°C ~ 125°C" H 18775 8600 50  0001 C CNN "Operating Temperature"
+F 16 "0603 (1608 Metric)" H 18775 8600 50  0001 C CNN "Package / Case"
+F 17 "Active" H 18775 8600 50  0001 C CNN "Part Status"
+F 18 "-" H 18775 8600 50  0001 C CNN "Ratings"
+F 19 "GRM" H 18775 8600 50  0001 C CNN "Series"
+F 20 "0.063\" L x 0.032\" W (1.60mm x 0.80mm)" H 18775 8600 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 18775 8600 50  0001 C CNN "Supplier 1"
+F 22 "490-1524-1-ND" H 18775 8600 50  0001 C CNN "Supplier Part Number 1"
+F 23 "X7R" H 18775 8600 50  0001 C CNN "Temperature Coefficient"
+F 24 "0.035\" (0.90mm)" H 18775 8600 50  0001 C CNN "Thickness (Max)"
+F 25 "±10%" H 18775 8600 50  0001 C CNN "Tolerance"
+F 26 "25V" H 18775 8600 50  0001 C CNN "Voltage - Rated"
+	1    18775 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR?
+U 1 1 5ACECD84
+P 18200 8975
+F 0 "#PWR?" H 18200 8775 50  0001 C CNN
+F 1 "GNDPWR" H 18200 8845 50  0000 C CNN
+F 2 "" H 18200 8925 50  0000 C CNN
+F 3 "" H 18200 8925 50  0000 C CNN
+	1    18200 8975
+	1    0    0    -1  
+$EndComp
+Text Label 20925 2800 0    60   ~ 0
+3V3
 Wire Wire Line
 	15850 2800 15850 3450
 Wire Wire Line
@@ -4189,17 +4293,12 @@ Connection ~ 17575 4550
 Wire Wire Line
 	15850 5250 15950 5250
 Wire Wire Line
-	15950 5250 15950 6000
+	15950 5250 15950 6725
 Wire Wire Line
 	15950 5350 15850 5350
 Connection ~ 15950 5350
 Wire Wire Line
-	15750 5900 16050 5900
-Connection ~ 15950 5900
-Wire Wire Line
-	16350 5900 16450 5900
-Wire Wire Line
-	16450 5850 16450 6000
+	16450 5850 16450 6725
 Wire Wire Line
 	15850 5150 16225 5150
 Wire Wire Line
@@ -4608,12 +4707,12 @@ Connection ~ 13250 6500
 Wire Wire Line
 	18275 3400 18100 3400
 Wire Wire Line
-	15850 4050 18600 4050
+	18600 4050 15850 4050
 Wire Wire Line
 	18800 4150 19575 4150
 Connection ~ 19350 4150
 Wire Wire Line
-	18600 4050 18600 3900
+	18600 3900 18600 4050
 Wire Wire Line
 	18700 4050 18900 4050
 Wire Wire Line
@@ -4712,8 +4811,7 @@ Wire Wire Line
 	16600 4950 16600 4900
 Connection ~ 16600 4950
 Wire Wire Line
-	15750 5900 15750 5850
-Connection ~ 16450 5900
+	15750 5850 15750 6025
 Wire Wire Line
 	19075 5100 19125 5100
 Wire Wire Line
@@ -4722,28 +4820,6 @@ Wire Wire Line
 	19350 4700 19475 4700
 Wire Wire Line
 	19350 4600 19475 4600
-$Comp
-L TEST TP18
-U 1 1 5ACAC756
-P 19025 3925
-F 0 "TP18" H 19025 4225 50  0000 C BNN
-F 1 "TEST" H 19025 4175 50  0000 C CNN
-F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Small" H 19025 3925 50  0001 C CNN
-F 3 "" H 19025 3925 50  0001 C CNN
-	1    19025 3925
-	0    1    1    0   
-$EndComp
-$Comp
-L TEST TP20
-U 1 1 5ACAC950
-P 19025 4075
-F 0 "TP20" H 19025 4375 50  0000 C BNN
-F 1 "TEST" H 19025 4325 50  0000 C CNN
-F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Small" H 19025 4075 50  0001 C CNN
-F 3 "" H 19025 4075 50  0001 C CNN
-	1    19025 4075
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	18600 3925 19025 3925
 Connection ~ 18600 3925
@@ -4752,6 +4828,291 @@ Wire Wire Line
 Connection ~ 18900 4050
 Wire Wire Line
 	18900 3100 19800 3100
-Text Notes 14200 7625 0    60   ~ 0
-3V3 net in this sheet must only be used within this sheet!\nDo not connect with outside 3v3 net!!!!
+Wire Wire Line
+	18650 8375 18925 8375
+Wire Wire Line
+	18775 8375 18775 8450
+Connection ~ 18775 8375
+Wire Wire Line
+	17575 8375 17575 8450
+Wire Wire Line
+	18200 8825 18200 8975
+Wire Wire Line
+	18775 8900 18775 8750
+Wire Wire Line
+	17575 8900 18775 8900
+Connection ~ 18200 8900
+Wire Wire Line
+	17575 8750 17575 8900
+Text Notes 15200 7100 0    60   ~ 0
+In layout merge the copper fills near this area but\n leave solder mask open so that it can be cut if need be.
+$Comp
+L GNDPWR #PWR010
+U 1 1 5A871531
+P 15950 6725
+F 0 "#PWR010" H 15950 6525 50  0001 C CNN
+F 1 "GNDPWR" H 15950 6595 50  0000 C CNN
+F 2 "" H 15950 6675 50  0000 C CNN
+F 3 "" H 15950 6675 50  0000 C CNN
+	1    15950 6725
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_0R0_0%_0.1W_0603 R?
+U 1 1 5AD14FED
+P 16200 6150
+F 0 "R?" H 16200 6200 50  0000 C BNN
+F 1 "DNP" H 16200 6100 50  0000 C TNN
+F 2 "SFUSat-res:R_0603" H 16200 6150 50  0001 C CNN
+F 3 "" H 16200 6150 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 16200 6150 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 16200 6150 50  0001 C CNN "Composition"
+F 6 "-" H 16200 6150 50  0001 C CNN "Failure Rate"
+F 7 "Automotive AEC-Q200" H 16200 6150 50  0001 C CNN "Features"
+F 8 "0.020\" (0.50mm)" H 16200 6150 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 16200 6150 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Vishay Dale" H 16200 6150 50  0001 C CNN "Manufacturer 1"
+F 11 "CRCW06030000Z0EA" H 16200 6150 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "2" H 16200 6150 50  0001 C CNN "Number of Terminations"
+F 13 "-55°C ~ 155°C" H 16200 6150 50  0001 C CNN "Operating Temperature"
+F 14 "0603 (1608 Metric)" H 16200 6150 50  0001 C CNN "Package / Case"
+F 15 "Active" H 16200 6150 50  0001 C CNN "Part Status"
+F 16 "0.1W, 1/10W" H 16200 6150 50  0001 C CNN "Power (Watts)"
+F 17 "0 Ohms" H 16200 6150 50  0001 C CNN "Resistance"
+F 18 "CRCW" H 16200 6150 50  0001 C CNN "Series"
+F 19 "0.063\" L x 0.033\" W (1.60mm x 0.85mm)" H 16200 6150 50  0001 C CNN "Size / Dimension"
+F 20 "Digi-Key" H 16200 6150 50  0001 C CNN "Supplier 1"
+F 21 "0603" H 16200 6150 50  0001 C CNN "Supplier Device Package"
+F 22 "541-0.0GCT-ND" H 16200 6150 50  0001 C CNN "Supplier Part Number 1"
+F 23 "-" H 16200 6150 50  0001 C CNN "Temperature Coefficient"
+F 24 "Jumper" H 16200 6150 50  0001 C CNN "Tolerance"
+	1    16200 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_0R0_0%_0.1W_0603 R?
+U 1 1 5AD151D6
+P 16200 6400
+F 0 "R?" H 16200 6450 50  0000 C BNN
+F 1 "DNP" H 16200 6350 50  0000 C TNN
+F 2 "SFUSat-res:R_0603" H 16200 6400 50  0001 C CNN
+F 3 "" H 16200 6400 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 16200 6400 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 16200 6400 50  0001 C CNN "Composition"
+F 6 "-" H 16200 6400 50  0001 C CNN "Failure Rate"
+F 7 "Automotive AEC-Q200" H 16200 6400 50  0001 C CNN "Features"
+F 8 "0.020\" (0.50mm)" H 16200 6400 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 16200 6400 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Vishay Dale" H 16200 6400 50  0001 C CNN "Manufacturer 1"
+F 11 "CRCW06030000Z0EA" H 16200 6400 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "2" H 16200 6400 50  0001 C CNN "Number of Terminations"
+F 13 "-55°C ~ 155°C" H 16200 6400 50  0001 C CNN "Operating Temperature"
+F 14 "0603 (1608 Metric)" H 16200 6400 50  0001 C CNN "Package / Case"
+F 15 "Active" H 16200 6400 50  0001 C CNN "Part Status"
+F 16 "0.1W, 1/10W" H 16200 6400 50  0001 C CNN "Power (Watts)"
+F 17 "0 Ohms" H 16200 6400 50  0001 C CNN "Resistance"
+F 18 "CRCW" H 16200 6400 50  0001 C CNN "Series"
+F 19 "0.063\" L x 0.033\" W (1.60mm x 0.85mm)" H 16200 6400 50  0001 C CNN "Size / Dimension"
+F 20 "Digi-Key" H 16200 6400 50  0001 C CNN "Supplier 1"
+F 21 "0603" H 16200 6400 50  0001 C CNN "Supplier Device Package"
+F 22 "541-0.0GCT-ND" H 16200 6400 50  0001 C CNN "Supplier Part Number 1"
+F 23 "-" H 16200 6400 50  0001 C CNN "Temperature Coefficient"
+F 24 "Jumper" H 16200 6400 50  0001 C CNN "Tolerance"
+	1    16200 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_0R0_0%_0.1W_0603 R?
+U 1 1 5AD18220
+P 16200 6650
+F 0 "R?" H 16200 6700 50  0000 C BNN
+F 1 "DNP" H 16200 6600 50  0000 C TNN
+F 2 "SFUSat-res:R_0603" H 16200 6650 50  0001 C CNN
+F 3 "" H 16200 6650 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 16200 6650 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 16200 6650 50  0001 C CNN "Composition"
+F 6 "-" H 16200 6650 50  0001 C CNN "Failure Rate"
+F 7 "Automotive AEC-Q200" H 16200 6650 50  0001 C CNN "Features"
+F 8 "0.020\" (0.50mm)" H 16200 6650 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 16200 6650 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Vishay Dale" H 16200 6650 50  0001 C CNN "Manufacturer 1"
+F 11 "CRCW06030000Z0EA" H 16200 6650 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "2" H 16200 6650 50  0001 C CNN "Number of Terminations"
+F 13 "-55°C ~ 155°C" H 16200 6650 50  0001 C CNN "Operating Temperature"
+F 14 "0603 (1608 Metric)" H 16200 6650 50  0001 C CNN "Package / Case"
+F 15 "Active" H 16200 6650 50  0001 C CNN "Part Status"
+F 16 "0.1W, 1/10W" H 16200 6650 50  0001 C CNN "Power (Watts)"
+F 17 "0 Ohms" H 16200 6650 50  0001 C CNN "Resistance"
+F 18 "CRCW" H 16200 6650 50  0001 C CNN "Series"
+F 19 "0.063\" L x 0.033\" W (1.60mm x 0.85mm)" H 16200 6650 50  0001 C CNN "Size / Dimension"
+F 20 "Digi-Key" H 16200 6650 50  0001 C CNN "Supplier 1"
+F 21 "0603" H 16200 6650 50  0001 C CNN "Supplier Device Package"
+F 22 "541-0.0GCT-ND" H 16200 6650 50  0001 C CNN "Supplier Part Number 1"
+F 23 "-" H 16200 6650 50  0001 C CNN "Temperature Coefficient"
+F 24 "Jumper" H 16200 6650 50  0001 C CNN "Tolerance"
+	1    16200 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16350 6650 16450 6650
+Connection ~ 16450 6650
+Wire Wire Line
+	16050 6650 15950 6650
+Connection ~ 15950 6650
+Wire Wire Line
+	16050 6400 15950 6400
+Connection ~ 15950 6400
+Wire Wire Line
+	16350 6400 16450 6400
+Connection ~ 16450 6400
+Wire Wire Line
+	16350 6150 16450 6150
+Connection ~ 16450 6150
+Wire Wire Line
+	16050 6150 15950 6150
+Connection ~ 15950 6150
+Wire Wire Line
+	15950 5900 16050 5900
+Connection ~ 15950 5900
+Wire Wire Line
+	16350 5900 16450 5900
+Connection ~ 16450 5900
+Wire Wire Line
+	15750 6025 15950 6025
+Connection ~ 15950 6025
+Text Label 18925 8375 0    60   ~ 0
+3V3
+$Comp
+L BAT54HT1G D?
+U 1 1 5AD2BC10
+P 16950 7950
+F 0 "D?" H 16950 8010 50  0000 C BNN
+F 1 "BAT54HT1G" H 16950 7895 50  0001 C TNN
+F 2 "SFUSat:SOD-323" H 16950 7950 50  0001 C CNN
+F 3 "" H 16950 7950 50  0001 C CNN
+F 4 "BAT54H" H 16950 7950 50  0001 C CNN "Base Part Number"
+F 5 "10pF @ 1V, 1MHz" H 16950 7950 50  0001 C CNN "Capacitance @ Vr, F"
+F 6 "Discrete Semiconductor Products - Diodes - Rectifiers - Single" H 16950 7950 50  0001 C CNN "Categories"
+F 7 "200mA (DC)" H 16950 7950 50  0001 C CNN "Current - Average Rectified (Io)"
+F 8 "2µA @ 25V" H 16950 7950 50  0001 C CNN "Current - Reverse Leakage @ Vr"
+F 9 "Schottky" H 16950 7950 50  0001 C CNN "Diode Type"
+F 10 "Lead free / RoHS Compliant" H 16950 7950 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 11 "ON Semiconductor" H 16950 7950 50  0001 C CNN "Manufacturer 1"
+F 12 "BAT54HT1G" H 16950 7950 50  0001 C CNN "Manufacturer Part Number 1"
+F 13 "22 Weeks" H 16950 7950 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 14 "Surface Mount" H 16950 7950 50  0001 C CNN "Mounting Type"
+F 15 "-55°C ~ 150°C" H 16950 7950 50  0001 C CNN "Operating Temperature - Junction"
+F 16 "SC-76, SOD-323" H 16950 7950 50  0001 C CNN "Package / Case"
+F 17 "Active" H 16950 7950 50  0001 C CNN "Part Status"
+F 18 "5ns" H 16950 7950 50  0001 C CNN "Reverse Recovery Time (trr)"
+F 19 "-" H 16950 7950 50  0001 C CNN "Series"
+F 20 "Small Signal =< 200mA (Io), Any Speed" H 16950 7950 50  0001 C CNN "Speed"
+F 21 "Digi-Key" H 16950 7950 50  0001 C CNN "Supplier 1"
+F 22 "SOD-323" H 16950 7950 50  0001 C CNN "Supplier Device Package"
+F 23 "BAT54HT1GOSCT-ND" H 16950 7950 50  0001 C CNN "Supplier Part Number 1"
+F 24 "30V" H 16950 7950 50  0001 C CNN "Voltage - DC Reverse (Vr) (Max)"
+F 25 "800mV @ 100mA" H 16950 7950 50  0001 C CNN "Voltage - Forward (Vf) (Max) @ If"
+	1    16950 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L BAT54HT1G D?
+U 1 1 5AD2DE9B
+P 17275 7950
+F 0 "D?" H 17275 8010 50  0000 C BNN
+F 1 "BAT54HT1G" H 17275 7895 50  0001 C TNN
+F 2 "SFUSat:SOD-323" H 17275 7950 50  0001 C CNN
+F 3 "" H 17275 7950 50  0001 C CNN
+F 4 "BAT54H" H 17275 7950 50  0001 C CNN "Base Part Number"
+F 5 "10pF @ 1V, 1MHz" H 17275 7950 50  0001 C CNN "Capacitance @ Vr, F"
+F 6 "Discrete Semiconductor Products - Diodes - Rectifiers - Single" H 17275 7950 50  0001 C CNN "Categories"
+F 7 "200mA (DC)" H 17275 7950 50  0001 C CNN "Current - Average Rectified (Io)"
+F 8 "2µA @ 25V" H 17275 7950 50  0001 C CNN "Current - Reverse Leakage @ Vr"
+F 9 "Schottky" H 17275 7950 50  0001 C CNN "Diode Type"
+F 10 "Lead free / RoHS Compliant" H 17275 7950 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 11 "ON Semiconductor" H 17275 7950 50  0001 C CNN "Manufacturer 1"
+F 12 "BAT54HT1G" H 17275 7950 50  0001 C CNN "Manufacturer Part Number 1"
+F 13 "22 Weeks" H 17275 7950 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 14 "Surface Mount" H 17275 7950 50  0001 C CNN "Mounting Type"
+F 15 "-55°C ~ 150°C" H 17275 7950 50  0001 C CNN "Operating Temperature - Junction"
+F 16 "SC-76, SOD-323" H 17275 7950 50  0001 C CNN "Package / Case"
+F 17 "Active" H 17275 7950 50  0001 C CNN "Part Status"
+F 18 "5ns" H 17275 7950 50  0001 C CNN "Reverse Recovery Time (trr)"
+F 19 "-" H 17275 7950 50  0001 C CNN "Series"
+F 20 "Small Signal =< 200mA (Io), Any Speed" H 17275 7950 50  0001 C CNN "Speed"
+F 21 "Digi-Key" H 17275 7950 50  0001 C CNN "Supplier 1"
+F 22 "SOD-323" H 17275 7950 50  0001 C CNN "Supplier Device Package"
+F 23 "BAT54HT1GOSCT-ND" H 17275 7950 50  0001 C CNN "Supplier Part Number 1"
+F 24 "30V" H 17275 7950 50  0001 C CNN "Voltage - DC Reverse (Vr) (Max)"
+F 25 "800mV @ 100mA" H 17275 7950 50  0001 C CNN "Voltage - Forward (Vf) (Max) @ If"
+	1    17275 7950
+	-1   0    0    -1  
+$EndComp
+Text HLabel 16775 7950 0    60   Input ~ 0
+VBAT+
+Text Label 17450 7950 0    60   ~ 0
+VBUS
+Wire Wire Line
+	17375 7950 17450 7950
+Wire Wire Line
+	17175 7950 17050 7950
+Wire Wire Line
+	16775 7950 16850 7950
+$Comp
+L R_10R0_1%_0.25W_1206 R?
+U 1 1 5AD4DF53
+P 17100 8150
+F 0 "R?" H 17100 8200 50  0000 C BNN
+F 1 "10R0" H 17100 8100 50  0000 C TNN
+F 2 "SFUSat-res:R_1206" H 17100 8150 50  0001 C CNN
+F 3 "" H 17100 8150 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 17100 8150 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 17100 8150 50  0001 C CNN "Composition"
+F 6 "-" H 17100 8150 50  0001 C CNN "Failure Rate"
+F 7 "Automotive AEC-Q200" H 17100 8150 50  0001 C CNN "Features"
+F 8 "0.028\" (0.70mm)" H 17100 8150 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 17100 8150 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Panasonic Electronic Components" H 17100 8150 50  0001 C CNN "Manufacturer 1"
+F 11 "ERJ-8ENF10R0V" H 17100 8150 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "2" H 17100 8150 50  0001 C CNN "Number of Terminations"
+F 13 "-55°C ~ 155°C" H 17100 8150 50  0001 C CNN "Operating Temperature"
+F 14 "1206 (3216 Metric)" H 17100 8150 50  0001 C CNN "Package / Case"
+F 15 "Active" H 17100 8150 50  0001 C CNN "Part Status"
+F 16 "0.25W, 1/4W" H 17100 8150 50  0001 C CNN "Power (Watts)"
+F 17 "10 Ohms" H 17100 8150 50  0001 C CNN "Resistance"
+F 18 "ERJ" H 17100 8150 50  0001 C CNN "Series"
+F 19 "0.126\" L x 0.063\" W (3.20mm x 1.60mm)" H 17100 8150 50  0001 C CNN "Size / Dimension"
+F 20 "Digi-Key" H 17100 8150 50  0001 C CNN "Supplier 1"
+F 21 "1206" H 17100 8150 50  0001 C CNN "Supplier Device Package"
+F 22 "P10.0FCT-ND" H 17100 8150 50  0001 C CNN "Supplier Part Number 1"
+F 23 "±100ppm/°C" H 17100 8150 50  0001 C CNN "Temperature Coefficient"
+F 24 "±1%" H 17100 8150 50  0001 C CNN "Tolerance"
+	1    17100 8150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17100 8375 17100 8300
+Wire Wire Line
+	17100 8000 17100 7950
+Connection ~ 17100 7950
+$Comp
+L Conn_01x02 JP8
+U 1 1 5AD53CE6
+P 17300 8750
+F 0 "JP8" H 17300 8850 50  0000 C CNN
+F 1 "Conn_01x02" H 17300 8550 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 17300 8750 50  0001 C CNN
+F 3 "" H 17300 8750 50  0001 C CNN
+	1    17300 8750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17100 8375 17200 8375
+Wire Wire Line
+	17200 8375 17200 8550
+Wire Wire Line
+	17300 8375 17750 8375
+Wire Wire Line
+	17300 8375 17300 8550
+Connection ~ 17575 8375
 $EndSCHEMATC
