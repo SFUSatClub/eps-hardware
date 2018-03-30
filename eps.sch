@@ -56,12 +56,19 @@ $EndDescr
 Text Notes 7350 7500 0    60   ~ 0
 CubeSat Electrical Power Subsystem
 $Sheet
-S 8225 1800 1275 600 
+S 8225 1800 1025 600 
 U 5A66DD3E
 F0 "BMS" 60
 F1 "BMS.sch" 60
 F2 "VBAT+" I L 8225 1850 60 
 F3 "VBAT-" I L 8225 1950 60 
+F4 "VIN" I L 8225 2200 60 
+F5 "VSYS" I R 9250 1850 60 
+F6 "SDA" I R 9250 1975 60 
+F7 "SCL" I R 9250 2075 60 
+F8 "~PROCHP" I R 9250 2200 60 
+F9 "VIN_GND" I L 8225 2300 60 
+F10 "CHG_OK" I R 9250 2300 60 
 $EndSheet
 $Comp
 L 3pin-DC-power P1
@@ -341,33 +348,33 @@ pack-
 Text Label 6275 5075 2    60   ~ 0
 return
 $Sheet
-S 3050 1800 1250 600 
+S 1350 1600 875  200 
 U 5AAF7649
 F0 "3.3V_Regulator_PDB" 60
 F1 "PowderDistribtuion.sch" 60
-F2 "Vout3.3V" I L 3050 1850 60 
-F3 "Vin" I L 3050 1950 60 
+F2 "Vout3.3V" I R 2225 1700 60 
+F3 "Vin" I L 1350 1700 60 
 $EndSheet
 $Sheet
-S 6550 1800 1500 600 
+S 6075 1975 900  225 
 U 5ABA6F73
 F0 "1.6A_Regulator_PDB" 60
 F1 "PowerDistributionCurrent.sch" 60
-F2 "Aout1.6A" I L 6550 1950 60 
-F3 "Vin" I L 6550 2050 60 
-F4 "Deploy.EN" I L 6550 1850 60 
+F2 "Vin" I L 6075 2150 60 
+F3 "Deploy.EN" I L 6075 2025 60 
+F4 "1.6A" I R 6975 2100 60 
 $EndSheet
 $Sheet
-S 4450 1800 1950 600 
+S 3650 1825 1225 550 
 U 5ABA7019
 F0 "PowerDistributionDeploymentControl" 60
 F1 "1.6ARailDeployment.sch" 60
-F2 "-z_Rails" I L 4450 1850 60 
-F3 "+z_Rails" I L 4450 1950 60 
-F4 "Vout3.3V" I L 4450 2250 60 
-F5 "Ain1.6A" I L 4450 2350 60 
-F6 "Deploy.Select" I L 4450 2050 60 
-F7 "Deploy.EN" I L 4450 2150 60 
+F2 "-z_Rails" I R 4875 1975 60 
+F3 "+z_Rails" I R 4875 2200 60 
+F4 "Deploy.Select" I L 3650 1900 60 
+F5 "Deploy.EN" I L 3650 2025 60 
+F6 "3V3" I L 3650 2150 60 
+F7 "1.6A" I L 3650 2275 60 
 $EndSheet
 Text HLabel 9000 4650 0    60   Input ~ 0
 Aout1.6A
@@ -405,10 +412,6 @@ Text HLabel 2525 5000 2    60   Input ~ 0
 Deploy.EN
 Text HLabel 2525 4900 2    60   Input ~ 0
 Deploy.Select
-Text HLabel 2525 6400 2    60   Input ~ 0
-Vout3.3V
-Text HLabel 2525 3800 2    60   Input ~ 0
-Vout3.3V
 Wire Wire Line
 	1425 6000 1075 6000
 Wire Wire Line
@@ -430,4 +433,68 @@ Wire Wire Line
 Wire Wire Line
 	1075 6400 1075 6300
 Connection ~ 1075 6300
+Wire Wire Line
+	2225 1700 2400 1700
+Text Label 2400 1700 0    60   ~ 0
+3V3
+Text Label 2725 3800 0    60   ~ 0
+3V3
+Wire Wire Line
+	2525 3800 2725 3800
+Text Label 2725 6400 0    60   ~ 0
+3V3
+Wire Wire Line
+	2525 6400 2725 6400
+$Comp
+L GND #PWR?
+U 1 1 5ABF2D6E
+P 1375 6700
+F 0 "#PWR?" H 1375 6450 50  0001 C CNN
+F 1 "GND" H 1375 6550 50  0000 C CNN
+F 2 "" H 1375 6700 50  0001 C CNN
+F 3 "" H 1375 6700 50  0001 C CNN
+	1    1375 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5ABF2F83
+P 2625 6700
+F 0 "#PWR?" H 2625 6450 50  0001 C CNN
+F 1 "GND" H 2625 6550 50  0000 C CNN
+F 2 "" H 2625 6700 50  0001 C CNN
+F 3 "" H 2625 6700 50  0001 C CNN
+	1    2625 6700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2525 6700 2625 6700
+Wire Wire Line
+	2525 6600 2575 6600
+Wire Wire Line
+	2575 6600 2575 6700
+Connection ~ 2575 6700
+Wire Wire Line
+	1375 6700 1425 6700
+$Comp
+L GND #PWR?
+U 1 1 5ABF3DAA
+P 2575 3600
+F 0 "#PWR?" H 2575 3350 50  0001 C CNN
+F 1 "GND" H 2575 3450 50  0000 C CNN
+F 2 "" H 2575 3600 50  0001 C CNN
+F 3 "" H 2575 3600 50  0001 C CNN
+	1    2575 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2525 3600 2575 3600
+Text Label 2650 4500 0    60   ~ 0
+CHG_OK
+Text Label 2650 4600 0    60   ~ 0
+PROCHP
+Wire Wire Line
+	2525 4600 2650 4600
+Wire Wire Line
+	2650 4500 2525 4500
 $EndSCHEMATC

@@ -177,7 +177,7 @@ $EndComp
 Text HLabel 5350 2750 2    60   Input ~ 0
 Deploy.EN
 Text HLabel 7250 2550 2    60   Input ~ 0
-Aout1.6A
+1.6A
 Text HLabel 3000 2250 0    60   Input ~ 0
 Vin
 Wire Wire Line
