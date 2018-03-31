@@ -1,4 +1,4 @@
-update=Thu 29 Mar 2018 09:52:17 PM PDT
+update=Sat 31 Mar 2018 12:47:26 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,8 +63,3 @@ LibName31=KiCad-Lib/SFUSat-power
 LibName32=KiCad-Lib/SFUSat-cap
 LibName33=KiCad-Lib/SFUSat-ind
 LibName34=KiCad-Lib/SFUSat-res
-LibName35=KiCad-Lib/lms3635aqrnlrq1
-LibName36=KiCad-Lib/tps563219ddfr-nd
-LibName37=KiCad-Lib/cd4555b
-LibName38=KiCad-Lib/bts5030-1eja
-LibName39=KiCad-Lib/tps2296xc

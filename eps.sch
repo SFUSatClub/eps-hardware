@@ -614,4 +614,9 @@ Text Notes 7475 1025 0    118  ~ 0
 Regulation
 Text Notes 7200 4150 0    118  ~ 0
 Battery Management
+Wire Wire Line
+	7950 5025 7475 5025
+Wire Wire Line
+	7475 5025 7475 4575
+Connection ~ 7475 4575
 $EndSCHEMATC
