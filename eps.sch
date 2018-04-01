@@ -33,6 +33,7 @@ LIBS:SFUSat-power
 LIBS:SFUSat-cap
 LIBS:SFUSat-ind
 LIBS:SFUSat-res
+LIBS:eps-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -366,9 +367,8 @@ F1 "1.6ARailDeployment.sch" 60
 F2 "-z_Rails" I R 9725 2575 60 
 F3 "+z_Rails" I R 9725 2800 60 
 F4 "Deploy.Select" I L 8500 2500 60 
-F5 "Deploy.EN" I L 8500 2625 60 
-F6 "3V3" I L 8500 2750 60 
-F7 "1.6A" I L 8500 2875 60 
+F5 "3V3" I L 8500 2750 60 
+F6 "1.6A" I L 8500 2875 60 
 $EndSheet
 Wire Wire Line
 	6700 5500 7950 5500
@@ -580,12 +580,8 @@ Wire Wire Line
 	5900 2150 6000 2150
 Wire Wire Line
 	8375 2500 8500 2500
-Wire Wire Line
-	8500 2625 8375 2625
 Text Label 8375 2500 2    60   ~ 0
 DPL_SEL
-Text Label 8375 2625 2    60   ~ 0
-DPL_EN
 Text Label 2950 5075 0    60   ~ 0
 DPL_SEL
 Text Label 2950 5175 0    60   ~ 0

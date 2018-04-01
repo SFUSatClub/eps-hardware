@@ -33,6 +33,7 @@ LIBS:SFUSat-power
 LIBS:SFUSat-cap
 LIBS:SFUSat-ind
 LIBS:SFUSat-res
+LIBS:eps-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
