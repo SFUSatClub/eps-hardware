@@ -4094,7 +4094,7 @@ F 24 "Jumper" H 16200 6650 50  0001 C CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 Text Label 18925 8375 0    60   ~ 0
-3V3_BMS
+3V3
 $Comp
 L BAT54HT1G D2
 U 1 1 5AD2BC10
@@ -5110,8 +5110,6 @@ Wire Wire Line
 Wire Wire Line
 	17100 8000 17100 7950
 Connection ~ 17100 7950
-Wire Wire Line
-	17100 8375 17750 8375
 Connection ~ 17575 8375
 Wire Wire Line
 	7250 1925 7250 1825
@@ -5145,4 +5143,6 @@ Wire Wire Line
 	11550 2500 11550 2800
 Wire Wire Line
 	12350 2500 12350 2700
+Wire Wire Line
+	17100 8375 17750 8375
 $EndSCHEMATC
