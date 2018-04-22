@@ -4094,7 +4094,7 @@ F 24 "Jumper" H 16200 6650 50  0001 C CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 Text Label 18925 8375 0    60   ~ 0
-3V3
+3V3_BMS
 $Comp
 L BAT54HT1G D2
 U 1 1 5AD2BC10
