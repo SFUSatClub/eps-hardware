@@ -5146,4 +5146,6 @@ Wire Wire Line
 	12350 2500 12350 2700
 Wire Wire Line
 	17100 8375 17750 8375
+Text Label 17700 5150 0    60   ~ 0
+CELL_control
 $EndSCHEMATC
