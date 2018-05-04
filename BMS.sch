@@ -4201,14 +4201,14 @@ $EndComp
 $Comp
 L CONN_01X02 JP1
 U 1 1 5AE1A3B0
-P 7150 1625
+P 7200 1625
 AR Path="/5AE1A3B0" Ref="JP1"  Part="1" 
 AR Path="/5A66DD3E/5AE1A3B0" Ref="JP1"  Part="1" 
-F 0 "JP1" H 7150 1725 50  0000 C CNN
-F 1 "Conn_01x02" H 7150 1425 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 7150 1625 50  0001 C CNN
-F 3 "" H 7150 1625 50  0001 C CNN
-	1    7150 1625
+F 0 "JP1" H 7200 1725 50  0000 C CNN
+F 1 "Conn_01x02" H 7200 1425 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 7200 1625 50  0001 C CNN
+F 3 "" H 7200 1625 50  0001 C CNN
+	1    7200 1625
 	0    -1   -1   0   
 $EndComp
 Text HLabel 4800 3150 0    60   Input ~ 0
@@ -5146,4 +5146,6 @@ Wire Wire Line
 	12350 2500 12350 2700
 Wire Wire Line
 	17100 8375 17750 8375
+Text Label 17700 5150 0    60   ~ 0
+CELL_control
 $EndSCHEMATC
