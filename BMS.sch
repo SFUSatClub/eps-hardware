@@ -2115,7 +2115,7 @@ U 1 1 5A896D68
 P 8250 2700
 F 0 "Q8" H 8250 3000 50  0000 C BNN
 F 1 "DMP3035SFG-7" H 8250 2400 50  0000 C TNN
-F 2 "SFUSat:8-PowerWDFN" H 8250 2700 50  0001 C CNN
+F 2 "SFUSat:POWERDI3333-8" H 8250 2700 50  0001 C CNN
 F 3 "" H 8250 2700 50  0001 C CNN
 F 4 "Discrete Semiconductor Products - Transistors - FETs, MOSFETs - Single" H 8250 2700 50  0001 C CNN "Categories"
 F 5 "8.5A (Ta)" H 8250 2700 50  0001 C CNN "Current - Continuous Drain (Id) @ 25°C"
@@ -2338,7 +2338,7 @@ U 1 1 5A89D3DC
 P 6000 2700
 F 0 "Q5" H 6000 3000 50  0000 C BNN
 F 1 "DMP3035SFG-7" H 6000 2400 50  0000 C TNN
-F 2 "SFUSat:8-PowerWDFN" H 6000 2700 50  0001 C CNN
+F 2 "SFUSat:POWERDI3333-8" H 6000 2700 50  0001 C CNN
 F 3 "" H 6000 2700 50  0001 C CNN
 F 4 "Discrete Semiconductor Products - Transistors - FETs, MOSFETs - Single" H 6000 2700 50  0001 C CNN "Categories"
 F 5 "8.5A (Ta)" H 6000 2700 50  0001 C CNN "Current - Continuous Drain (Id) @ 25°C"
@@ -4416,6 +4416,8 @@ Text Notes 10000 4375 1    60   ~ 0
 JP5
 Text Notes 10625 5025 1    60   ~ 0
 JP6
+Text Label 17700 5150 0    60   ~ 0
+CELL_control
 Wire Wire Line
 	15850 2800 15850 3450
 Wire Wire Line
@@ -4482,11 +4484,11 @@ Wire Wire Line
 Wire Wire Line
 	12350 3750 13650 3750
 Wire Wire Line
-	17150 2500 17150 2850
+	17150 2495 17150 2850
 Connection ~ 17150 2750
 Connection ~ 17150 2650
 Wire Wire Line
-	17950 2500 17950 2950
+	17950 2500 17950 3225
 Connection ~ 17950 2850
 Connection ~ 17950 2750
 Connection ~ 17950 2650
@@ -4505,10 +4507,6 @@ Connection ~ 18875 2500
 Connection ~ 19075 2500
 Connection ~ 19275 2500
 Connection ~ 19475 2500
-Wire Wire Line
-	18075 2800 18075 3225
-Wire Wire Line
-	18075 3225 17250 3225
 Wire Wire Line
 	17250 3225 17250 3850
 Wire Wire Line
@@ -4532,7 +4530,7 @@ Wire Wire Line
 	17300 3400 17250 3400
 Connection ~ 17250 3400
 Wire Wire Line
-	17300 3400 17300 3700
+	17300 3400 17300 3800
 Connection ~ 17300 3500
 Connection ~ 17300 3600
 Wire Wire Line
@@ -4699,7 +4697,7 @@ Wire Wire Line
 Connection ~ 9025 2500
 Connection ~ 8725 2500
 Wire Wire Line
-	8650 2500 8650 2800
+	8650 2500 8650 2900
 Connection ~ 8650 2600
 Connection ~ 8650 2700
 Wire Wire Line
@@ -4736,7 +4734,7 @@ Connection ~ 5500 1925
 Wire Wire Line
 	5325 1925 7150 1925
 Wire Wire Line
-	5600 2500 5600 2800
+	5600 2500 5600 2900
 Connection ~ 5600 2700
 Connection ~ 5600 2600
 Wire Wire Line
@@ -5141,11 +5139,19 @@ Wire Wire Line
 Wire Wire Line
 	10350 2500 11550 2500
 Wire Wire Line
-	11550 2500 11550 2800
+	11550 2500 11550 2900
 Wire Wire Line
 	12350 2500 12350 2700
 Wire Wire Line
 	17100 8375 17750 8375
-Text Label 17700 5150 0    60   ~ 0
-CELL_control
+Connection ~ 17300 3700
+Connection ~ 17950 2950
+Connection ~ 16875 2500
+Connection ~ 11550 2800
+Connection ~ 12575 2500
+Connection ~ 5600 2800
+Connection ~ 8650 2800
+Connection ~ 17950 3050
+Wire Wire Line
+	17950 3225 17250 3225
 $EndSCHEMATC
