@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:eps-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -34,7 +33,6 @@ LIBS:SFUSat-power
 LIBS:SFUSat-cap
 LIBS:SFUSat-ind
 LIBS:SFUSat-res
-LIBS:eps-cache
 EELAYER 25 0
 EELAYER END
 $Descr A2 23386 16535

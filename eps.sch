@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:eps-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -34,7 +33,6 @@ LIBS:SFUSat-power
 LIBS:SFUSat-cap
 LIBS:SFUSat-ind
 LIBS:SFUSat-res
-LIBS:eps-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -602,6 +600,6 @@ Wire Wire Line
 Connection ~ 2350 5925
 Wire Wire Line
 	2550 2900 2425 2900
-Text Label 2075 2925 0    60   ~ 0
+Text Label 2425 2900 2    60   ~ 0
 DPL_EN
 $EndSCHEMATC
