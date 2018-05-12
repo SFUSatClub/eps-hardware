@@ -252,17 +252,10 @@ F 3 "" H 2900 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4050 2400 4200 2400
-Connection ~ 4050 4150
-Connection ~ 2900 4150
 Wire Wire Line
 	2900 4150 2900 1900
-Connection ~ 2500 4150
 Wire Wire Line
 	2500 4150 2500 1900
-Connection ~ 2050 4150
-Wire Wire Line
-	2050 4150 2050 1900
-Connection ~ 4950 4150
 Wire Wire Line
 	1600 1900 1600 4150
 Connection ~ 3600 1250
@@ -282,7 +275,6 @@ Wire Wire Line
 	3600 750  3600 2200
 Wire Wire Line
 	3600 2200 4200 2200
-Connection ~ 6000 4150
 Wire Wire Line
 	6000 4150 6000 3200
 Wire Wire Line
@@ -299,9 +291,7 @@ Connection ~ 5900 1800
 Wire Wire Line
 	5900 1800 5800 1800
 Wire Wire Line
-	5200 1300 5900 1300
-Wire Wire Line
-	5900 1300 5900 2250
+	5900 1000 5900 2250
 Wire Wire Line
 	5800 1900 5900 1900
 Connection ~ 4850 1000
@@ -318,20 +308,15 @@ Wire Wire Line
 Wire Wire Line
 	4050 4150 4050 1000
 Wire Wire Line
-	4050 1000 5200 1000
+	4050 1000 5900 1000
 Wire Wire Line
 	4850 1300 4850 1000
-Connection ~ 5250 4150
 Wire Wire Line
 	4950 4150 4950 2950
-Connection ~ 6700 4150
 Wire Wire Line
 	6700 4150 6700 4200
-Connection ~ 8250 4150
 Wire Wire Line
 	9000 4150 9000 3550
-Wire Wire Line
-	1150 4150 9000 4150
 Connection ~ 7450 3400
 Wire Wire Line
 	5100 2950 5100 3400
@@ -400,13 +385,11 @@ Wire Wire Line
 Connection ~ 1150 1250
 Wire Wire Line
 	1150 1900 1150 4150
-Connection ~ 1600 4150
 Wire Wire Line
 	3150 1600 3150 1250
 Connection ~ 3150 1250
 Wire Wire Line
 	3150 1850 3150 4150
-Connection ~ 3150 4150
 $Comp
 L C C63
 U 1 1 5AE2C839
@@ -452,19 +435,42 @@ Connection ~ 9750 2700
 Wire Wire Line
 	9750 4150 9750 3550
 Wire Wire Line
-	8250 4150 9750 4150
-Connection ~ 8000 4150
-Wire Wire Line
 	5250 3775 8500 3775
 Wire Wire Line
 	8500 3775 8500 3300
 Wire Wire Line
-	8500 4075 8500 4150
+	8500 4150 8500 4075
+Wire Wire Line
+	9250 4150 9250 3550
+Wire Wire Line
+	9500 4150 9500 3550
+Text Label 6300 1150 0    60   ~ 0
+SW
+Text Label 6125 2400 0    60   ~ 0
+CBOOT
+Text Label 6000 2550 0    60   ~ 0
+VCC
+Text Label 6600 3400 0    60   ~ 0
+FB
+Text Label 6675 3775 0    60   ~ 0
+BIAS
+Wire Wire Line
+	2050 4150 2050 1900
+Wire Wire Line
+	1150 4150 9750 4150
+Connection ~ 8000 4150
+Connection ~ 6700 4150
+Connection ~ 6000 4150
+Connection ~ 4950 4150
+Connection ~ 4050 4150
+Connection ~ 3150 4150
+Connection ~ 2900 4150
+Connection ~ 2500 4150
+Connection ~ 2050 4150
+Connection ~ 1600 4150
 Connection ~ 8500 4150
-Wire Wire Line
-	9250 3550 9250 4150
+Connection ~ 9000 4150
 Connection ~ 9250 4150
-Wire Wire Line
-	9500 3550 9500 4150
 Connection ~ 9500 4150
+Connection ~ 5200 1000
 $EndSCHEMATC

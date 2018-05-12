@@ -4490,8 +4490,6 @@ Connection ~ 12575 3425
 Connection ~ 12350 2600
 Connection ~ 12675 2500
 Connection ~ 12350 2500
-Connection ~ 11550 2700
-Connection ~ 11550 2600
 Wire Wire Line
 	12350 2900 12350 3750
 Wire Wire Line
@@ -5152,19 +5150,43 @@ Wire Wire Line
 Wire Wire Line
 	10350 2500 11550 2500
 Wire Wire Line
-	11550 2500 11550 2900
-Wire Wire Line
 	12350 2500 12350 2700
 Wire Wire Line
 	17100 8375 17750 8375
 Connection ~ 17300 3700
 Connection ~ 17950 2950
 Connection ~ 16875 2500
-Connection ~ 11550 2800
 Connection ~ 12575 2500
 Connection ~ 5600 2800
 Connection ~ 8650 2800
 Connection ~ 17950 3050
 Wire Wire Line
 	17950 3225 17250 3225
+Connection ~ 11550 2600
+Connection ~ 11550 2700
+Connection ~ 11550 2800
+Wire Wire Line
+	11550 2500 11550 2900
+Text Label 16125 4550 0    60   ~ 0
+COMP2
+Text Label 13300 3650 0    60   ~ 0
+LODRV1
+Text Label 13300 3750 0    60   ~ 0
+HIDRV1
+Text Label 13350 3950 0    60   ~ 0
+ACN
+Text Label 13350 4000 0    60   ~ 0
+ACP
+Text Label 13475 3550 0    60   ~ 0
+SW1
+Text Label 15875 3550 0    60   ~ 0
+SW2
+Text Label 15925 3650 0    60   ~ 0
+LODRV2
+Text Label 15925 3750 0    60   ~ 0
+HIDRV2
+Text Label 15950 4050 0    60   ~ 0
+SRP
+Text Label 15950 4150 0    60   ~ 0
+SRN
 $EndSCHEMATC

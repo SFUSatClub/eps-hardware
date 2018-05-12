@@ -240,4 +240,12 @@ Wire Wire Line
 Wire Wire Line
 	5125 3625 5125 4275
 Connection ~ 5125 4200
+Text Label 5375 3000 0    60   ~ 0
+FB
+Text Label 5125 2600 0    60   ~ 0
+VBOOT
+Text Label 4675 2300 0    60   ~ 0
+SW
+Text Label 5075 2050 0    60   ~ 0
+PG
 $EndSCHEMATC

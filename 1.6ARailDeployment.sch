@@ -232,4 +232,8 @@ Connection ~ 6100 3250
 Connection ~ 6300 3250
 Text HLabel 6350 3650 0    60   Input ~ 0
 3V3
+Text Label 5675 3675 0    60   ~ 0
+on+z
+Text Label 5675 3775 0    60   ~ 0
+on-z
 $EndSCHEMATC
