@@ -148,10 +148,10 @@ F 3 "" H 6100 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR37
+L GND #PWR037
 U 1 1 5ABA777B
 P 5125 4275
-F 0 "#PWR37" H 5125 4025 50  0001 C CNN
+F 0 "#PWR037" H 5125 4025 50  0001 C CNN
 F 1 "GND" H 5125 4125 50  0000 C CNN
 F 2 "" H 5125 4275 50  0001 C CNN
 F 3 "" H 5125 4275 50  0001 C CNN
@@ -159,10 +159,10 @@ F 3 "" H 5125 4275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR36
+L GND #PWR038
 U 1 1 5ABA7781
 P 3700 2600
-F 0 "#PWR36" H 3700 2350 50  0001 C CNN
+F 0 "#PWR038" H 3700 2350 50  0001 C CNN
 F 1 "GND" H 3700 2450 50  0000 C CNN
 F 2 "" H 3700 2600 50  0001 C CNN
 F 3 "" H 3700 2600 50  0001 C CNN
@@ -248,4 +248,34 @@ Text Label 4675 2300 0    60   ~ 0
 SW
 Text Label 5075 2050 0    60   ~ 0
 PG
+$Comp
+L CT6EP103 RV?
+U 1 1 5B03C21D
+P 7850 3575
+F 0 "RV?" H 7850 3515 50  0000 C TNN
+F 1 "CT6EP103" H 7850 3575 50  0001 C CNN
+F 2 "SFUSat:CT6EP103" H 7850 3575 50  0001 C CNN
+F 3 "" H 7850 3575 50  0001 C CNN
+F 4 "Top Adjustment" H 7850 3575 50  0001 C CNN "Adjustment Type"
+F 5 "Potentiometers, Variable Resistors - Trimmer Potentiometers" H 7850 3575 50  0001 C CNN "Categories"
+F 6 "Lead free / RoHS Compliant" H 7850 3575 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 7 "Nidec Copal Electronics" H 7850 3575 50  0001 C CNN "Manufacturer 1"
+F 8 "CT6EP103" H 7850 3575 50  0001 C CNN "Manufacturer Part Number 1"
+F 9 "9 Weeks" H 7850 3575 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 10 "Through Hole" H 7850 3575 50  0001 C CNN "Mounting Type"
+F 11 "1" H 7850 3575 50  0001 C CNN "Number of Turns"
+F 12 "Active" H 7850 3575 50  0001 C CNN "Part Status"
+F 13 "0.5W, 1/2W" H 7850 3575 50  0001 C CNN "Power (Watts)"
+F 14 "10 kOhms" H 7850 3575 50  0001 C CNN "Resistance"
+F 15 "Cermet" H 7850 3575 50  0001 C CNN "Resistive Material"
+F 16 "CT6" H 7850 3575 50  0001 C CNN "Series"
+F 17 "Square - 0.276\" x 0.276\" Face x 0.228\" L (7.00mm x 7.00mm x 5.80mm)" H 7850 3575 50  0001 C CNN "Size / Dimension"
+F 18 "Digi-Key" H 7850 3575 50  0001 C CNN "Supplier 1"
+F 19 "CT6EP103-ND" H 7850 3575 50  0001 C CNN "Supplier Part Number 1"
+F 20 "±100ppm/°C" H 7850 3575 50  0001 C CNN "Temperature Coefficient"
+F 21 "PC Pins" H 7850 3575 50  0001 C CNN "Termination Style"
+F 22 "±10%" H 7850 3575 50  0001 C CNN "Tolerance"
+	1    7850 3575
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
