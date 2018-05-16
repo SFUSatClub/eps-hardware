@@ -207,10 +207,10 @@ F 3 "" H 1050 1075 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L GND #PWR1
 U 1 1 5AA5314F
 P 750 1075
-F 0 "#PWR01" H 750 825 50  0001 C CNN
+F 0 "#PWR1" H 750 825 50  0001 C CNN
 F 1 "GND" H 750 925 50  0000 C CNN
 F 2 "" H 750 1075 50  0001 C CNN
 F 3 "" H 750 1075 50  0001 C CNN
@@ -229,10 +229,10 @@ F 3 "" H 1050 1450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L GND #PWR2
 U 1 1 5AA53A58
 P 750 1450
-F 0 "#PWR02" H 750 1200 50  0001 C CNN
+F 0 "#PWR2" H 750 1200 50  0001 C CNN
 F 1 "GND" H 750 1300 50  0000 C CNN
 F 2 "" H 750 1450 50  0001 C CNN
 F 3 "" H 750 1450 50  0001 C CNN
@@ -251,10 +251,10 @@ F 3 "" H 1050 1875 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L GND #PWR3
 U 1 1 5AA53C1C
 P 750 1875
-F 0 "#PWR03" H 750 1625 50  0001 C CNN
+F 0 "#PWR3" H 750 1625 50  0001 C CNN
 F 1 "GND" H 750 1725 50  0000 C CNN
 F 2 "" H 750 1875 50  0001 C CNN
 F 3 "" H 750 1875 50  0001 C CNN
@@ -273,10 +273,10 @@ F 3 "" H 1050 2250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L GND #PWR4
 U 1 1 5AA53C28
 P 750 2250
-F 0 "#PWR04" H 750 2000 50  0001 C CNN
+F 0 "#PWR4" H 750 2000 50  0001 C CNN
 F 1 "GND" H 750 2100 50  0000 C CNN
 F 2 "" H 750 2250 50  0001 C CNN
 F 3 "" H 750 2250 50  0001 C CNN
@@ -345,13 +345,14 @@ F2 "Vout3.3V" I R 3375 2200 60
 F3 "Vin" I L 2500 2200 60 
 $EndSheet
 $Sheet
-S 2550 2850 900  225 
+S 2550 2850 900  375 
 U 5ABA6F73
 F0 "1.6A_Regulator_PDB" 60
 F1 "PowerDistributionCurrent.sch" 60
 F2 "Vin" I L 2550 3025 60 
 F3 "Deploy.EN" I L 2550 2900 60 
 F4 "1.6A" I R 3450 2975 60 
+F5 "FB" I L 2550 3150 60 
 $EndSheet
 $Sheet
 S 5000 2475 1225 550 
@@ -373,10 +374,10 @@ Text Label 10425 2275 0    60   ~ 0
 Text Label 10425 4875 0    60   ~ 0
 3V3
 $Comp
-L GND #PWR05
+L GND #PWR7
 U 1 1 5ABF2D6E
 P 9075 5175
-F 0 "#PWR05" H 9075 4925 50  0001 C CNN
+F 0 "#PWR7" H 9075 4925 50  0001 C CNN
 F 1 "GND" H 9075 5025 50  0000 C CNN
 F 2 "" H 9075 5175 50  0001 C CNN
 F 3 "" H 9075 5175 50  0001 C CNN
@@ -384,10 +385,10 @@ F 3 "" H 9075 5175 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR06
+L GND #PWR9
 U 1 1 5ABF2F83
 P 10325 5175
-F 0 "#PWR06" H 10325 4925 50  0001 C CNN
+F 0 "#PWR9" H 10325 4925 50  0001 C CNN
 F 1 "GND" H 10325 5025 50  0000 C CNN
 F 2 "" H 10325 5175 50  0001 C CNN
 F 3 "" H 10325 5175 50  0001 C CNN
@@ -395,10 +396,10 @@ F 3 "" H 10325 5175 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR07
+L GND #PWR8
 U 1 1 5ABF3DAA
 P 10275 2075
-F 0 "#PWR07" H 10275 1825 50  0001 C CNN
+F 0 "#PWR8" H 10275 1825 50  0001 C CNN
 F 1 "GND" H 10275 1925 50  0000 C CNN
 F 2 "" H 10275 2075 50  0001 C CNN
 F 3 "" H 10275 2075 50  0001 C CNN
@@ -436,10 +437,10 @@ Text Label 4875 2800 2    60   ~ 0
 Text Label 3225 1475 0    60   ~ 0
 VSYS_RETURN
 $Comp
-L GND #PWR08
+L GND #PWR6
 U 1 1 5ADD0552
 P 3225 1675
-F 0 "#PWR08" H 3225 1425 50  0001 C CNN
+F 0 "#PWR6" H 3225 1425 50  0001 C CNN
 F 1 "GND" H 3225 1525 50  0000 C CNN
 F 2 "" H 3225 1675 50  0001 C CNN
 F 3 "" H 3225 1675 50  0001 C CNN
@@ -643,14 +644,124 @@ F 25 "±0.5%" H 2500 3425 50  0001 C CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L GND #PWR5
 U 1 1 5AED2256
 P 2775 3425
-F 0 "#PWR09" H 2775 3175 50  0001 C CNN
+F 0 "#PWR5" H 2775 3175 50  0001 C CNN
 F 1 "GND" H 2775 3275 50  0000 C CNN
 F 2 "" H 2775 3425 50  0001 C CNN
 F 3 "" H 2775 3425 50  0001 C CNN
 	1    2775 3425
 	0    -1   -1   0   
 $EndComp
+$Comp
+L CT6EP103 RV1
+U 1 1 5AFC424C
+P 4800 3875
+F 0 "RV1" H 4800 3815 50  0000 C TNN
+F 1 "CT6EP103" H 4800 3875 50  0001 C CNN
+F 2 "SFUSat:CT6EP103" H 4800 3875 50  0001 C CNN
+F 3 "" H 4800 3875 50  0001 C CNN
+F 4 "Top Adjustment" H 4800 3875 50  0001 C CNN "Adjustment Type"
+F 5 "Potentiometers, Variable Resistors - Trimmer Potentiometers" H 4800 3875 50  0001 C CNN "Categories"
+F 6 "Lead free / RoHS Compliant" H 4800 3875 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 7 "Nidec Copal Electronics" H 4800 3875 50  0001 C CNN "Manufacturer 1"
+F 8 "CT6EP103" H 4800 3875 50  0001 C CNN "Manufacturer Part Number 1"
+F 9 "9 Weeks" H 4800 3875 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 10 "Through Hole" H 4800 3875 50  0001 C CNN "Mounting Type"
+F 11 "1" H 4800 3875 50  0001 C CNN "Number of Turns"
+F 12 "Active" H 4800 3875 50  0001 C CNN "Part Status"
+F 13 "0.5W, 1/2W" H 4800 3875 50  0001 C CNN "Power (Watts)"
+F 14 "10 kOhms" H 4800 3875 50  0001 C CNN "Resistance"
+F 15 "Cermet" H 4800 3875 50  0001 C CNN "Resistive Material"
+F 16 "CT6" H 4800 3875 50  0001 C CNN "Series"
+F 17 "Square - 0.276\" x 0.276\" Face x 0.228\" L (7.00mm x 7.00mm x 5.80mm)" H 4800 3875 50  0001 C CNN "Size / Dimension"
+F 18 "Digi-Key" H 4800 3875 50  0001 C CNN "Supplier 1"
+F 19 "CT6EP103-ND" H 4800 3875 50  0001 C CNN "Supplier Part Number 1"
+F 20 "±100ppm/°C" H 4800 3875 50  0001 C CNN "Temperature Coefficient"
+F 21 "PC Pins" H 4800 3875 50  0001 C CNN "Termination Style"
+F 22 "±10%" H 4800 3875 50  0001 C CNN "Tolerance"
+	1    4800 3875
+	0    1    1    0   
+$EndComp
+$Comp
+L R_73k2_0.1%_0.063W_0402 R10
+U 1 1 5AFC4269
+P 4800 3475
+F 0 "R10" H 4800 3525 50  0000 C BNN
+F 1 "73k2" H 4800 3425 50  0000 C TNN
+F 2 "SFUSat-res:R_0402" H 4800 3475 50  0001 C CNN
+F 3 "" H 4800 3475 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 4800 3475 50  0001 C CNN "Categories"
+F 5 "Thin Film" H 4800 3475 50  0001 C CNN "Composition"
+F 6 "-" H 4800 3475 50  0001 C CNN "Failure Rate"
+F 7 "Automotive AEC-Q200" H 4800 3475 50  0001 C CNN "Features"
+F 8 "0.016\" (0.40mm)" H 4800 3475 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 4800 3475 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Panasonic Electronic Components" H 4800 3475 50  0001 C CNN "Manufacturer 1"
+F 11 "ERA-2AEB7322X" H 4800 3475 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "23 Weeks" H 4800 3475 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 13 "2" H 4800 3475 50  0001 C CNN "Number of Terminations"
+F 14 "-55°C ~ 155°C" H 4800 3475 50  0001 C CNN "Operating Temperature"
+F 15 "0402 (1005 Metric)" H 4800 3475 50  0001 C CNN "Package / Case"
+F 16 "Active" H 4800 3475 50  0001 C CNN "Part Status"
+F 17 "0.063W, 1/16W" H 4800 3475 50  0001 C CNN "Power (Watts)"
+F 18 "73.2 kOhms" H 4800 3475 50  0001 C CNN "Resistance"
+F 19 "ERA-2A" H 4800 3475 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 4800 3475 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 4800 3475 50  0001 C CNN "Supplier 1"
+F 22 "0402" H 4800 3475 50  0001 C CNN "Supplier Device Package"
+F 23 "P73.2KDCCT-ND" H 4800 3475 50  0001 C CNN "Supplier Part Number 1"
+F 24 "±25ppm/°C" H 4800 3475 50  0001 C CNN "Temperature Coefficient"
+F 25 "±0.1%" H 4800 3475 50  0001 C CNN "Tolerance"
+	1    4800 3475
+	0    1    1    0   
+$EndComp
+$Comp
+L R R9
+U 1 1 5AFC4270
+P 4475 3875
+F 0 "R9" V 4555 3875 50  0000 C CNN
+F 1 "DNP" V 4475 3875 50  0000 C CNN
+F 2 "SFUSat-res:R_0402" V 4405 3875 50  0001 C CNN
+F 3 "" H 4475 3875 50  0001 C CNN
+	1    4475 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AFC4277
+P 4800 4150
+F 0 "#PWR?" H 4800 3900 50  0001 C CNN
+F 1 "GND" H 4800 4000 50  0000 C CNN
+F 2 "" H 4800 4150 50  0001 C CNN
+F 3 "" H 4800 4150 50  0001 C CNN
+	1    4800 4150
+	1    0    0    -1  
+$EndComp
+Text Label 5025 3875 0    60   ~ 0
+FB
+Wire Wire Line
+	4800 3625 4800 3725
+Wire Wire Line
+	4950 3875 5025 3875
+Wire Wire Line
+	4800 4025 4800 4150
+Wire Wire Line
+	4800 3675 4475 3675
+Wire Wire Line
+	4475 3675 4475 3725
+Connection ~ 4800 3675
+Wire Wire Line
+	4475 4075 4800 4075
+Wire Wire Line
+	4475 4075 4475 4025
+Connection ~ 4800 4075
+Wire Wire Line
+	4800 2925 4800 3325
+Connection ~ 4800 2925
+Wire Wire Line
+	2550 3150 2425 3150
+Text Label 2425 3150 2    60   ~ 0
+FB
 $EndSCHEMATC
