@@ -1,0 +1,36 @@
+Fabrication Instructions for PCBWay.com
+Copper layers: 4 layers
+Size: 90.17mmX95.89mm
+Quantity: 10
+Minimum track spacing: 6mil/0.1524mm
+Minimum drill size: 0.3mm
+Soldermask color: White
+Silkscreen color: Black
+Gold fingers: No
+Surface finish: HASL with lead
+Via process: Tented Vias
+FR4-TG: 150 - 160
+Finished Copper: 1 oz.
+Inner Copper: 1 oz.
+Minimum slot size: plated: 0.6mm, non-plated: 0.8mm
+Minimum soldermask bridge width: 150um
+
+Stackup:
+------------- Copper    1     35 um
+============= Dielectric 1-2 0.175 mm (e.g. 1x Prepreg 7628 AT05 47% Resin) TG130 dk  4.29  
+------------- Copper    2     35 um
+============= Dielectric  2-3    1.13 mm (6x 7628M 43% Resin) TG150  dk  3.96
+------------- Copper    3     35 um
+============= Dielectric  3-4    0.175 mm (e.g. 1x Prepreg 7628 AT05 47% Resin)  TG130 dk 4.29
+------------- Copper    4     35 um
+
+
+
+
+Stencil type: Non-framework
+Stencil size: Custom 190mmX290mm
+Stencil side: Top
+Stencil Quantity: 1
+Stencil Thickness: 0.10mm
+Existing fiducials: none
+Electropolishing: no
